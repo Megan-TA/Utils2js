@@ -3,7 +3,7 @@
  * @Author: chen_huang 
  * @Date: 2017-09-20 16:17:55 
  * @Last Modified by: chen_huang
- * @Last Modified time: 2017-09-21 20:08:23
+ * @Last Modified time: 2017-10-12 13:31:53
  */
 
 (function (global, factory) {
@@ -123,7 +123,44 @@
 		 * var test = new Utils.Logger('box1')
 		 * test.info('666')	// [box1] 666
 		 */
-		Logger: Logger
+		Logger: Logger,
+		
+		/**
+		 * 对象继承
+		 * 用法： 
+		 * extend({}, { name: '张三' })
+		 * @param {any} destination 
+		 * @param {any} source 
+		 * @returns 
+		 */
+		extend: function extend (destination, source) {
+			if (destination instanceof Object && source instanceof Object) {
+				for (key in source) {
+					destination[key] = source[key]
+				}
+				return destination
+			} else {
+				console.error('参数必须为对象')
+			}	 
+		},
+
+		/**
+		 * 深拷贝
+		 * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
+		 * @param {any} source 
+		 * @param {any} deepSource 
+		 */
+		deepCopy: function deepCopy (source, deepSource) {
+			deepSource = deepSource || {}
+			for ( var key in source) {
+				if (typeof source[key] == 'object') {
+					deepSource[key] = source[key] instanceof Array ? [] : {}
+				} else {
+					deepSource[key] = source[key]
+ 				}
+			}
+			return deepCopy
+		},
 
 	}
 
@@ -149,6 +186,13 @@
 	Logger.prototype.info = function (message) {
 		this.log(message)
 	}
-
+	
+	// 字符串方法扩展
+ 
+	// 字符串倒序
+	String.prototype.reverse = function () {
+    	return Array.prototype.reverse.call(this.split('')).join('')
+	}
+	
 	return Utils
 }))

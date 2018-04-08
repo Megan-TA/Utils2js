@@ -3,14 +3,14 @@
  * @Author: chen_huang 
  * @Date: 2017-09-20 16:17:55 
  * @Last Modified by: chen_huang
- * @Last Modified time: 2017-10-12 13:31:53
+ * @Last Modified time: 2018-04-08 15:19:46
  */
 
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined'
         ? module.exports = factory()
         : typeof define === 'function'
-            ? define(factory) : (global.Utils = factory())
+            ? define(factory) : (window ? window.Utils = factory() : global.Utils = factory())
 }(this, function () {
 	Utils = {
 		
@@ -118,14 +118,6 @@
 			}
 		},	
 		/**
-		 * 更简单多色彩的现代浏览器控制台输出显示
-		 * IE浏览器则默认输出 [xxx] xxx 黑色信息
-		 * var test = new Utils.Logger('box1')
-		 * test.info('666')	// [box1] 666
-		 */
-		Logger: Logger,
-		
-		/**
 		 * 对象继承
 		 * 用法： 
 		 * extend({}, { name: '张三' })
@@ -145,7 +137,7 @@
 		},
 
 		/**
-		 * 深拷贝
+		 * 深拷贝  基于递归
 		 * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
 		 * @param {any} source 
 		 * @param {any} deepSource 
@@ -155,37 +147,141 @@
 			for ( var key in source) {
 				if (typeof source[key] == 'object') {
 					deepSource[key] = source[key] instanceof Array ? [] : {}
+					deepCopy(source[key], deepSource[key])
 				} else {
 					deepSource[key] = source[key]
  				}
 			}
-			return deepCopy
+			return deepSource
 		},
-
-	}
-
-	function Logger (channel, options) {
-		this.channel = channel
-		this.options = options || {}
 		
-		// 浏览器检测
-		this.log = function (message) {
-			if (Utils.brower.isIE()) {
-				console.log(Utils.interpolation('[{0}]', this.channel), message)
-			} else {
-				if (this.options.color) {
-					this.options.color = options.color
-				} else {
-					this.options.color = Utils.getRandomAssignNum(6)
-				}
-				console.log(Utils.interpolation('%c[{0}]', this.channel), Utils.interpolation('color: {0}', this.options.color), message)
+		/**
+		 * 处理js双精度问题
+		 * 
+		 * @returns 
+		 */
+		float: (function float () {
+			/**
+			 * 判断Obj是否是一个整数
+			 * 
+			 * @param {any} obj 
+			 * @returns 
+			 */
+			function isInt (obj) {
+				return Math.floor(obj) == obj
 			}
-		}	
+
+			/**
+			 * 双精度数据转整数  输出 整数+10的n次幂 对象
+			 * 
+			 * @param {any} floatNum 
+			 * @returns 
+			 */
+			function toInt (floatNum) {
+				var temp = {
+					pow: 1,
+					num: floatNum
+				}
+				// 是整数跳过
+				if (isInt(floatNum)) return temp
+				
+				var stringNum = floatNum + ''
+				var len = stringNum.split('.')[1].length
+				var pow = Math.pow(10, len)
+				// 坑
+				// 0.55 * 100 = 55.00000000000001 用parseInt强制转整数
+				temp.num = parseInt(floatNum * pow, 10)
+				temp.pow = pow
+
+				return temp
+			}
+
+			/**
+			 * 比较两个数 取整 取最大幂数
+			 * 
+			 * @param {any} num1 
+			 * @param {any} num2 
+			 */
+			function operate (num1, num2, op) {
+				
+				var toInt1 = toInt(num1)
+				var toInt2 = toInt(num2)
+				// 取整
+				var t1 = toInt1.num
+				var t2 = toInt2.num
+				// 取幂数
+				var pow1 = toInt1.pow
+				var pow2 = toInt2.pow
+
+				// 先比较幂数大小 再做处理
+				switch (op) {
+					case 'add':
+						if (pow1 == pow2) return ( t1 + t2 ) / pow1
+						if (pow1 > pow2) return ( t1 + t2 * (pow1 / pow2) ) / pow1
+						else return ( t1 * (pow2 / pow1) + t2 ) / pow2
+					case 'sub':
+						if (pow1 == pow2) return ( t1 - t2 ) / pow1
+						if (pow1 > pow2) return ( t1 - t2 * (pow1 / pow2) ) / pow1
+						else return ( t1 * (pow2 / pow1) - t2 ) / pow2
+					case 'ride':
+						return (t1 * t2) / (pow1 * pow2)
+					case 'divide':
+						// 参考  55 / 0.22 => ( 55 / 22 ) * (100 / 1)  注意分子和分母顺序
+						return (t1 / t2) * (pow2 / pow1)   
+				}
+			}
+			
+			return {
+				add: function (num1, num2) {
+					return operate(num1, num2, 'add')
+				},
+				sub: function (num1, num2) {
+					return operate(num1, num2, 'sub')
+				},
+				ride: function (num1, num2) {
+					return operate(num1, num2, 'ride')
+				},
+				divide: function (num1, num2) {
+					return operate(num1, num2, 'divide')
+				},
+			}
+
+		})(),
+		/**
+		 * 更简单多色彩的现代浏览器控制台输出显示
+		 * IE浏览器则默认输出 [xxx] xxx 黑色信息
+		 * var test = new Utils.Logger('box1')
+		 * test.info('666')	// [box1] 666
+		 */
+		Logger: function (channel, options) {
+			options = options || {}
+			var _self = this
+			// 浏览器检测
+			function info (message) {
+				if (_self.brower.isIE()) {
+					console.log(_self.interpolation('[{0}]', channel), message)
+				} else {
+					if (options.color) {
+						options.color = options.color
+					} else {
+						options.color = _self.getRandomAssignNum(6)
+					}
+					console.log(_self.interpolation('%c[{0}]', channel), _self.interpolation('color: {0}', options.color), message)
+				}
+			}	
+
+			return {
+				info: info
+			}
+		}
+
 	}
 
-	Logger.prototype.info = function (message) {
-		this.log(message)
-	}
+	
+
+	// Logger.prototype.info = function (message) {
+	// 	this.log(message)
+	// }
 	
 	// 字符串方法扩展
  

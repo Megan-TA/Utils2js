@@ -9,6 +9,7 @@
 获取指定对象下指定字段的值，支持递归
 
 举例：
+
 * prop({a: {b: 1}}, 'a.b') // 1
 * prop({a: {b: 1}}, 'a')   // {b: 1}
 * prop({a: {b: 1}}, 'm')   // null
@@ -23,8 +24,10 @@
 
 举例：
 
-* interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') // ADBBC
-* interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) // test - 1
+```
+Utils.interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') // ADBBC
+Utils.interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) // test - 1
+```
 
 ---
 > 3. getRandomAssignNum
@@ -33,8 +36,9 @@
 
 举例：
 
-* getRandomAssignNum(6)  // 6位数的随机十六进制数
-
+```
+Utils.getRandomAssignNum(6) // 6位数的随机十六进制数
+```
 
 ---
 
@@ -44,22 +48,50 @@
 
 举例：
 ```
-var test = new Utils.Logger('box1')
+var test = Utils.Logger('box1')
 test.info('666')	// [box1] 666
 ```
 ---
 > 5. extend
 
+  重名默认覆盖
+
 举例：
 
-* extend({}, { name: '张三' })
+```
+Utils.extend({name: '张三'}, {age: 12})
+```
 
 ---
 
 > 6. deepCopy
 
+空值或者undefined默认拷贝为空对象{}
+
 举例：
 
-* deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
+```
+Utils.deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
+```
 
 ---
+
+> 7. float
+
+举例：
+
+```
+Utils.float.add(0.22, 0.1)
+Utils.float.sub(0.22, 0.1)
+Utils.float.ride(0.22, 0.1)
+Utils.float.divide(0.22, 0.1)
+```
+
+> 8. 识别浏览器类型
+
+举例：
+
+```
+Utils.brower.browerVal()
+Utils.brower.isIE()
+```

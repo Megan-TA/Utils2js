@@ -1,5 +1,5 @@
 {
-  "name": "Utils2js",
+  "name": "utils2js",
   "version": "1.0.0",
   "description": "Common tool method encapsulation",
   "main": "index.js",
@@ -14,10 +14,8 @@
     "url": "git+https://github.com/Megan-TA/Utils2js.git"
   },
   "keywords": [
-    "utils2js",
-    "utilsjs"
     "utils",
-    "Utils2js"
+    "utils2js"
   ],
   "author": "chen214",
   "license": "MIT",

@@ -3,46 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<title>test</title>
-	<script type="text/javascript" src='Utils.js'></script>
+	<script type="text/javascript" src='Utils2js.js'></script>
 </head>
 <body>
 	<script type="text/javascript">
 
 		// 测试 多彩控制台输出
-		var test1 = Utils.Logger('频道1')
+		var test1 = Utils2js.Logger('频道1')
 		test1.info('多彩输出')
 
 		// 测试 双精度问题
-		var test2 = Utils.Logger('双精度')
-		test2.info( Utils.float.add(0.1, 0.22) )
-		test2.info( Utils.float.sub(0.1, 0.22) )
-		test2.info( Utils.float.ride(0.1, 0.22) )
-		test2.info( Utils.float.divide(0.1, 0.22) )
+		var test2 = Utils2js.Logger('双精度')
+		test2.info( Utils2js.float.add(0.1, 0.22) )
+		test2.info( Utils2js.float.sub(0.1, 0.22) )
+		test2.info( Utils2js.float.ride(0.1, 0.22) )
+		test2.info( Utils2js.float.divide(0.1, 0.22) )
 
 		// 测试 继承
-		var test3 = Utils.Logger('继承')
-		test3.info( Utils.extend({name: '张三'}, {age: 12}) )
-		test3.info( Utils.extend({name: '张三'}, {name: '李四'}) )
+		var test3 = Utils2js.Logger('继承')
+		test3.info( Utils2js.extend({name: '张三'}, {age: 12}) )
+		test3.info( Utils2js.extend({name: '张三'}, {name: '李四'}) )
 
 		// 测试 深拷贝
-		var test4 = Utils.Logger('深拷贝')
-		test4.info( Utils.deepCopy({name: 'zhansgan', obj: {age: 15, deep: {name: '李四' }}, arr: [2, 3]}) )
-		test4.info( Utils.deepCopy({name: 'zhansgan', sss: null}) )
+		var test4 = Utils2js.Logger('深拷贝')
+		test4.info( Utils2js.deepCopy({name: 'zhansgan', obj: {age: 15, deep: {name: '李四' }}, arr: [2, 3]}) )
+		test4.info( Utils2js.deepCopy({name: 'zhansgan', sss: null}) )
 
 
 		// 测试 浏览器类型
-		var test5 = Utils.Logger('浏览器类型')
-		test5.info( Utils.brower.browerVal() )
-		test5.info( Utils.brower.isIE() )
+		var test5 = Utils2js.Logger('浏览器类型')
+		test5.info( Utils2js.brower.browerVal() )
+		test5.info( Utils2js.brower.isIE() )
 
 		// 测试 随机生成指定位数的16进制数
-		var test6 = Utils.Logger('16进制数')
-		test5.info( Utils.getRandomAssignNum(4) )
+		var test6 = Utils2js.Logger('16进制数')
+		test5.info( Utils2js.getRandomAssignNum(4) )
 
 		// 测试  自定义插值
-		var test7 = Utils.Logger('自定义插值')
-		test7.info( Utils.interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') )
-		test7.info( Utils.interpolation('{name} - {userID}', {name: 'test', userID: 1, age: 12}) )
+		var test7 = Utils2js.Logger('自定义插值')
+		test7.info( Utils2js.interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') )
+		test7.info( Utils2js.interpolation('{name} - {userID}', {name: 'test', userID: 1, age: 12}) )
 
 	</script>
 </body>

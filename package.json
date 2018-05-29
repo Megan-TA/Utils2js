@@ -1,0 +1,28 @@
+{
+  "name": "Utils2js",
+  "version": "1.0.0",
+  "description": "Common tool method encapsulation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megan-TA/Utils2js.git"
+  },
+  "keywords": [
+    "utils2js",
+    "utilsjs"
+    "utils",
+    "Utils2js"
+  ],
+  "author": "chen214",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Megan-TA/Utils2js/issues"
+  },
+  "homepage": "https://github.com/Megan-TA/Utils2js#readme"
+}

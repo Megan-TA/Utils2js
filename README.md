@@ -1,6 +1,9 @@
-# UtilsJS
+# utils2js
 ---
-### 个人日常使用的工具方法  拒绝造轮子
+
+```shell
+npm install utils2js --save-dev
+```
 
 ### API
 
@@ -25,8 +28,8 @@
 举例：
 
 ```
-Utils.interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') // ADBBC
-Utils.interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) // test - 1
+utils2js.interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') // ADBBC
+utils2js.interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) // test - 1
 ```
 
 ---
@@ -37,7 +40,7 @@ Utils.interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) // t
 举例：
 
 ```
-Utils.getRandomAssignNum(6) // 6位数的随机十六进制数
+utils2js.getRandomAssignNum(6) // 6位数的随机十六进制数
 ```
 
 ---
@@ -48,7 +51,7 @@ Utils.getRandomAssignNum(6) // 6位数的随机十六进制数
 
 举例：
 ```
-var test = Utils.Logger('box1')
+var test = utils2js.Logger('box1')
 test.info('666')	// [box1] 666
 ```
 ---
@@ -59,7 +62,7 @@ test.info('666')	// [box1] 666
 举例：
 
 ```
-Utils.extend({name: '张三'}, {age: 12})
+utils2js.extend({name: '张三'}, {age: 12})
 ```
 
 ---
@@ -71,7 +74,7 @@ Utils.extend({name: '张三'}, {age: 12})
 举例：
 
 ```
-Utils.deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
+utils2js.deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
 ```
 
 ---
@@ -81,10 +84,10 @@ Utils.deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
 举例：
 
 ```
-Utils.float.add(0.22, 0.1)
-Utils.float.sub(0.22, 0.1)
-Utils.float.ride(0.22, 0.1)
-Utils.float.divide(0.22, 0.1)
+utils2js.float.add(0.22, 0.1)
+utils2js.float.sub(0.22, 0.1)
+utils2js.float.ride(0.22, 0.1)
+utils2js.float.divide(0.22, 0.1)
 ```
 
 > 8. 识别浏览器类型
@@ -92,6 +95,6 @@ Utils.float.divide(0.22, 0.1)
 举例：
 
 ```
-Utils.brower.browerVal()
-Utils.brower.isIE()
+utils2js.brower.browerVal()
+utils2js.brower.isIE()
 ```

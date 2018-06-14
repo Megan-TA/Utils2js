@@ -1,1 +1,1 @@
-module.exports = require('./lib/Utils2js.js')
+module.exports = require('./src')

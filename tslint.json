@@ -1,0 +1,19 @@
+{
+  "extends": "tslint:recommended",
+  "lintOptions": {
+      "typeCheck": true
+  },
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape"],
+    "semicolon":[true, "never", "ignore-interfaces"],
+    "triple-equals": false,
+    "trailing-comma": false,
+    "whiteSpace": false,
+    "no-var-keyword": true,
+    "space-before-function-paren": true,
+    "one-line": false,
+    "no-console": false,
+    "no-conditional-assignment":false,
+    "arrow-parens": false
+  }
+}

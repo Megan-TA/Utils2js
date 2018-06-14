@@ -7,7 +7,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --config webpack.config.js",
+    "prod": "webpack --colors --config webpack.config.js",
+    "publish": "npm publish ./publish",
+    "doc": "./node_modules/.bin/esdoc"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,25 @@
   "bugs": {
     "url": "https://github.com/Megan-TA/Utils2js/issues"
   },
-  "homepage": "https://github.com/Megan-TA/Utils2js#readme"
+  "homepage": "https://github.com/Megan-TA/Utils2js#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "3.5.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "esdoc-typescript-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mockjs": "^1.0.1-beta3",
+    "pump": "^3.0.0",
+    "source-map-loader": "^0.2.3",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {}
 }

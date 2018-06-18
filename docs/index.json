@@ -1,0 +1,1657 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "dist/.external-ecmascript.js",
+    "static": true,
+    "longname": "dist/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "dist/index.js",
+    "content": "import * as _Main from './lib/index';\r\nimport * as _Brower from './lib/brower';\r\nimport * as _Number from './lib/number';\r\nimport * as _String from './lib/string';\r\nimport * as _Url from './lib/url';\r\nexport { _Main, _Brower, _Number, _String, _Url };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "dist/lib/brower.js",
+    "content": "/**\r\n * 判断浏览器类型 返回对应浏览器名称\r\n * @returns\r\n */\r\nlet finalName = 'IE';\r\nconst userAgent = navigator.userAgent;\r\nif (userAgent.indexOf('Chrome') > -1) {\r\n    finalName = 'Chrome';\r\n}\r\nelse if (userAgent.indexOf('Firefox') > -1) {\r\n    finalName = 'Firefox';\r\n}\r\nelse if (userAgent.indexOf('Opera') > -1) {\r\n    finalName = 'Opera';\r\n}\r\nelse if (userAgent.indexOf('Safari') > -1) {\r\n    finalName = 'Safari';\r\n}\r\nconst isIE = finalName == 'IE';\r\nconst isChrome = finalName == 'Chrome';\r\nconst isFirefox = finalName == 'Firefox';\r\nconst isOpera = finalName == 'Opera';\r\nconst isSafari = finalName == 'Safari';\r\nexport { isIE, isChrome, isFirefox, isOpera, isSafari };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/brower.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "finalName",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~finalName",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": null,
+    "description": "判断浏览器类型 返回对应浏览器名称",
+    "lineNumber": 5,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "userAgent",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~userAgent",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "isIE",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~isIE",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": "{isIE}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "isChrome",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~isChrome",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": "{isChrome}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "isFirefox",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~isFirefox",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": "{isFirefox}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "isOpera",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~isOpera",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": "{isOpera}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "isSafari",
+    "memberof": "dist/lib/brower.js",
+    "static": true,
+    "longname": "dist/lib/brower.js~isSafari",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/brower.js",
+    "importStyle": "{isSafari}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "dist/lib/date.js",
+    "content": "",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/date.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "dist/lib/index.js",
+    "content": "/*\r\n * 个人工具方法\r\n * @Author: chen_huang\r\n * @Date: 2017-09-20 16:17:55\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 19:04:13\r\n */\r\nimport { isIE } from './brower';\r\nimport { getRandomBit } from './number';\r\nimport { interpolation } from './object';\r\nlet INSTANCE = null;\r\nclass Utils2js {\r\n    static get getInstance() {\r\n        if (!INSTANCE) {\r\n            INSTANCE = new Utils2js();\r\n        }\r\n        return INSTANCE;\r\n    }\r\n    Logger(channel, options = {}) {\r\n        // 浏览器检测\r\n        function info(message) {\r\n            if (isIE) {\r\n                console.log(interpolation('[{0}]', channel), message);\r\n            }\r\n            else {\r\n                if (options && options.color) {\r\n                    options.color = options.color;\r\n                }\r\n                else {\r\n                    options.color = getRandomBit(6, 16);\r\n                }\r\n                console.log(interpolation('%c[{0}]', channel), interpolation('color: {0}', options.color), message);\r\n            }\r\n        }\r\n        return {\r\n            info\r\n        };\r\n    }\r\n    /**\r\n     * 更准确的类型判定方法\r\n     * 返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error\r\n     *\r\n     * @param {*} params\r\n     * @returns {string} 统一返回小写的具体类型名称\r\n     * @memberof Utils2js\r\n     */\r\n    Type(params) {\r\n        const REGEXP = /^\\[object\\W([a-zA-Z]+)\\]$/g;\r\n        const waitingForReg = Object.prototype.toString.call(params);\r\n        const handleResult = REGEXP.exec(waitingForReg);\r\n        return handleResult[1].toLowerCase();\r\n    }\r\n}\r\nconst STANCE__UTILS2JS = Utils2js.getInstance;\r\nexport const Logger = STANCE__UTILS2JS.Logger;\r\nexport const Type = STANCE__UTILS2JS.Type;\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "INSTANCE",
+    "memberof": "dist/lib/index.js",
+    "static": true,
+    "longname": "dist/lib/index.js~INSTANCE",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "class",
+    "name": "Utils2js",
+    "memberof": "dist/lib/index.js",
+    "static": true,
+    "longname": "dist/lib/index.js~Utils2js",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "get",
+    "name": "getInstance",
+    "memberof": "dist/lib/index.js~Utils2js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/index.js~Utils2js.getInstance",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "Logger",
+    "memberof": "dist/lib/index.js~Utils2js",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "dist/lib/index.js~Utils2js#Logger",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "channel",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "options",
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"info\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "Type",
+    "memberof": "dist/lib/index.js~Utils2js",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "dist/lib/index.js~Utils2js#Type",
+    "access": "public",
+    "description": "更准确的类型判定方法\n返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error",
+    "lineNumber": 47,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 统一返回小写的具体类型名称"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "统一返回小写的具体类型名称"
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "STANCE__UTILS2JS",
+    "memberof": "dist/lib/index.js",
+    "static": true,
+    "longname": "dist/lib/index.js~STANCE__UTILS2JS",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "Logger",
+    "memberof": "dist/lib/index.js",
+    "static": true,
+    "longname": "dist/lib/index.js~Logger",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/index.js",
+    "importStyle": "{Logger}",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "Type",
+    "memberof": "dist/lib/index.js",
+    "static": true,
+    "longname": "dist/lib/index.js~Type",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/index.js",
+    "importStyle": "{Type}",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "dist/lib/number.js",
+    "content": "/**\r\n * 整数\r\n * @param  {number} Num\r\n */\r\nfunction isInt(Num) {\r\n    return Math.floor(Num) == Num;\r\n}\r\nfunction toInt(floatNum) {\r\n    const temp = {\r\n        num: floatNum,\r\n        pow: 1\r\n    };\r\n    // 是整数跳过\r\n    if (isInt(floatNum)) {\r\n        return temp;\r\n    }\r\n    const stringNum = floatNum + '';\r\n    const len = stringNum.split('.')[1].length;\r\n    const pow = Math.pow(10, len);\r\n    // 坑\r\n    // 0.55 * 100 = 55.00000000000001 用parseInt强制转整数\r\n    temp.num = parseInt((floatNum * pow).toString(), 10);\r\n    temp.pow = pow;\r\n    return temp;\r\n}\r\n/**\r\n * 比较两个数 取整 取最大幂数\r\n * @param  {number} num1 第一个number\r\n * @param  {number} num2 第二个number\r\n * @param  {string} op 指定操作类型\r\n */\r\nfunction operate(num1, num2, op) {\r\n    const toInt1 = toInt(num1);\r\n    const toInt2 = toInt(num2);\r\n    // 取整\r\n    const t1 = toInt1.num;\r\n    const t2 = toInt2.num;\r\n    // 取幂数\r\n    const pow1 = toInt1.pow;\r\n    const pow2 = toInt2.pow;\r\n    // 先比较幂数大小 再做处理\r\n    switch (op) {\r\n        case 'add':\r\n            if (pow1 == pow2) {\r\n                return (t1 + t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 + t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) + t2) / pow2;\r\n            }\r\n        case 'sub':\r\n            if (pow1 == pow2) {\r\n                return (t1 - t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 - t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) - t2) / pow2;\r\n            }\r\n        case 'ride':\r\n            return (t1 * t2) / (pow1 * pow2);\r\n        case 'divide':\r\n            // 参考  55 / 0.22 => ( 55 / 22 ) * (100 / 1)  注意分子和分母顺序\r\n            return (t1 / t2) * (pow2 / pow1);\r\n    }\r\n}\r\nconst float = {\r\n    add(num1, num2) {\r\n        return operate(num1, num2, 'add');\r\n    },\r\n    sub(num1, num2) {\r\n        return operate(num1, num2, 'sub');\r\n    },\r\n    ride(num1, num2) {\r\n        return operate(num1, num2, 'ride');\r\n    },\r\n    divide(num1, num2) {\r\n        return operate(num1, num2, 'divide');\r\n    }\r\n};\r\n/**\r\n * 获取指定位数的X进制数\r\n * @param {number} num 指定输出的位数\r\n * @param {number} bit 指定进制数 8/10/16进制\r\n * @returns {string}\r\n */\r\nfunction getRandomBit(num, bit = 10) {\r\n    let result = '#';\r\n    if (typeof num != 'number') {\r\n        throw new Error('num类型必须为数字!');\r\n    }\r\n    for (let i = 0; i <= num - 1; i++) {\r\n        result += Math.floor(Math.random() * bit).toString(bit);\r\n    }\r\n    return result;\r\n}\r\nexport { float, getRandomBit };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/number.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "isInt",
+    "memberof": "dist/lib/number.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/number.js~isInt",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/number.js",
+    "importStyle": null,
+    "description": "整数",
+    "lineNumber": 5,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Num",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "toInt",
+    "memberof": "dist/lib/number.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/number.js~toInt",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/number.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "floatNum",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "operate",
+    "memberof": "dist/lib/number.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/number.js~operate",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/lib/number.js",
+    "importStyle": null,
+    "description": "比较两个数 取整 取最大幂数",
+    "lineNumber": 32,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num1",
+        "description": "第一个number"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num2",
+        "description": "第二个number"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "op",
+        "description": "指定操作类型"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "float",
+    "memberof": "dist/lib/number.js",
+    "static": true,
+    "longname": "dist/lib/number.js~float",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/number.js",
+    "importStyle": "{float}",
+    "description": null,
+    "lineNumber": 70,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"add\": function, \"sub\": function, \"ride\": function, \"divide\": function}"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "getRandomBit",
+    "memberof": "dist/lib/number.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/number.js~getRandomBit",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/number.js",
+    "importStyle": "{getRandomBit}",
+    "description": "获取指定位数的X进制数",
+    "lineNumber": 90,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num",
+        "description": "指定输出的位数"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bit",
+        "description": "指定进制数 8/10/16进制"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "dist/lib/object.js",
+    "content": "/*\r\n * 对象扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 17:00:34\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 14:42:29\r\n */\r\n/**\r\n * 浅拷贝（不包括原型链属性拷贝）\r\n * simpleCopy({}, { name: '张三' })\r\n * @param {object} [destination={}] 默认空对象\r\n * @param {object} source 待拷贝对象\r\n * @returns {object} 输出浅拷贝对象\r\n */\r\nfunction simpleCopy(destination = {}, source) {\r\n    Object.keys(source).forEach((value, key) => {\r\n        if (!destination.hasOwnProperty(key)) {\r\n            return destination[key] = value;\r\n        }\r\n    });\r\n    return destination;\r\n}\r\n/**\r\n * 获取指定对象下指定字段的值，支持递归\r\n * prop({a: {b: 1}}, 'a.b') => 1\r\n * prop({a: {b: 1}}, 'a')   => {b: 1}\r\n * prop({a: {b: 1}}, 'm')   => null\r\n * @param {object} [obj={}] 待查找的原始对象\r\n * @param {string} [path=''] 需要查找的节点\r\n * @returns {any} 未找到默认输出null\r\n */\r\nfunction prop(obj = {}, path = '') {\r\n    let key;\r\n    let pathArray;\r\n    pathArray = path.split('.');\r\n    while ((key = pathArray.shift())) {\r\n        try {\r\n            obj = obj[key];\r\n        }\r\n        catch (err) {\r\n            return null;\r\n        }\r\n    }\r\n    return obj;\r\n}\r\n/**\r\n * 深拷贝（基于递归）\r\n * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})\r\n * @param {object} [source={}] 原始对象\r\n * @param {object} [deepSource] 可选 默认空对象\r\n * @returns {object} 深拷贝之后的对象\r\n */\r\nfunction deepCopy(source = {}, deepSource) {\r\n    for (const key in source) {\r\n        if (typeof source[key] == 'object') {\r\n            deepSource[key] = source[key] instanceof Array ? [] : {};\r\n            deepCopy(source[key], deepSource[key]);\r\n        }\r\n        else {\r\n            deepSource[key] = source[key];\r\n        }\r\n    }\r\n    return deepSource;\r\n}\r\n/**\r\n * 自定义插值\r\n * 适用于取到接口返回的JSON根据需要转换成指定格式的字符串\r\n * 基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\r\n * 基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1\r\n * @param  {string} param 字符串\r\n * @param  {any} ...options 字符串|对象\r\n * @returns {string} 最终输出的字符串\r\n */\r\nfunction interpolation(param, ...options) {\r\n    let arg1 = arguments[0] || '';\r\n    const arg2 = arguments[1] || {};\r\n    let matchArray = [];\r\n    const REG_RULE = /{([a-zA-Z0-9]+)}/;\r\n    const REG_NUM_RULE = /\\d+/;\r\n    while ((matchArray = REG_RULE.exec(arg1))) {\r\n        // matchArray代表符合正则匹配的数组\r\n        // matchArray[0] 代表匹配完整的{1}\r\n        // matchArray[1] 代表{}里面具体的值1\r\n        const execTotalVal = matchArray[0];\r\n        const execVal = matchArray[1];\r\n        if (REG_NUM_RULE.test(execVal)) {\r\n            // 基于位置插值\r\n            arg1 = arg1.replace(execTotalVal, options[Number(execVal)]);\r\n        }\r\n        else {\r\n            if (prop(arg2, matchArray[1]) != null) {\r\n                arg1 = arg1.replace(execTotalVal, prop(arg2, matchArray[1]));\r\n            }\r\n        }\r\n    }\r\n    return arg1;\r\n}\r\nexport { interpolation, deepCopy, prop, simpleCopy };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/object.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "interpolation",
+    "memberof": "dist/lib/object.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/object.js~interpolation",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/object.js",
+    "importStyle": "{interpolation}",
+    "description": "自定义插值\n适用于取到接口返回的JSON根据需要转换成指定格式的字符串\n基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\n基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1",
+    "lineNumber": 74,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 最终输出的字符串"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param",
+        "description": "字符串"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "...options",
+        "description": "字符串|对象"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "最终输出的字符串"
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "deepCopy",
+    "memberof": "dist/lib/object.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/object.js~deepCopy",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/object.js",
+    "importStyle": "{deepCopy}",
+    "description": "深拷贝（基于递归）\ndeepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})",
+    "lineNumber": 53,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} 深拷贝之后的对象"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "source",
+        "description": "原始对象"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "deepSource",
+        "description": "可选 默认空对象"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "深拷贝之后的对象"
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "prop",
+    "memberof": "dist/lib/object.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/object.js~prop",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/object.js",
+    "importStyle": "{prop}",
+    "description": "获取指定对象下指定字段的值，支持递归\nprop({a: {b: 1}}, 'a.b') => 1\nprop({a: {b: 1}}, 'a')   => {b: 1}\nprop({a: {b: 1}}, 'm')   => null",
+    "lineNumber": 32,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{any} 未找到默认输出null"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "obj",
+        "description": "待查找的原始对象"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "path",
+        "description": "需要查找的节点"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "any"
+      ],
+      "spread": false,
+      "description": "未找到默认输出null"
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "simpleCopy",
+    "memberof": "dist/lib/object.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/object.js~simpleCopy",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/object.js",
+    "importStyle": "{simpleCopy}",
+    "description": "浅拷贝（不包括原型链属性拷贝）\nsimpleCopy({}, { name: '张三' })",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} 输出浅拷贝对象"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "destination",
+        "description": "默认空对象"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "source",
+        "description": "待拷贝对象"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "输出浅拷贝对象"
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "dist/lib/regex.js",
+    "content": "",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/regex.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "file",
+    "name": "dist/lib/string.js",
+    "content": "/*\r\n * 字符串方法扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 16:00:49\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-18 23:01:56\r\n */\r\n/**\r\n * 字符串倒序\r\n * @example reverse('qwer') => rewq\r\n *\r\n * @param {string} [insert=''] 传入的字符串\r\n * @returns {string} 倒序后的字符串\r\n */\r\nfunction reverse(insert = '') {\r\n    return Array.prototype.reverse.call(insert.split('')).join('');\r\n}\r\nexport { reverse };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/string.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "reverse",
+    "memberof": "dist/lib/string.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/string.js~reverse",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/string.js",
+    "importStyle": "{reverse}",
+    "description": "字符串倒序",
+    "examples": [
+      "reverse('qwer') => rewq"
+    ],
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 倒序后的字符串"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "insert",
+        "description": "传入的字符串"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "倒序后的字符串"
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "dist/lib/types/INDEX.js",
+    "content": "",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/types/INDEX.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "dist/lib/types/NUMBER.js",
+    "content": "",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/types/NUMBER.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "dist/lib/url.js",
+    "content": "/**\r\n * 截掉url协议名（http|https）和:\r\n * @param {string} [url=''] 待传入需要截取协议的url\r\n * @returns {string} 正常会输出//www.baidu.com 不是url的字符串原路返回\r\n */\r\nfunction sliceProtocol(url = '') {\r\n    return url.replace(/^(http|https):/, '');\r\n}\r\nexport { sliceProtocol };\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/url.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "sliceProtocol",
+    "memberof": "dist/lib/url.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/url.js~sliceProtocol",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/url.js",
+    "importStyle": "{sliceProtocol}",
+    "description": "截掉url协议名（http|https）和:",
+    "lineNumber": 6,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 正常会输出//www.baidu.com 不是url的字符串原路返回"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "url",
+        "description": "待传入需要截取协议的url"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "正常会输出//www.baidu.com 不是url的字符串原路返回"
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "dist/test.js",
+    "content": "import { _Brower, _Main, _Number, _String, _Url } from './index';\r\nconst { Logger, Type } = _Main;\r\n{\r\n    const A = Logger('测试Logger');\r\n    A.info('测试成功了');\r\n}\r\nconst { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;\r\n{\r\n    const s = Logger('测试浏览器类型判断');\r\n    s.info(isIE);\r\n    s.info(isChrome);\r\n    s.info(isOpera);\r\n    s.info(isFirefox);\r\n    s.info(isSafari);\r\n    s.info('---------------------');\r\n    const test = [\r\n        123,\r\n        '123',\r\n        true,\r\n        { name: '张三' },\r\n        function name() {\r\n            return '张三';\r\n        },\r\n        /^\\d+$/,\r\n        null,\r\n        undefined,\r\n        [1, 2, 3],\r\n        new Date(),\r\n        new Error()\r\n    ];\r\n    test.forEach(item => {\r\n        s.info(Type(item));\r\n    });\r\n}\r\nconst { float, getRandomBit } = _Number;\r\n{\r\n    const s = Logger('测试数字方法');\r\n    s.info(float.add(0.1, 0.2));\r\n    s.info(float.sub(0.1, 0.2));\r\n    s.info(float.ride(0.1, 0.2));\r\n    s.info(float.divide(0.1, 0.2));\r\n}\r\nconst { reverse } = _String;\r\n{\r\n    const s = Logger('测试字符串方法');\r\n    s.info(reverse('qwert1s'));\r\n}\r\nconst { sliceProtocol } = _Url;\r\n{\r\n    const s = Logger('测试url方法');\r\n    s.info(sliceProtocol('http://www.baidu.com'));\r\n    s.info(sliceProtocol('https://www.baidu.com'));\r\n}\r\n",
+    "static": true,
+    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "Logger",
+    "memberof": "dist/test.js",
+    "static": true,
+    "longname": "dist/test.js~Logger",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "isIE",
+    "memberof": "dist/test.js",
+    "static": true,
+    "longname": "dist/test.js~isIE",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "float",
+    "memberof": "dist/test.js",
+    "static": true,
+    "longname": "dist/test.js~float",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "reverse",
+    "memberof": "dist/test.js",
+    "static": true,
+    "longname": "dist/test.js~reverse",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "sliceProtocol",
+    "memberof": "dist/test.js",
+    "static": true,
+    "longname": "dist/test.js~sliceProtocol",
+    "access": "public",
+    "export": false,
+    "importPath": "utils2js/dist/test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "",
+    "longname": "C:\\Users\\Administrator\\Desktop\\github\\Utils2js\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"utils2js\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Common tool method encapsulation\",\r\n  \"main\": \"index.js\",\r\n  \"directories\": {\r\n    \"lib\": \"lib\"\r\n  },\r\n  \"scripts\": {\r\n    \"dev\": \"webpack-dev-server --config webpack.config.js\",\r\n    \"prod\": \"webpack --colors --config webpack.config.js\",\r\n    \"publish\": \"npm publish ./publish\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"tsc\": \"tsc\",\r\n    \"pack\": \"npm run tsc && npm run doc\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Megan-TA/Utils2js.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"utils\",\r\n    \"utils2js\"\r\n  ],\r\n  \"author\": \"chen214\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Megan-TA/Utils2js/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Megan-TA/Utils2js#readme\",\r\n  \"devDependencies\": {\r\n    \"awesome-typescript-loader\": \"3.5.0\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\r\n    \"gulp\": \"^3.9.1\",\r\n    \"gulp-babel\": \"^7.0.1\",\r\n    \"gulp-plumber\": \"^1.2.0\",\r\n    \"gulp-uglify\": \"^3.0.0\",\r\n    \"html-webpack-plugin\": \"^3.2.0\",\r\n    \"mockjs\": \"^1.0.1-beta3\",\r\n    \"pump\": \"^3.0.0\",\r\n    \"source-map-loader\": \"^0.2.3\",\r\n    \"tslint\": \"^5.10.0\",\r\n    \"typescript\": \"^2.9.2\",\r\n    \"webpack\": \"3.5.5\",\r\n    \"webpack-dev-server\": \"2.7.1\",\r\n    \"webpack-merge\": \"^4.1.2\"\r\n  },\r\n  \"dependencies\": {}\r\n}\r\n",
+    "longname": "C:\\Users\\Administrator\\Desktop\\github\\Utils2js\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

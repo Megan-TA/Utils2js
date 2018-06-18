@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">dist/lib/number.js | utils2js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common tool method encapsulation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="utils2js"><meta property="twitter:description" content="Common tool method encapsulation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/Megan-TA/Utils2js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#lib">lib</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRandomBit">getRandomBit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepCopy">deepCopy</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isIE">isIE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isOpera">isOpera</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isSafari">isSafari</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">dist/lib/number.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * &#x6574;&#x6570;
+ * @param  {number} Num
+ */
+function isInt(Num) {
+    return Math.floor(Num) == Num;
+}
+function toInt(floatNum) {
+    const temp = {
+        num: floatNum,
+        pow: 1
+    };
+    // &#x662F;&#x6574;&#x6570;&#x8DF3;&#x8FC7;
+    if (isInt(floatNum)) {
+        return temp;
+    }
+    const stringNum = floatNum + &apos;&apos;;
+    const len = stringNum.split(&apos;.&apos;)[1].length;
+    const pow = Math.pow(10, len);
+    // &#x5751;
+    // 0.55 * 100 = 55.00000000000001 &#x7528;parseInt&#x5F3A;&#x5236;&#x8F6C;&#x6574;&#x6570;
+    temp.num = parseInt((floatNum * pow).toString(), 10);
+    temp.pow = pow;
+    return temp;
+}
+/**
+ * &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570; &#x53D6;&#x6574; &#x53D6;&#x6700;&#x5927;&#x5E42;&#x6570;
+ * @param  {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number
+ * @param  {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number
+ * @param  {string} op &#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;
+ */
+function operate(num1, num2, op) {
+    const toInt1 = toInt(num1);
+    const toInt2 = toInt(num2);
+    // &#x53D6;&#x6574;
+    const t1 = toInt1.num;
+    const t2 = toInt2.num;
+    // &#x53D6;&#x5E42;&#x6570;
+    const pow1 = toInt1.pow;
+    const pow2 = toInt2.pow;
+    // &#x5148;&#x6BD4;&#x8F83;&#x5E42;&#x6570;&#x5927;&#x5C0F; &#x518D;&#x505A;&#x5904;&#x7406;
+    switch (op) {
+        case &apos;add&apos;:
+            if (pow1 == pow2) {
+                return (t1 + t2) / pow1;
+            }
+            if (pow1 &gt; pow2) {
+                return (t1 + t2 * (pow1 / pow2)) / pow1;
+            }
+            else {
+                return (t1 * (pow2 / pow1) + t2) / pow2;
+            }
+        case &apos;sub&apos;:
+            if (pow1 == pow2) {
+                return (t1 - t2) / pow1;
+            }
+            if (pow1 &gt; pow2) {
+                return (t1 - t2 * (pow1 / pow2)) / pow1;
+            }
+            else {
+                return (t1 * (pow2 / pow1) - t2) / pow2;
+            }
+        case &apos;ride&apos;:
+            return (t1 * t2) / (pow1 * pow2);
+        case &apos;divide&apos;:
+            // &#x53C2;&#x8003;  55 / 0.22 =&gt; ( 55 / 22 ) * (100 / 1)  &#x6CE8;&#x610F;&#x5206;&#x5B50;&#x548C;&#x5206;&#x6BCD;&#x987A;&#x5E8F;
+            return (t1 / t2) * (pow2 / pow1);
+    }
+}
+const float = {
+    add(num1, num2) {
+        return operate(num1, num2, &apos;add&apos;);
+    },
+    sub(num1, num2) {
+        return operate(num1, num2, &apos;sub&apos;);
+    },
+    ride(num1, num2) {
+        return operate(num1, num2, &apos;ride&apos;);
+    },
+    divide(num1, num2) {
+        return operate(num1, num2, &apos;divide&apos;);
+    }
+};
+/**
+ * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x6570;&#x7684;X&#x8FDB;&#x5236;&#x6570;
+ * @param {number} num &#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x7684;&#x4F4D;&#x6570;
+ * @param {number} bit &#x6307;&#x5B9A;&#x8FDB;&#x5236;&#x6570; 8/10/16&#x8FDB;&#x5236;
+ * @returns {string}
+ */
+function getRandomBit(num, bit = 10) {
+    let result = &apos;#&apos;;
+    if (typeof num != &apos;number&apos;) {
+        throw new Error(&apos;num&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4E3A;&#x6570;&#x5B57;!&apos;);
+    }
+    for (let i = 0; i &lt;= num - 1; i++) {
+        result += Math.floor(Math.random() * bit).toString(bit);
+    }
+    return result;
+}
+export { float, getRandomBit };
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

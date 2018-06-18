@@ -1,0 +1,66 @@
+{
+  "coverage": "35.48%",
+  "expectCount": 31,
+  "actualCount": 11,
+  "files": {
+    "dist/lib/brower.js": {
+      "expectCount": 7,
+      "actualCount": 1,
+      "undocumentLines": [
+        6,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "dist/lib/index.js": {
+      "expectCount": 8,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        12,
+        13,
+        19,
+        54,
+        55,
+        56
+      ]
+    },
+    "dist/lib/number.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        8,
+        70
+      ]
+    },
+    "dist/lib/object.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "dist/lib/string.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "dist/lib/url.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "dist/test.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        7,
+        35,
+        43,
+        48
+      ]
+    }
+  }
+}

@@ -10,7 +10,9 @@
     "dev": "webpack-dev-server --config webpack.config.js",
     "prod": "webpack --colors --config webpack.config.js",
     "publish": "npm publish ./publish",
-    "doc": "./node_modules/.bin/esdoc"
+    "doc": "./node_modules/.bin/esdoc",
+    "tsc": "tsc",
+    "pack": "npm run tsc && npm run doc"
   },
   "repository": {
     "type": "git",

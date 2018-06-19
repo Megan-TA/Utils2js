@@ -17,12 +17,27 @@ import {
 
 let INSTANCE = null
 
+/**
+ * Utils2js 单列模式
+ * @class Utils2js
+ */
 class Utils2js {
     static get getInstance () {
         if (!INSTANCE) { INSTANCE = new Utils2js() }
         return INSTANCE
     }
 
+    /**
+     * 控制台输出多彩提示信息
+     * IE版本默认不支持多彩控制信息，默认输出白底黑字文本
+     * @example
+     * const channelOne = Logger('频道1')
+     * channelOne.info('这是测试文本')
+     * @param {string} channel 必须先指定文本属于自身的频道
+     * @param {{color?: string}} [options={}] （可选）指定需要展示的颜色值，默认会随机生成
+     * @returns {object} 输出{info}格式的对象 通过.info()最终输出的带多彩的类似"['频道1']这是测试文本" 形式
+     * @memberof Utils2js
+     */
     public Logger (channel: string, options: {color?: string} = {}): object {
         // 浏览器检测
         function info (message: any) {

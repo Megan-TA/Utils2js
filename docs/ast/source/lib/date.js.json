@@ -1,37 +1,89 @@
 {
   "type": "File",
   "start": 0,
-  "end": 0,
+  "end": 163,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 1,
+      "line": 8,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 0,
+    "end": 163,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 1,
+        "line": 8,
         "column": 0
       }
     },
     "sourceType": "module",
     "body": [],
-    "directives": []
+    "directives": [],
+    "leadingComments": null,
+    "innerComments": [
+      {
+        "type": "CommentBlock",
+        "value": "\r\n * 日期方法扩展（基于dayjs）\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:32:21\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:10:23\r\n ",
+        "start": 0,
+        "end": 161,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 7,
+            "column": 3
+          }
+        }
+      }
+    ]
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "\r\n * 日期方法扩展（基于dayjs）\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:32:21\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:10:23\r\n ",
+      "start": 0,
+      "end": 161,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "\r\n * 日期方法扩展（基于dayjs）\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:32:21\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:10:23\r\n ",
+      "start": 0,
+      "end": 161,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
     {
       "type": {
         "label": "eof",
@@ -45,15 +97,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 0,
-      "end": 0,
+      "start": 163,
+      "end": 163,
       "loc": {
         "start": {
-          "line": 1,
+          "line": 8,
           "column": 0
         },
         "end": {
-          "line": 1,
+          "line": 8,
           "column": 0
         }
       }

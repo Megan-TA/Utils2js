@@ -34,7 +34,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -44,6 +46,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -67,10 +70,30 @@ else if (userAgent.indexOf(&apos;Opera&apos;) &gt; -1) {
 else if (userAgent.indexOf(&apos;Safari&apos;) &gt; -1) {
     finalName = &apos;Safari&apos;;
 }
+/**
+ * &#x662F;&#x5426;&#x662F;IE&#x6D4F;&#x89C8;&#x5668;
+ * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
+ */
 const isIE = finalName == &apos;IE&apos;;
+/**
+ * &#x662F;&#x5426;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;
+ * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
+ */
 const isChrome = finalName == &apos;Chrome&apos;;
+/**
+ * &#x662F;&#x5426;&#x662F;Firefox&#x6D4F;&#x89C8;&#x5668;
+ * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
+ */
 const isFirefox = finalName == &apos;Firefox&apos;;
+/**
+ * &#x662F;&#x5426;&#x662F;Opera&#x6D4F;&#x89C8;&#x5668;
+ * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
+ */
 const isOpera = finalName == &apos;Opera&apos;;
+/**
+ * &#x662F;&#x5426;&#x662F;Safari&#x6D4F;&#x89C8;&#x5668;
+ * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
+ */
 const isSafari = finalName == &apos;Safari&apos;;
 export { isIE, isChrome, isFirefox, isOpera, isSafari };
 </code></pre>

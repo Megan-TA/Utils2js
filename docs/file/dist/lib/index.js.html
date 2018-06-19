@@ -34,7 +34,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -44,6 +46,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -60,6 +63,10 @@ import { isIE } from &apos;./brower&apos;;
 import { getRandomBit } from &apos;./number&apos;;
 import { interpolation } from &apos;./object&apos;;
 let INSTANCE = null;
+/**
+ * Utils2js &#x5355;&#x5217;&#x6A21;&#x5F0F;
+ * @class Utils2js
+ */
 class Utils2js {
     static get getInstance() {
         if (!INSTANCE) {
@@ -67,6 +74,17 @@ class Utils2js {
         }
         return INSTANCE;
     }
+    /**
+     * &#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x591A;&#x5F69;&#x63D0;&#x793A;&#x4FE1;&#x606F;
+     * IE&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x4E0D;&#x652F;&#x6301;&#x591A;&#x5F69;&#x63A7;&#x5236;&#x4FE1;&#x606F;&#xFF0C;&#x9ED8;&#x8BA4;&#x8F93;&#x51FA;&#x767D;&#x5E95;&#x9ED1;&#x5B57;&#x6587;&#x672C;
+     * @example
+     * const channelOne = Logger(&apos;&#x9891;&#x9053;1&apos;)
+     * channelOne.info(&apos;&#x8FD9;&#x662F;&#x6D4B;&#x8BD5;&#x6587;&#x672C;&apos;)
+     * @param {string} channel &#x5FC5;&#x987B;&#x5148;&#x6307;&#x5B9A;&#x6587;&#x672C;&#x5C5E;&#x4E8E;&#x81EA;&#x8EAB;&#x7684;&#x9891;&#x9053;
+     * @param {{color?: string}} [options={}] &#xFF08;&#x53EF;&#x9009;&#xFF09;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7684;&#x989C;&#x8272;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x968F;&#x673A;&#x751F;&#x6210;
+     * @returns {object} &#x8F93;&#x51FA;{info}&#x683C;&#x5F0F;&#x7684;&#x5BF9;&#x8C61; &#x901A;&#x8FC7;.info()&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x5E26;&#x591A;&#x5F69;&#x7684;&#x7C7B;&#x4F3C;&quot;[&apos;&#x9891;&#x9053;1&apos;]&#x8FD9;&#x662F;&#x6D4B;&#x8BD5;&#x6587;&#x672C;&quot; &#x5F62;&#x5F0F;
+     * @memberof Utils2js
+     */
     Logger(channel, options = {}) {
         // &#x6D4F;&#x89C8;&#x5668;&#x68C0;&#x6D4B;
         function info(message) {

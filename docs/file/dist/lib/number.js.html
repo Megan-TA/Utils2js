@@ -34,7 +34,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -44,18 +46,27 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">dist/lib/number.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * &#x6574;&#x6570;
- * @param  {number} Num
+ * &#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x6574;&#x6570;
+ *
+ * @param {number} Num
+ * @returns {boolean} true &#x662F;&#x6574;&#x6570; false&#x4E0D;&#x662F;
  */
 function isInt(Num) {
     return Math.floor(Num) == Num;
 }
+/**
+ * &#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x6210;&#x6574;&#x6570;
+ * @private
+ * @param {number} floatNum
+ * @returns {ItoInt}
+ */
 function toInt(floatNum) {
     const temp = {
         num: floatNum,
@@ -70,12 +81,13 @@ function toInt(floatNum) {
     const pow = Math.pow(10, len);
     // &#x5751;
     // 0.55 * 100 = 55.00000000000001 &#x7528;parseInt&#x5F3A;&#x5236;&#x8F6C;&#x6574;&#x6570;
-    temp.num = parseInt((floatNum * pow).toString(), 10);
+    temp.num = Number.parseInt((floatNum * pow).toString(), 10);
     temp.pow = pow;
     return temp;
 }
 /**
  * &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570; &#x53D6;&#x6574; &#x53D6;&#x6700;&#x5927;&#x5E42;&#x6570;
+ * @private
  * @param  {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number
  * @param  {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number
  * @param  {string} op &#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;
@@ -118,25 +130,63 @@ function operate(num1, num2, op) {
             return (t1 / t2) * (pow2 / pow1);
     }
 }
+/**
+ * float &#x89E3;&#x51B3;js&#x5904;&#x7406;&#x6D6E;&#x70B9;&#x6570;&#x4E0D;&#x7CBE;&#x786E;&#x95EE;&#x9898;
+ * @public
+ */
 const float = {
+    /**
+     * &#x4E24;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x52A0;
+     * @example
+     * float.add(0.1, 0.2) =&gt; 0.3
+     * @param {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @param {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @returns {number} &#x76F8;&#x52A0;&#x540E;&#x7684;&#x7ED3;&#x679C;
+     */
     add(num1, num2) {
         return operate(num1, num2, &apos;add&apos;);
     },
+    /**
+     * &#x4E24;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x51CF;
+     * @example
+     * float.sub(0.2, 0.1) =&gt; 0.1
+     * @param {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @param {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @returns {number} &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; - &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; &#x540E;&#x7684;&#x7ED3;&#x679C;
+     */
     sub(num1, num2) {
         return operate(num1, num2, &apos;sub&apos;);
     },
+    /**
+     * &#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x4E58;
+     * @example
+     * float.ride(0.2, 0.1) =&gt; 0.02
+     * @param {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @param {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @returns {number} &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; * &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; &#x540E;&#x7684;&#x7ED3;&#x679C;
+     */
     ride(num1, num2) {
         return operate(num1, num2, &apos;ride&apos;);
     },
+    /**
+     * &#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x9664;
+     * @example
+     * float.ride(0.2, 0.1) =&gt; 2
+     * @param {number} num1 &#x7B2C;&#x4E00;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @param {number} num2 &#x7B2C;&#x4E8C;&#x4E2A;number&#x7C7B;&#x578B;&#x53C2;&#x6570;
+     * @returns {number} &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; / &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; &#x540E;&#x7684;&#x7ED3;&#x679C;
+     */
     divide(num1, num2) {
         return operate(num1, num2, &apos;divide&apos;);
     }
 };
 /**
  * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x6570;&#x7684;X&#x8FDB;&#x5236;&#x6570;
+ * @example
+ * getRandomBit(6, 16)
  * @param {number} num &#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x7684;&#x4F4D;&#x6570;
  * @param {number} bit &#x6307;&#x5B9A;&#x8FDB;&#x5236;&#x6570; 8/10/16&#x8FDB;&#x5236;
- * @returns {string}
+ * @returns {string} &#x8F93;&#x51FA;&apos;#abcwed&apos;&#x5F62;&#x5F0F;&#x7684;&#x6307;&#x5B9A;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;
  */
 function getRandomBit(num, bit = 10) {
     let result = &apos;#&apos;;

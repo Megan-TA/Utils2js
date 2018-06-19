@@ -67,12 +67,16 @@ const {
 }
 
 const {
-    reverse
+    Reverse,
+    LimitAndSliceChinese,
+    LimitAndSliceChineseNotSym
 } = _String
 
 {
     const s = Logger('测试字符串方法')
-    s.info(reverse('qwert1s'))
+    s.info(Reverse('qwert1s'))
+    s.info(LimitAndSliceChinese('你好啊，我是张三！', 4))
+    s.info(LimitAndSliceChineseNotSym('你好啊，我是张三！', 4))
 }
 
 const {

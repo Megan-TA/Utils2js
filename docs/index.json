@@ -567,9 +567,9 @@
     "__docId__": 48,
     "kind": "file",
     "name": "dist/index.js",
-    "content": "import * as _Main from './lib/index';\r\nimport * as _Brower from './lib/brower';\r\nimport * as _Number from './lib/number';\r\nimport * as _String from './lib/string';\r\nimport * as _Url from './lib/url';\r\nexport { _Main, _Brower, _Number, _String, _Url };\r\n",
+    "content": "import * as _Brower from './lib/brower';\r\nimport * as _Main from './lib/index';\r\nimport * as _Number from './lib/number';\r\nimport * as _String from './lib/string';\r\nimport * as _Url from './lib/url';\r\nexport { _Main, _Brower, _Number, _String, _Url };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/index.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -578,9 +578,9 @@
     "__docId__": 49,
     "kind": "file",
     "name": "dist/lib/brower.js",
-    "content": "/**\r\n * 判断浏览器类型 返回对应浏览器名称\r\n * @returns\r\n */\r\nlet finalName = 'IE';\r\nconst userAgent = navigator.userAgent;\r\nif (userAgent.indexOf('Chrome') > -1) {\r\n    finalName = 'Chrome';\r\n}\r\nelse if (userAgent.indexOf('Firefox') > -1) {\r\n    finalName = 'Firefox';\r\n}\r\nelse if (userAgent.indexOf('Opera') > -1) {\r\n    finalName = 'Opera';\r\n}\r\nelse if (userAgent.indexOf('Safari') > -1) {\r\n    finalName = 'Safari';\r\n}\r\nconst isIE = finalName == 'IE';\r\nconst isChrome = finalName == 'Chrome';\r\nconst isFirefox = finalName == 'Firefox';\r\nconst isOpera = finalName == 'Opera';\r\nconst isSafari = finalName == 'Safari';\r\nexport { isIE, isChrome, isFirefox, isOpera, isSafari };\r\n",
+    "content": "/**\r\n * 判断浏览器类型 返回对应浏览器名称\r\n * @returns\r\n */\r\nlet finalName = 'IE';\r\nconst userAgent = navigator.userAgent;\r\nif (userAgent.indexOf('Chrome') > -1) {\r\n    finalName = 'Chrome';\r\n}\r\nelse if (userAgent.indexOf('Firefox') > -1) {\r\n    finalName = 'Firefox';\r\n}\r\nelse if (userAgent.indexOf('Opera') > -1) {\r\n    finalName = 'Opera';\r\n}\r\nelse if (userAgent.indexOf('Safari') > -1) {\r\n    finalName = 'Safari';\r\n}\r\n/**\r\n * 是否是IE浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n */\r\nconst isIE = finalName == 'IE';\r\n/**\r\n * 是否是Chrome浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n */\r\nconst isChrome = finalName == 'Chrome';\r\n/**\r\n * 是否是Firefox浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n */\r\nconst isFirefox = finalName == 'Firefox';\r\n/**\r\n * 是否是Opera浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n */\r\nconst isOpera = finalName == 'Opera';\r\n/**\r\n * 是否是Safari浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n */\r\nconst isSafari = finalName == 'Safari';\r\nexport { isIE, isChrome, isFirefox, isOpera, isSafari };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/brower.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/brower.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -643,9 +643,22 @@
     "export": true,
     "importPath": "utils2js/dist/lib/brower.js",
     "importStyle": "{isIE}",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true,
+    "description": "是否是IE浏览器",
+    "lineNumber": 23,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是的 false 不是"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是的 false 不是"
+    },
     "type": {
       "types": [
         "*"
@@ -663,9 +676,22 @@
     "export": true,
     "importPath": "utils2js/dist/lib/brower.js",
     "importStyle": "{isChrome}",
-    "description": null,
-    "lineNumber": 20,
-    "undocument": true,
+    "description": "是否是Chrome浏览器",
+    "lineNumber": 28,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是的 false 不是"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是的 false 不是"
+    },
     "type": {
       "types": [
         "*"
@@ -683,9 +709,22 @@
     "export": true,
     "importPath": "utils2js/dist/lib/brower.js",
     "importStyle": "{isFirefox}",
-    "description": null,
-    "lineNumber": 21,
-    "undocument": true,
+    "description": "是否是Firefox浏览器",
+    "lineNumber": 33,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是的 false 不是"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是的 false 不是"
+    },
     "type": {
       "types": [
         "*"
@@ -703,9 +742,22 @@
     "export": true,
     "importPath": "utils2js/dist/lib/brower.js",
     "importStyle": "{isOpera}",
-    "description": null,
-    "lineNumber": 22,
-    "undocument": true,
+    "description": "是否是Opera浏览器",
+    "lineNumber": 38,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是的 false 不是"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是的 false 不是"
+    },
     "type": {
       "types": [
         "*"
@@ -723,9 +775,22 @@
     "export": true,
     "importPath": "utils2js/dist/lib/brower.js",
     "importStyle": "{isSafari}",
-    "description": null,
-    "lineNumber": 23,
-    "undocument": true,
+    "description": "是否是Safari浏览器",
+    "lineNumber": 43,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是的 false 不是"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是的 false 不是"
+    },
     "type": {
       "types": [
         "*"
@@ -736,9 +801,9 @@
     "__docId__": 57,
     "kind": "file",
     "name": "dist/lib/date.js",
-    "content": "",
+    "content": "/*\r\n * 日期方法扩展（基于dayjs）\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:32:21\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:10:23\r\n */\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/date.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/date.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -747,9 +812,9 @@
     "__docId__": 58,
     "kind": "file",
     "name": "dist/lib/index.js",
-    "content": "/*\r\n * 个人工具方法\r\n * @Author: chen_huang\r\n * @Date: 2017-09-20 16:17:55\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 19:04:13\r\n */\r\nimport { isIE } from './brower';\r\nimport { getRandomBit } from './number';\r\nimport { interpolation } from './object';\r\nlet INSTANCE = null;\r\nclass Utils2js {\r\n    static get getInstance() {\r\n        if (!INSTANCE) {\r\n            INSTANCE = new Utils2js();\r\n        }\r\n        return INSTANCE;\r\n    }\r\n    Logger(channel, options = {}) {\r\n        // 浏览器检测\r\n        function info(message) {\r\n            if (isIE) {\r\n                console.log(interpolation('[{0}]', channel), message);\r\n            }\r\n            else {\r\n                if (options && options.color) {\r\n                    options.color = options.color;\r\n                }\r\n                else {\r\n                    options.color = getRandomBit(6, 16);\r\n                }\r\n                console.log(interpolation('%c[{0}]', channel), interpolation('color: {0}', options.color), message);\r\n            }\r\n        }\r\n        return {\r\n            info\r\n        };\r\n    }\r\n    /**\r\n     * 更准确的类型判定方法\r\n     * 返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error\r\n     *\r\n     * @param {*} params\r\n     * @returns {string} 统一返回小写的具体类型名称\r\n     * @memberof Utils2js\r\n     */\r\n    Type(params) {\r\n        const REGEXP = /^\\[object\\W([a-zA-Z]+)\\]$/g;\r\n        const waitingForReg = Object.prototype.toString.call(params);\r\n        const handleResult = REGEXP.exec(waitingForReg);\r\n        return handleResult[1].toLowerCase();\r\n    }\r\n}\r\nconst STANCE__UTILS2JS = Utils2js.getInstance;\r\nexport const Logger = STANCE__UTILS2JS.Logger;\r\nexport const Type = STANCE__UTILS2JS.Type;\r\n",
+    "content": "/*\r\n * 个人工具方法\r\n * @Author: chen_huang\r\n * @Date: 2017-09-20 16:17:55\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 19:04:13\r\n */\r\nimport { isIE } from './brower';\r\nimport { getRandomBit } from './number';\r\nimport { interpolation } from './object';\r\nlet INSTANCE = null;\r\n/**\r\n * Utils2js 单列模式\r\n * @class Utils2js\r\n */\r\nclass Utils2js {\r\n    static get getInstance() {\r\n        if (!INSTANCE) {\r\n            INSTANCE = new Utils2js();\r\n        }\r\n        return INSTANCE;\r\n    }\r\n    /**\r\n     * 控制台输出多彩提示信息\r\n     * IE版本默认不支持多彩控制信息，默认输出白底黑字文本\r\n     * @example\r\n     * const channelOne = Logger('频道1')\r\n     * channelOne.info('这是测试文本')\r\n     * @param {string} channel 必须先指定文本属于自身的频道\r\n     * @param {{color?: string}} [options={}] （可选）指定需要展示的颜色值，默认会随机生成\r\n     * @returns {object} 输出{info}格式的对象 通过.info()最终输出的带多彩的类似\"['频道1']这是测试文本\" 形式\r\n     * @memberof Utils2js\r\n     */\r\n    Logger(channel, options = {}) {\r\n        // 浏览器检测\r\n        function info(message) {\r\n            if (isIE) {\r\n                console.log(interpolation('[{0}]', channel), message);\r\n            }\r\n            else {\r\n                if (options && options.color) {\r\n                    options.color = options.color;\r\n                }\r\n                else {\r\n                    options.color = getRandomBit(6, 16);\r\n                }\r\n                console.log(interpolation('%c[{0}]', channel), interpolation('color: {0}', options.color), message);\r\n            }\r\n        }\r\n        return {\r\n            info\r\n        };\r\n    }\r\n    /**\r\n     * 更准确的类型判定方法\r\n     * 返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error\r\n     *\r\n     * @param {*} params\r\n     * @returns {string} 统一返回小写的具体类型名称\r\n     * @memberof Utils2js\r\n     */\r\n    Type(params) {\r\n        const REGEXP = /^\\[object\\W([a-zA-Z]+)\\]$/g;\r\n        const waitingForReg = Object.prototype.toString.call(params);\r\n        const handleResult = REGEXP.exec(waitingForReg);\r\n        return handleResult[1].toLowerCase();\r\n    }\r\n}\r\nconst STANCE__UTILS2JS = Utils2js.getInstance;\r\nexport const Logger = STANCE__UTILS2JS.Logger;\r\nexport const Type = STANCE__UTILS2JS.Type;\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/index.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -786,9 +851,14 @@
     "export": false,
     "importPath": "utils2js/dist/lib/index.js",
     "importStyle": null,
-    "description": null,
-    "lineNumber": 12,
-    "undocument": true,
+    "description": "Utils2js 单列模式",
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "Utils2js"
+      }
+    ],
     "interface": false,
     "ignore": true
   },
@@ -803,7 +873,7 @@
     "longname": "dist/lib/index.js~Utils2js.getInstance",
     "access": "public",
     "description": null,
-    "lineNumber": 13,
+    "lineNumber": 17,
     "undocument": true,
     "type": {
       "types": [
@@ -821,30 +891,48 @@
     "static": false,
     "longname": "dist/lib/index.js~Utils2js#Logger",
     "access": "public",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true,
+    "description": "控制台输出多彩提示信息\nIE版本默认不支持多彩控制信息，默认输出白底黑字文本",
+    "examples": [
+      "const channelOne = Logger('频道1')\nchannelOne.info('这是测试文本')"
+    ],
+    "lineNumber": 34,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} 输出{info}格式的对象 通过.info()最终输出的带多彩的类似\"['频道1']这是测试文本\" 形式"
+      }
+    ],
     "params": [
       {
-        "name": "channel",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "channel",
+        "description": "必须先指定文本属于自身的频道"
       },
       {
-        "name": "options",
-        "optional": true,
+        "nullable": null,
         "types": [
-          "{}"
+          "{color?: string}"
         ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
         "defaultRaw": {},
-        "defaultValue": "{}"
+        "name": "options",
+        "description": "（可选）指定需要展示的颜色值，默认会随机生成"
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "{\"info\": *}"
-      ]
+        "object"
+      ],
+      "spread": false,
+      "description": "输出{info}格式的对象 通过.info()最终输出的带多彩的类似\"['频道1']这是测试文本\" 形式"
     }
   },
   {
@@ -858,7 +946,7 @@
     "longname": "dist/lib/index.js~Utils2js#Type",
     "access": "public",
     "description": "更准确的类型判定方法\n返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error",
-    "lineNumber": 47,
+    "lineNumber": 62,
     "unknown": [
       {
         "tagName": "@returns",
@@ -898,7 +986,7 @@
     "importPath": "utils2js/dist/lib/index.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 54,
+    "lineNumber": 69,
     "undocument": true,
     "type": {
       "types": [
@@ -919,7 +1007,7 @@
     "importPath": "utils2js/dist/lib/index.js",
     "importStyle": "{Logger}",
     "description": null,
-    "lineNumber": 55,
+    "lineNumber": 70,
     "undocument": true,
     "type": {
       "types": [
@@ -939,7 +1027,7 @@
     "importPath": "utils2js/dist/lib/index.js",
     "importStyle": "{Type}",
     "description": null,
-    "lineNumber": 56,
+    "lineNumber": 71,
     "undocument": true,
     "type": {
       "types": [
@@ -951,9 +1039,9 @@
     "__docId__": 67,
     "kind": "file",
     "name": "dist/lib/number.js",
-    "content": "/**\r\n * 整数\r\n * @param  {number} Num\r\n */\r\nfunction isInt(Num) {\r\n    return Math.floor(Num) == Num;\r\n}\r\nfunction toInt(floatNum) {\r\n    const temp = {\r\n        num: floatNum,\r\n        pow: 1\r\n    };\r\n    // 是整数跳过\r\n    if (isInt(floatNum)) {\r\n        return temp;\r\n    }\r\n    const stringNum = floatNum + '';\r\n    const len = stringNum.split('.')[1].length;\r\n    const pow = Math.pow(10, len);\r\n    // 坑\r\n    // 0.55 * 100 = 55.00000000000001 用parseInt强制转整数\r\n    temp.num = parseInt((floatNum * pow).toString(), 10);\r\n    temp.pow = pow;\r\n    return temp;\r\n}\r\n/**\r\n * 比较两个数 取整 取最大幂数\r\n * @param  {number} num1 第一个number\r\n * @param  {number} num2 第二个number\r\n * @param  {string} op 指定操作类型\r\n */\r\nfunction operate(num1, num2, op) {\r\n    const toInt1 = toInt(num1);\r\n    const toInt2 = toInt(num2);\r\n    // 取整\r\n    const t1 = toInt1.num;\r\n    const t2 = toInt2.num;\r\n    // 取幂数\r\n    const pow1 = toInt1.pow;\r\n    const pow2 = toInt2.pow;\r\n    // 先比较幂数大小 再做处理\r\n    switch (op) {\r\n        case 'add':\r\n            if (pow1 == pow2) {\r\n                return (t1 + t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 + t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) + t2) / pow2;\r\n            }\r\n        case 'sub':\r\n            if (pow1 == pow2) {\r\n                return (t1 - t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 - t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) - t2) / pow2;\r\n            }\r\n        case 'ride':\r\n            return (t1 * t2) / (pow1 * pow2);\r\n        case 'divide':\r\n            // 参考  55 / 0.22 => ( 55 / 22 ) * (100 / 1)  注意分子和分母顺序\r\n            return (t1 / t2) * (pow2 / pow1);\r\n    }\r\n}\r\nconst float = {\r\n    add(num1, num2) {\r\n        return operate(num1, num2, 'add');\r\n    },\r\n    sub(num1, num2) {\r\n        return operate(num1, num2, 'sub');\r\n    },\r\n    ride(num1, num2) {\r\n        return operate(num1, num2, 'ride');\r\n    },\r\n    divide(num1, num2) {\r\n        return operate(num1, num2, 'divide');\r\n    }\r\n};\r\n/**\r\n * 获取指定位数的X进制数\r\n * @param {number} num 指定输出的位数\r\n * @param {number} bit 指定进制数 8/10/16进制\r\n * @returns {string}\r\n */\r\nfunction getRandomBit(num, bit = 10) {\r\n    let result = '#';\r\n    if (typeof num != 'number') {\r\n        throw new Error('num类型必须为数字!');\r\n    }\r\n    for (let i = 0; i <= num - 1; i++) {\r\n        result += Math.floor(Math.random() * bit).toString(bit);\r\n    }\r\n    return result;\r\n}\r\nexport { float, getRandomBit };\r\n",
+    "content": "/**\r\n * 判断是否是整数\r\n *\r\n * @param {number} Num\r\n * @returns {boolean} true 是整数 false不是\r\n */\r\nfunction isInt(Num) {\r\n    return Math.floor(Num) == Num;\r\n}\r\n/**\r\n * 强制转换成整数\r\n * @private\r\n * @param {number} floatNum\r\n * @returns {ItoInt}\r\n */\r\nfunction toInt(floatNum) {\r\n    const temp = {\r\n        num: floatNum,\r\n        pow: 1\r\n    };\r\n    // 是整数跳过\r\n    if (isInt(floatNum)) {\r\n        return temp;\r\n    }\r\n    const stringNum = floatNum + '';\r\n    const len = stringNum.split('.')[1].length;\r\n    const pow = Math.pow(10, len);\r\n    // 坑\r\n    // 0.55 * 100 = 55.00000000000001 用parseInt强制转整数\r\n    temp.num = Number.parseInt((floatNum * pow).toString(), 10);\r\n    temp.pow = pow;\r\n    return temp;\r\n}\r\n/**\r\n * 比较两个数 取整 取最大幂数\r\n * @private\r\n * @param  {number} num1 第一个number\r\n * @param  {number} num2 第二个number\r\n * @param  {string} op 指定操作类型\r\n */\r\nfunction operate(num1, num2, op) {\r\n    const toInt1 = toInt(num1);\r\n    const toInt2 = toInt(num2);\r\n    // 取整\r\n    const t1 = toInt1.num;\r\n    const t2 = toInt2.num;\r\n    // 取幂数\r\n    const pow1 = toInt1.pow;\r\n    const pow2 = toInt2.pow;\r\n    // 先比较幂数大小 再做处理\r\n    switch (op) {\r\n        case 'add':\r\n            if (pow1 == pow2) {\r\n                return (t1 + t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 + t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) + t2) / pow2;\r\n            }\r\n        case 'sub':\r\n            if (pow1 == pow2) {\r\n                return (t1 - t2) / pow1;\r\n            }\r\n            if (pow1 > pow2) {\r\n                return (t1 - t2 * (pow1 / pow2)) / pow1;\r\n            }\r\n            else {\r\n                return (t1 * (pow2 / pow1) - t2) / pow2;\r\n            }\r\n        case 'ride':\r\n            return (t1 * t2) / (pow1 * pow2);\r\n        case 'divide':\r\n            // 参考  55 / 0.22 => ( 55 / 22 ) * (100 / 1)  注意分子和分母顺序\r\n            return (t1 / t2) * (pow2 / pow1);\r\n    }\r\n}\r\n/**\r\n * float 解决js处理浮点数不精确问题\r\n * @public\r\n */\r\nconst float = {\r\n    /**\r\n     * 两个浮点数相加\r\n     * @example\r\n     * float.add(0.1, 0.2) => 0.3\r\n     * @param {number} num1 第一个number类型参数\r\n     * @param {number} num2 第二个number类型参数\r\n     * @returns {number} 相加后的结果\r\n     */\r\n    add(num1, num2) {\r\n        return operate(num1, num2, 'add');\r\n    },\r\n    /**\r\n     * 两个浮点数相减\r\n     * @example\r\n     * float.sub(0.2, 0.1) => 0.1\r\n     * @param {number} num1 第一个number类型参数\r\n     * @param {number} num2 第二个number类型参数\r\n     * @returns {number} 第一个参数 - 第二个参数 后的结果\r\n     */\r\n    sub(num1, num2) {\r\n        return operate(num1, num2, 'sub');\r\n    },\r\n    /**\r\n     * 浮点数相乘\r\n     * @example\r\n     * float.ride(0.2, 0.1) => 0.02\r\n     * @param {number} num1 第一个number类型参数\r\n     * @param {number} num2 第二个number类型参数\r\n     * @returns {number} 第一个参数 * 第二个参数 后的结果\r\n     */\r\n    ride(num1, num2) {\r\n        return operate(num1, num2, 'ride');\r\n    },\r\n    /**\r\n     * 浮点数相除\r\n     * @example\r\n     * float.ride(0.2, 0.1) => 2\r\n     * @param {number} num1 第一个number类型参数\r\n     * @param {number} num2 第二个number类型参数\r\n     * @returns {number} 第一个参数 / 第二个参数 后的结果\r\n     */\r\n    divide(num1, num2) {\r\n        return operate(num1, num2, 'divide');\r\n    }\r\n};\r\n/**\r\n * 获取指定位数的X进制数\r\n * @example\r\n * getRandomBit(6, 16)\r\n * @param {number} num 指定输出的位数\r\n * @param {number} bit 指定进制数 8/10/16进制\r\n * @returns {string} 输出'#abcwed'形式的指定进制字符串\r\n */\r\nfunction getRandomBit(num, bit = 10) {\r\n    let result = '#';\r\n    if (typeof num != 'number') {\r\n        throw new Error('num类型必须为数字!');\r\n    }\r\n    for (let i = 0; i <= num - 1; i++) {\r\n        result += Math.floor(Math.random() * bit).toString(bit);\r\n    }\r\n    return result;\r\n}\r\nexport { float, getRandomBit };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/number.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/number.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -971,8 +1059,14 @@
     "export": false,
     "importPath": "utils2js/dist/lib/number.js",
     "importStyle": null,
-    "description": "整数",
-    "lineNumber": 5,
+    "description": "判断是否是整数",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean} true 是整数 false不是"
+      }
+    ],
     "params": [
       {
         "nullable": null,
@@ -986,9 +1080,12 @@
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true 是整数 false不是"
     },
     "ignore": true
   },
@@ -1001,25 +1098,37 @@
     "async": false,
     "static": true,
     "longname": "dist/lib/number.js~toInt",
-    "access": "public",
+    "access": "private",
     "export": false,
     "importPath": "utils2js/dist/lib/number.js",
     "importStyle": null,
-    "description": null,
-    "lineNumber": 8,
-    "undocument": true,
+    "description": "强制转换成整数",
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{ItoInt}"
+      }
+    ],
     "params": [
       {
-        "name": "floatNum",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "floatNum",
+        "description": ""
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "ItoInt"
+      ],
+      "spread": false,
+      "description": ""
     },
     "ignore": true
   },
@@ -1032,12 +1141,12 @@
     "async": false,
     "static": true,
     "longname": "dist/lib/number.js~operate",
-    "access": "public",
+    "access": "private",
     "export": false,
     "importPath": "utils2js/dist/lib/number.js",
     "importStyle": null,
     "description": "比较两个数 取整 取最大幂数",
-    "lineNumber": 32,
+    "lineNumber": 41,
     "params": [
       {
         "nullable": null,
@@ -1088,9 +1197,8 @@
     "export": true,
     "importPath": "utils2js/dist/lib/number.js",
     "importStyle": "{float}",
-    "description": null,
-    "lineNumber": 70,
-    "undocument": true,
+    "description": "float 解决js处理浮点数不精确问题",
+    "lineNumber": 83,
     "type": {
       "types": [
         "{\"add\": function, \"sub\": function, \"ride\": function, \"divide\": function}"
@@ -1111,11 +1219,14 @@
     "importPath": "utils2js/dist/lib/number.js",
     "importStyle": "{getRandomBit}",
     "description": "获取指定位数的X进制数",
-    "lineNumber": 90,
+    "examples": [
+      "getRandomBit(6, 16)"
+    ],
+    "lineNumber": 137,
     "unknown": [
       {
         "tagName": "@returns",
-        "tagValue": "{string}"
+        "tagValue": "{string} 输出'#abcwed'形式的指定进制字符串"
       }
     ],
     "params": [
@@ -1146,16 +1257,16 @@
         "string"
       ],
       "spread": false,
-      "description": ""
+      "description": "输出'#abcwed'形式的指定进制字符串"
     }
   },
   {
     "__docId__": 73,
     "kind": "file",
     "name": "dist/lib/object.js",
-    "content": "/*\r\n * 对象扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 17:00:34\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 14:42:29\r\n */\r\n/**\r\n * 浅拷贝（不包括原型链属性拷贝）\r\n * simpleCopy({}, { name: '张三' })\r\n * @param {object} [destination={}] 默认空对象\r\n * @param {object} source 待拷贝对象\r\n * @returns {object} 输出浅拷贝对象\r\n */\r\nfunction simpleCopy(destination = {}, source) {\r\n    Object.keys(source).forEach((value, key) => {\r\n        if (!destination.hasOwnProperty(key)) {\r\n            return destination[key] = value;\r\n        }\r\n    });\r\n    return destination;\r\n}\r\n/**\r\n * 获取指定对象下指定字段的值，支持递归\r\n * prop({a: {b: 1}}, 'a.b') => 1\r\n * prop({a: {b: 1}}, 'a')   => {b: 1}\r\n * prop({a: {b: 1}}, 'm')   => null\r\n * @param {object} [obj={}] 待查找的原始对象\r\n * @param {string} [path=''] 需要查找的节点\r\n * @returns {any} 未找到默认输出null\r\n */\r\nfunction prop(obj = {}, path = '') {\r\n    let key;\r\n    let pathArray;\r\n    pathArray = path.split('.');\r\n    while ((key = pathArray.shift())) {\r\n        try {\r\n            obj = obj[key];\r\n        }\r\n        catch (err) {\r\n            return null;\r\n        }\r\n    }\r\n    return obj;\r\n}\r\n/**\r\n * 深拷贝（基于递归）\r\n * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})\r\n * @param {object} [source={}] 原始对象\r\n * @param {object} [deepSource] 可选 默认空对象\r\n * @returns {object} 深拷贝之后的对象\r\n */\r\nfunction deepCopy(source = {}, deepSource) {\r\n    for (const key in source) {\r\n        if (typeof source[key] == 'object') {\r\n            deepSource[key] = source[key] instanceof Array ? [] : {};\r\n            deepCopy(source[key], deepSource[key]);\r\n        }\r\n        else {\r\n            deepSource[key] = source[key];\r\n        }\r\n    }\r\n    return deepSource;\r\n}\r\n/**\r\n * 自定义插值\r\n * 适用于取到接口返回的JSON根据需要转换成指定格式的字符串\r\n * 基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\r\n * 基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1\r\n * @param  {string} param 字符串\r\n * @param  {any} ...options 字符串|对象\r\n * @returns {string} 最终输出的字符串\r\n */\r\nfunction interpolation(param, ...options) {\r\n    let arg1 = arguments[0] || '';\r\n    const arg2 = arguments[1] || {};\r\n    let matchArray = [];\r\n    const REG_RULE = /{([a-zA-Z0-9]+)}/;\r\n    const REG_NUM_RULE = /\\d+/;\r\n    while ((matchArray = REG_RULE.exec(arg1))) {\r\n        // matchArray代表符合正则匹配的数组\r\n        // matchArray[0] 代表匹配完整的{1}\r\n        // matchArray[1] 代表{}里面具体的值1\r\n        const execTotalVal = matchArray[0];\r\n        const execVal = matchArray[1];\r\n        if (REG_NUM_RULE.test(execVal)) {\r\n            // 基于位置插值\r\n            arg1 = arg1.replace(execTotalVal, options[Number(execVal)]);\r\n        }\r\n        else {\r\n            if (prop(arg2, matchArray[1]) != null) {\r\n                arg1 = arg1.replace(execTotalVal, prop(arg2, matchArray[1]));\r\n            }\r\n        }\r\n    }\r\n    return arg1;\r\n}\r\nexport { interpolation, deepCopy, prop, simpleCopy };\r\n",
+    "content": "/*\r\n * 对象扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 17:00:34\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:18:44\r\n */\r\n/**\r\n * 浅拷贝（不包括原型链属性拷贝）\r\n * @example\r\n * simpleCopy({}, { name: '张三' })\r\n * @param {object} [destination={}] 默认空对象\r\n * @param {object} source 待拷贝对象\r\n * @returns {object} 输出浅拷贝对象\r\n */\r\nfunction simpleCopy(destination = {}, source) {\r\n    Object.keys(source).forEach((value, key) => {\r\n        if (!destination.hasOwnProperty(key)) {\r\n            return destination[key] = value;\r\n        }\r\n    });\r\n    return destination;\r\n}\r\n/**\r\n * 获取指定对象下指定字段的值，支持递归\r\n * @example\r\n * prop({a: {b: 1}}, 'a.b') => 1\r\n * prop({a: {b: 1}}, 'a')   => {b: 1}\r\n * prop({a: {b: 1}}, 'm')   => null\r\n * @param {object} [obj={}] 待查找的原始对象\r\n * @param {string} [path=''] 需要查找的节点\r\n * @returns {any} 未找到默认输出null\r\n */\r\nfunction prop(obj = {}, path = '') {\r\n    let key;\r\n    let pathArray;\r\n    pathArray = path.split('.');\r\n    while ((key = pathArray.shift())) {\r\n        try {\r\n            obj = obj[key];\r\n        }\r\n        catch (err) {\r\n            return null;\r\n        }\r\n    }\r\n    return obj;\r\n}\r\n/**\r\n * 深拷贝（基于递归）\r\n * @example\r\n * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})\r\n * @param {object} [source={}] 原始对象\r\n * @param {object} [deepSource] 可选 默认空对象\r\n * @returns {object} 深拷贝之后的对象\r\n */\r\nfunction deepCopy(source = {}, deepSource) {\r\n    for (const key in source) {\r\n        if (typeof source[key] == 'object') {\r\n            deepSource[key] = source[key] instanceof Array ? [] : {};\r\n            deepCopy(source[key], deepSource[key]);\r\n        }\r\n        else {\r\n            deepSource[key] = source[key];\r\n        }\r\n    }\r\n    return deepSource;\r\n}\r\n/**\r\n * 自定义插值 适用于取到接口返回的JSON根据需要转换成指定格式的字符串\r\n * @example\r\n * 基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\r\n * 基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1\r\n * @param {string} param  字符串\r\n * @param {*} options ...options 字符串|对象\r\n * @returns {string} 最终输出的字符串\r\n */\r\nfunction interpolation(param, ...options) {\r\n    let arg1 = arguments[0] || '';\r\n    const arg2 = arguments[1] || {};\r\n    let matchArray = [];\r\n    const REG_RULE = /{([a-zA-Z0-9]+)}/;\r\n    const REG_NUM_RULE = /\\d+/;\r\n    while ((matchArray = REG_RULE.exec(arg1))) {\r\n        // matchArray代表符合正则匹配的数组\r\n        // matchArray[0] 代表匹配完整的{1}\r\n        // matchArray[1] 代表{}里面具体的值1\r\n        const execTotalVal = matchArray[0];\r\n        const execVal = matchArray[1];\r\n        if (REG_NUM_RULE.test(execVal)) {\r\n            // 基于位置插值\r\n            arg1 = arg1.replace(execTotalVal, options[Number(execVal)]);\r\n        }\r\n        else {\r\n            if (prop(arg2, matchArray[1]) != null) {\r\n                arg1 = arg1.replace(execTotalVal, prop(arg2, matchArray[1]));\r\n            }\r\n        }\r\n    }\r\n    return arg1;\r\n}\r\nexport { interpolation, deepCopy, prop, simpleCopy };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/object.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/object.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1173,8 +1284,11 @@
     "export": true,
     "importPath": "utils2js/dist/lib/object.js",
     "importStyle": "{interpolation}",
-    "description": "自定义插值\n适用于取到接口返回的JSON根据需要转换成指定格式的字符串\n基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\n基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1",
-    "lineNumber": 74,
+    "description": "自定义插值 适用于取到接口返回的JSON根据需要转换成指定格式的字符串",
+    "examples": [
+      "基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC\n基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1"
+    ],
+    "lineNumber": 77,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1195,12 +1309,12 @@
       {
         "nullable": null,
         "types": [
-          "any"
+          "*"
         ],
         "spread": false,
         "optional": false,
-        "name": "...options",
-        "description": "字符串|对象"
+        "name": "options",
+        "description": "...options 字符串|对象"
       }
     ],
     "return": {
@@ -1225,8 +1339,11 @@
     "export": true,
     "importPath": "utils2js/dist/lib/object.js",
     "importStyle": "{deepCopy}",
-    "description": "深拷贝（基于递归）\ndeepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})",
-    "lineNumber": 53,
+    "description": "深拷贝（基于递归）",
+    "examples": [
+      "deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})"
+    ],
+    "lineNumber": 56,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1279,8 +1396,11 @@
     "export": true,
     "importPath": "utils2js/dist/lib/object.js",
     "importStyle": "{prop}",
-    "description": "获取指定对象下指定字段的值，支持递归\nprop({a: {b: 1}}, 'a.b') => 1\nprop({a: {b: 1}}, 'a')   => {b: 1}\nprop({a: {b: 1}}, 'm')   => null",
-    "lineNumber": 32,
+    "description": "获取指定对象下指定字段的值，支持递归",
+    "examples": [
+      "prop({a: {b: 1}}, 'a.b') => 1\nprop({a: {b: 1}}, 'a')   => {b: 1}\nprop({a: {b: 1}}, 'm')   => null"
+    ],
+    "lineNumber": 34,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1335,8 +1455,11 @@
     "export": true,
     "importPath": "utils2js/dist/lib/object.js",
     "importStyle": "{simpleCopy}",
-    "description": "浅拷贝（不包括原型链属性拷贝）\nsimpleCopy({}, { name: '张三' })",
-    "lineNumber": 15,
+    "description": "浅拷贝（不包括原型链属性拷贝）",
+    "examples": [
+      "simpleCopy({}, { name: '张三' })"
+    ],
+    "lineNumber": 16,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1380,42 +1503,115 @@
     "__docId__": 78,
     "kind": "file",
     "name": "dist/lib/regex.js",
-    "content": "",
+    "content": "/*\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:22:01\r\n */\r\nexport const RegExtension = {\r\n    rules: {\r\n        // 匹配多个中文\r\n        matchMultiChinese: /[\\u4e00-\\u9fa5]+/g,\r\n        // 匹配单个中文\r\n        matchSingleChinese: /[\\u4e00-\\u9fa5]/\r\n    }\r\n};\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/regex.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/regex.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "__docId__": 79,
+    "kind": "variable",
+    "name": "RegExtension",
+    "memberof": "dist/lib/regex.js",
+    "static": true,
+    "longname": "dist/lib/regex.js~RegExtension",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/regex.js",
+    "importStyle": "{RegExtension}",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"rules\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
     "kind": "file",
     "name": "dist/lib/string.js",
-    "content": "/*\r\n * 字符串方法扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 16:00:49\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-18 23:01:56\r\n */\r\n/**\r\n * 字符串倒序\r\n * @example reverse('qwer') => rewq\r\n *\r\n * @param {string} [insert=''] 传入的字符串\r\n * @returns {string} 倒序后的字符串\r\n */\r\nfunction reverse(insert = '') {\r\n    return Array.prototype.reverse.call(insert.split('')).join('');\r\n}\r\nexport { reverse };\r\n",
+    "content": "/*\r\n * 字符串方法扩展\r\n * @Author: chen_huang\r\n * @Date: 2018-06-13 16:00:49\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:17:27\r\n */\r\nimport { RegExtension } from './regex';\r\n/**\r\n * 字符串倒序\r\n * @example\r\n * reverse('qwer') => rewq\r\n * @param {string} [insert=''] 传入的字符串\r\n * @returns {string} 倒序后的字符串\r\n */\r\nfunction Reverse(insert = '') {\r\n    return Array.prototype.reverse.call(insert.split('')).join('');\r\n}\r\n/**\r\n * 当前字符串长度与最大限制长度个数作比较\r\n * @private\r\n * @param {number} nowLen\r\n * @param {number} maxNunLen\r\n * @returns {string} 输出当前长度与最大长度比较后的结果 gt/eq/lt\r\n */\r\nfunction mapState(nowLen, maxNunLen) {\r\n    const state = {\r\n        // 正好等于最大字数限制\r\n        eq: '',\r\n        // 大于最大字数限制\r\n        gt: '...',\r\n        // 小于最大字数限制\r\n        lt: ''\r\n    };\r\n    if (nowLen > maxNunLen) {\r\n        return 'gt';\r\n    }\r\n    else if (nowLen == maxNunLen) {\r\n        return 'eq';\r\n    }\r\n    else if (nowLen < maxNunLen) {\r\n        return 'lt';\r\n    }\r\n}\r\n/**\r\n * 限制指定位数的中文 不包括中文符号 超出以 ... 结尾\r\n * @example\r\n * LimitAndSliceChineseNotSym('你好啊，我是张三！', 4) => 你好啊，我...\r\n * @param {*} waitingForSliceString 需要截取指定个数的字符串\r\n * @param {number} [maxNumLen=10] 指定长度最大个数\r\n * @returns {string} 输出截取后符合长度的字符串 超过...\r\n */\r\nfunction LimitAndSliceChineseNotSym(waitingForSliceString, maxNumLen = 10) {\r\n    let temp = '';\r\n    let result = '';\r\n    let compareState = '';\r\n    let recodeChineaseNum = 0;\r\n    for (let i = 0; i <= waitingForSliceString.length - 1; i++) {\r\n        temp = waitingForSliceString.charAt(i);\r\n        compareState = mapState(recodeChineaseNum, maxNumLen);\r\n        switch (compareState) {\r\n            case 'lt':\r\n                // 处理是中文的情况\r\n                if (RegExtension\r\n                    .rules\r\n                    .matchSingleChinese\r\n                    .test(temp)) {\r\n                    result += temp;\r\n                    recodeChineaseNum++;\r\n                }\r\n                else {\r\n                    result += temp;\r\n                }\r\n                break;\r\n            case 'eq':\r\n                // 等于最大限制字数的时候\r\n                // 判断是否遍历的索引是否是最后一个 如不是加上...\r\n                i == waitingForSliceString.length - 1\r\n                    ? result = result\r\n                    : result += '...';\r\n                recodeChineaseNum++;\r\n                break;\r\n            default:\r\n        }\r\n    }\r\n    return result;\r\n}\r\n/**\r\n * 限制指定位数的中文 包括中文符号 超出以 ... 结尾\r\n * @example\r\n * LimitAndSliceChinese('你好啊，我是张三！', 4) => 你好啊，...\r\n * @param {string} waitingForSliceString 需要截取指定个数的字符串\r\n * @param {number} [maxNumLen=10] 指定长度最大个数\r\n * @returns {string} 输出截取后符合长度的字符串 超过...\r\n */\r\nfunction LimitAndSliceChinese(waitingForSliceString, maxNumLen = 10) {\r\n    let temp = 0;\r\n    let result = '';\r\n    let recodeChineaseNum = 0;\r\n    let compareState = '';\r\n    for (let i = 0; i <= waitingForSliceString.length - 1; i++) {\r\n        temp = waitingForSliceString.charCodeAt(i);\r\n        compareState = mapState(recodeChineaseNum, maxNumLen);\r\n        switch (compareState) {\r\n            case 'lt':\r\n                // 英文\r\n                if (temp >= 0 && temp <= 128) {\r\n                    result += waitingForSliceString.charAt(i);\r\n                }\r\n                else {\r\n                    result += waitingForSliceString.charAt(i);\r\n                    recodeChineaseNum++;\r\n                }\r\n                break;\r\n            case 'eq':\r\n                i == waitingForSliceString.length - 1\r\n                    ? result = result\r\n                    : result += '...';\r\n                recodeChineaseNum++;\r\n                break;\r\n            default:\r\n        }\r\n    }\r\n    return result;\r\n}\r\nexport { Reverse, LimitAndSliceChineseNotSym, LimitAndSliceChinese };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/string.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/string.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 80,
+    "__docId__": 81,
     "kind": "function",
-    "name": "reverse",
+    "name": "mapState",
     "memberof": "dist/lib/string.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "dist/lib/string.js~reverse",
+    "longname": "dist/lib/string.js~mapState",
+    "access": "private",
+    "export": false,
+    "importPath": "utils2js/dist/lib/string.js",
+    "importStyle": null,
+    "description": "当前字符串长度与最大限制长度个数作比较",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 输出当前长度与最大长度比较后的结果 gt/eq/lt"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "nowLen",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "maxNunLen",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "输出当前长度与最大长度比较后的结果 gt/eq/lt"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "Reverse",
+    "memberof": "dist/lib/string.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/string.js~Reverse",
     "access": "public",
     "export": true,
     "importPath": "utils2js/dist/lib/string.js",
-    "importStyle": "{reverse}",
+    "importStyle": "{Reverse}",
     "description": "字符串倒序",
     "examples": [
       "reverse('qwer') => rewq"
     ],
-    "lineNumber": 15,
+    "lineNumber": 16,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1446,40 +1642,154 @@
     }
   },
   {
-    "__docId__": 81,
+    "__docId__": 83,
+    "kind": "function",
+    "name": "LimitAndSliceChineseNotSym",
+    "memberof": "dist/lib/string.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/string.js~LimitAndSliceChineseNotSym",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/string.js",
+    "importStyle": "{LimitAndSliceChineseNotSym}",
+    "description": "限制指定位数的中文 不包括中文符号 超出以 ... 结尾",
+    "examples": [
+      "LimitAndSliceChineseNotSym('你好啊，我是张三！', 4) => 你好啊，我..."
+    ],
+    "lineNumber": 53,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 输出截取后符合长度的字符串 超过..."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "waitingForSliceString",
+        "description": "需要截取指定个数的字符串"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "10",
+        "defaultRaw": 10,
+        "name": "maxNumLen",
+        "description": "指定长度最大个数"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "输出截取后符合长度的字符串 超过..."
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "LimitAndSliceChinese",
+    "memberof": "dist/lib/string.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "dist/lib/string.js~LimitAndSliceChinese",
+    "access": "public",
+    "export": true,
+    "importPath": "utils2js/dist/lib/string.js",
+    "importStyle": "{LimitAndSliceChinese}",
+    "description": "限制指定位数的中文 包括中文符号 超出以 ... 结尾",
+    "examples": [
+      "LimitAndSliceChinese('你好啊，我是张三！', 4) => 你好啊，..."
+    ],
+    "lineNumber": 96,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} 输出截取后符合长度的字符串 超过..."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "waitingForSliceString",
+        "description": "需要截取指定个数的字符串"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "10",
+        "defaultRaw": 10,
+        "name": "maxNumLen",
+        "description": "指定长度最大个数"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "输出截取后符合长度的字符串 超过..."
+    }
+  },
+  {
+    "__docId__": 85,
     "kind": "file",
     "name": "dist/lib/types/INDEX.js",
     "content": "",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/types/INDEX.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/types/INDEX.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 82,
+    "__docId__": 86,
     "kind": "file",
     "name": "dist/lib/types/NUMBER.js",
     "content": "",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/types/NUMBER.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/types/NUMBER.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 83,
+    "__docId__": 87,
     "kind": "file",
     "name": "dist/lib/url.js",
-    "content": "/**\r\n * 截掉url协议名（http|https）和:\r\n * @param {string} [url=''] 待传入需要截取协议的url\r\n * @returns {string} 正常会输出//www.baidu.com 不是url的字符串原路返回\r\n */\r\nfunction sliceProtocol(url = '') {\r\n    return url.replace(/^(http|https):/, '');\r\n}\r\nexport { sliceProtocol };\r\n",
+    "content": "/**\r\n * 截掉url协议名（http|https）以及：\r\n * @exanple\r\n * sliceProtocol('http://www.baidu.com') => //www.baidu.com\r\n * @param {string} [url=''] 待传入需要截取协议的url\r\n * @returns {string} 正常会输出//www.baidu.com 不是url的字符串原路返回\r\n */\r\nfunction sliceProtocol(url = '') {\r\n    return url.replace(/^(http|https):/, '');\r\n}\r\nexport { sliceProtocol };\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/lib/url.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/lib/url.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 84,
+    "__docId__": 88,
     "kind": "function",
     "name": "sliceProtocol",
     "memberof": "dist/lib/url.js",
@@ -1491,9 +1801,13 @@
     "export": true,
     "importPath": "utils2js/dist/lib/url.js",
     "importStyle": "{sliceProtocol}",
-    "description": "截掉url协议名（http|https）和:",
-    "lineNumber": 6,
+    "description": "截掉url协议名（http|https）以及：",
+    "lineNumber": 8,
     "unknown": [
+      {
+        "tagName": "@exanple",
+        "tagValue": "sliceProtocol('http://www.baidu.com') => //www.baidu.com"
+      },
       {
         "tagName": "@returns",
         "tagValue": "{string} 正常会输出//www.baidu.com 不是url的字符串原路返回"
@@ -1523,18 +1837,18 @@
     }
   },
   {
-    "__docId__": 85,
+    "__docId__": 89,
     "kind": "file",
     "name": "dist/test.js",
-    "content": "import { _Brower, _Main, _Number, _String, _Url } from './index';\r\nconst { Logger, Type } = _Main;\r\n{\r\n    const A = Logger('测试Logger');\r\n    A.info('测试成功了');\r\n}\r\nconst { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;\r\n{\r\n    const s = Logger('测试浏览器类型判断');\r\n    s.info(isIE);\r\n    s.info(isChrome);\r\n    s.info(isOpera);\r\n    s.info(isFirefox);\r\n    s.info(isSafari);\r\n    s.info('---------------------');\r\n    const test = [\r\n        123,\r\n        '123',\r\n        true,\r\n        { name: '张三' },\r\n        function name() {\r\n            return '张三';\r\n        },\r\n        /^\\d+$/,\r\n        null,\r\n        undefined,\r\n        [1, 2, 3],\r\n        new Date(),\r\n        new Error()\r\n    ];\r\n    test.forEach(item => {\r\n        s.info(Type(item));\r\n    });\r\n}\r\nconst { float, getRandomBit } = _Number;\r\n{\r\n    const s = Logger('测试数字方法');\r\n    s.info(float.add(0.1, 0.2));\r\n    s.info(float.sub(0.1, 0.2));\r\n    s.info(float.ride(0.1, 0.2));\r\n    s.info(float.divide(0.1, 0.2));\r\n}\r\nconst { reverse } = _String;\r\n{\r\n    const s = Logger('测试字符串方法');\r\n    s.info(reverse('qwert1s'));\r\n}\r\nconst { sliceProtocol } = _Url;\r\n{\r\n    const s = Logger('测试url方法');\r\n    s.info(sliceProtocol('http://www.baidu.com'));\r\n    s.info(sliceProtocol('https://www.baidu.com'));\r\n}\r\n",
+    "content": "import { _Brower, _Main, _Number, _String, _Url } from './index';\r\nconst { Logger, Type } = _Main;\r\n{\r\n    const A = Logger('测试Logger');\r\n    A.info('测试成功了');\r\n}\r\nconst { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;\r\n{\r\n    const s = Logger('测试浏览器类型判断');\r\n    s.info(isIE);\r\n    s.info(isChrome);\r\n    s.info(isOpera);\r\n    s.info(isFirefox);\r\n    s.info(isSafari);\r\n    s.info('---------------------');\r\n    const test = [\r\n        123,\r\n        '123',\r\n        true,\r\n        { name: '张三' },\r\n        function name() {\r\n            return '张三';\r\n        },\r\n        /^\\d+$/,\r\n        null,\r\n        undefined,\r\n        [1, 2, 3],\r\n        new Date(),\r\n        new Error()\r\n    ];\r\n    test.forEach(item => {\r\n        s.info(Type(item));\r\n    });\r\n}\r\nconst { float, getRandomBit } = _Number;\r\n{\r\n    const s = Logger('测试数字方法');\r\n    s.info(float.add(0.1, 0.2));\r\n    s.info(float.sub(0.1, 0.2));\r\n    s.info(float.ride(0.1, 0.2));\r\n    s.info(float.divide(0.1, 0.2));\r\n}\r\nconst { Reverse, LimitAndSliceChinese, LimitAndSliceChineseNotSym } = _String;\r\n{\r\n    const s = Logger('测试字符串方法');\r\n    s.info(Reverse('qwert1s'));\r\n    s.info(LimitAndSliceChinese('你好啊，我是张三！', 4));\r\n    s.info(LimitAndSliceChineseNotSym('你好啊，我是张三！', 4));\r\n}\r\nconst { sliceProtocol } = _Url;\r\n{\r\n    const s = Logger('测试url方法');\r\n    s.info(sliceProtocol('http://www.baidu.com'));\r\n    s.info(sliceProtocol('https://www.baidu.com'));\r\n}\r\n",
     "static": true,
-    "longname": "C:/Users/Administrator/Desktop/github/Utils2js/dist/test.js",
+    "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/dist/test.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 86,
+    "__docId__": 90,
     "kind": "variable",
     "name": "Logger",
     "memberof": "dist/test.js",
@@ -1555,7 +1869,7 @@
     "ignore": true
   },
   {
-    "__docId__": 87,
+    "__docId__": 91,
     "kind": "variable",
     "name": "isIE",
     "memberof": "dist/test.js",
@@ -1576,7 +1890,7 @@
     "ignore": true
   },
   {
-    "__docId__": 88,
+    "__docId__": 92,
     "kind": "variable",
     "name": "float",
     "memberof": "dist/test.js",
@@ -1597,12 +1911,12 @@
     "ignore": true
   },
   {
-    "__docId__": 89,
+    "__docId__": 93,
     "kind": "variable",
-    "name": "reverse",
+    "name": "Reverse",
     "memberof": "dist/test.js",
     "static": true,
-    "longname": "dist/test.js~reverse",
+    "longname": "dist/test.js~Reverse",
     "access": "public",
     "export": false,
     "importPath": "utils2js/dist/test.js",
@@ -1618,7 +1932,7 @@
     "ignore": true
   },
   {
-    "__docId__": 90,
+    "__docId__": 94,
     "kind": "variable",
     "name": "sliceProtocol",
     "memberof": "dist/test.js",
@@ -1629,7 +1943,7 @@
     "importPath": "utils2js/dist/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 48,
+    "lineNumber": 50,
     "undocument": true,
     "type": {
       "types": [
@@ -1640,16 +1954,16 @@
   },
   {
     "kind": "index",
-    "content": "",
-    "longname": "C:\\Users\\Administrator\\Desktop\\github\\Utils2js\\README.md",
+    "content": "# Utils2js\r\n\r\n一个基于`TypeScript`和`esdoc`编写的工具方法\r\n\r\n相应的工具方法已生成文档\r\n",
+    "longname": "D:\\Users\\chen_huang\\Desktop\\github\\Utils2js\\README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\r\n  \"name\": \"utils2js\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Common tool method encapsulation\",\r\n  \"main\": \"index.js\",\r\n  \"directories\": {\r\n    \"lib\": \"lib\"\r\n  },\r\n  \"scripts\": {\r\n    \"dev\": \"webpack-dev-server --config webpack.config.js\",\r\n    \"prod\": \"webpack --colors --config webpack.config.js\",\r\n    \"publish\": \"npm publish ./publish\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"tsc\": \"tsc\",\r\n    \"pack\": \"npm run tsc && npm run doc\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Megan-TA/Utils2js.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"utils\",\r\n    \"utils2js\"\r\n  ],\r\n  \"author\": \"chen214\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Megan-TA/Utils2js/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Megan-TA/Utils2js#readme\",\r\n  \"devDependencies\": {\r\n    \"awesome-typescript-loader\": \"3.5.0\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\r\n    \"gulp\": \"^3.9.1\",\r\n    \"gulp-babel\": \"^7.0.1\",\r\n    \"gulp-plumber\": \"^1.2.0\",\r\n    \"gulp-uglify\": \"^3.0.0\",\r\n    \"html-webpack-plugin\": \"^3.2.0\",\r\n    \"mockjs\": \"^1.0.1-beta3\",\r\n    \"pump\": \"^3.0.0\",\r\n    \"source-map-loader\": \"^0.2.3\",\r\n    \"tslint\": \"^5.10.0\",\r\n    \"typescript\": \"^2.9.2\",\r\n    \"webpack\": \"3.5.5\",\r\n    \"webpack-dev-server\": \"2.7.1\",\r\n    \"webpack-merge\": \"^4.1.2\"\r\n  },\r\n  \"dependencies\": {}\r\n}\r\n",
-    "longname": "C:\\Users\\Administrator\\Desktop\\github\\Utils2js\\package.json",
+    "content": "{\r\n  \"name\": \"utils2js\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Common tool method encapsulation\",\r\n  \"main\": \"index.js\",\r\n  \"directories\": {\r\n    \"lib\": \"lib\"\r\n  },\r\n  \"scripts\": {\r\n    \"dev\": \"webpack-dev-server --config webpack.config.js\",\r\n    \"prod\": \"webpack --colors --config webpack.config.js\",\r\n    \"publish\": \"npm publish ./publish\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"tsc\": \"tsc\",\r\n    \"pack\": \"npm run tsc && npm run doc\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Megan-TA/Utils2js.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"utils\",\r\n    \"utils2js\"\r\n  ],\r\n  \"author\": \"chen214\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Megan-TA/Utils2js/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Megan-TA/Utils2js#readme\",\r\n  \"devDependencies\": {\r\n    \"awesome-typescript-loader\": \"3.5.0\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\r\n    \"gulp\": \"^3.9.1\",\r\n    \"gulp-babel\": \"^7.0.1\",\r\n    \"gulp-plumber\": \"^1.2.0\",\r\n    \"gulp-uglify\": \"^3.0.0\",\r\n    \"html-webpack-plugin\": \"^3.2.0\",\r\n    \"mockjs\": \"^1.0.1-beta3\",\r\n    \"pump\": \"^3.0.0\",\r\n    \"source-map-loader\": \"^0.2.3\",\r\n    \"tslint\": \"^5.10.0\",\r\n    \"typescript\": \"^2.9.2\",\r\n    \"webpack\": \"3.5.5\",\r\n    \"webpack-dev-server\": \"2.7.1\",\r\n    \"webpack-merge\": \"^4.1.2\"\r\n  },\r\n  \"dependencies\": {\r\n    \"dayjs\": \"^1.6.9\"\r\n  }\r\n}\r\n",
+    "longname": "D:\\Users\\chen_huang\\Desktop\\github\\Utils2js\\package.json",
     "name": "package.json",
     "static": true,
     "access": "public"

@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 662,
+  "end": 993,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 25,
+      "line": 45,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 662,
+    "end": 993,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 25,
+        "line": 45,
         "column": 0
       }
     },
@@ -1188,84 +1188,107 @@
                     }
                   }
                 ],
-                "directives": []
+                "directives": [],
+                "trailingComments": null
               },
-              "alternate": null
+              "alternate": null,
+              "trailingComments": null
+            },
+            "trailingComments": null
+          },
+          "trailingComments": null
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * 是否是IE浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+            "start": 407,
+            "end": 468,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 0
+              },
+              "end": {
+                "line": 22,
+                "column": 3
+              }
             }
           }
-        }
+        ]
       },
       {
         "type": "Identifier",
-        "start": 407,
-        "end": 438,
+        "start": 470,
+        "end": 501,
         "loc": {
           "start": {
-            "line": 19,
+            "line": 23,
             "column": 0
           },
           "end": {
-            "line": 19,
+            "line": 23,
             "column": 31
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 413,
-            "end": 437,
+            "start": 476,
+            "end": 500,
             "loc": {
               "start": {
-                "line": 19,
+                "line": 23,
                 "column": 6
               },
               "end": {
-                "line": 19,
+                "line": 23,
                 "column": 30
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 413,
-              "end": 417,
+              "start": 476,
+              "end": 480,
               "loc": {
                 "start": {
-                  "line": 19,
+                  "line": 23,
                   "column": 6
                 },
                 "end": {
-                  "line": 19,
+                  "line": 23,
                   "column": 10
                 },
                 "identifierName": "isIE"
               },
-              "name": "isIE"
+              "name": "isIE",
+              "leadingComments": null
             },
             "init": {
               "type": "BinaryExpression",
-              "start": 420,
-              "end": 437,
+              "start": 483,
+              "end": 500,
               "loc": {
                 "start": {
-                  "line": 19,
+                  "line": 23,
                   "column": 13
                 },
                 "end": {
-                  "line": 19,
+                  "line": 23,
                   "column": 30
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 420,
-                "end": 429,
+                "start": 483,
+                "end": 492,
                 "loc": {
                   "start": {
-                    "line": 19,
+                    "line": 23,
                     "column": 13
                   },
                   "end": {
-                    "line": 19,
+                    "line": 23,
                     "column": 22
                   },
                   "identifierName": "finalName"
@@ -1275,15 +1298,15 @@
               "operator": "==",
               "right": {
                 "type": "StringLiteral",
-                "start": 433,
-                "end": 437,
+                "start": 496,
+                "end": 500,
                 "loc": {
                   "start": {
-                    "line": 19,
+                    "line": 23,
                     "column": 26
                   },
                   "end": {
-                    "line": 19,
+                    "line": 23,
                     "column": 30
                   }
                 },
@@ -1293,85 +1316,87 @@
                 },
                 "value": "IE"
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
-        "trailingComments": []
+        "trailingComments": [],
+        "name": "_"
       },
       {
         "type": "Identifier",
-        "start": 440,
-        "end": 479,
+        "start": 570,
+        "end": 609,
         "loc": {
           "start": {
-            "line": 20,
+            "line": 28,
             "column": 0
           },
           "end": {
-            "line": 20,
+            "line": 28,
             "column": 39
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 446,
-            "end": 478,
+            "start": 576,
+            "end": 608,
             "loc": {
               "start": {
-                "line": 20,
+                "line": 28,
                 "column": 6
               },
               "end": {
-                "line": 20,
+                "line": 28,
                 "column": 38
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 446,
-              "end": 454,
+              "start": 576,
+              "end": 584,
               "loc": {
                 "start": {
-                  "line": 20,
+                  "line": 28,
                   "column": 6
                 },
                 "end": {
-                  "line": 20,
+                  "line": 28,
                   "column": 14
                 },
                 "identifierName": "isChrome"
               },
-              "name": "isChrome"
+              "name": "isChrome",
+              "leadingComments": null
             },
             "init": {
               "type": "BinaryExpression",
-              "start": 457,
-              "end": 478,
+              "start": 587,
+              "end": 608,
               "loc": {
                 "start": {
-                  "line": 20,
+                  "line": 28,
                   "column": 17
                 },
                 "end": {
-                  "line": 20,
+                  "line": 28,
                   "column": 38
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 457,
-                "end": 466,
+                "start": 587,
+                "end": 596,
                 "loc": {
                   "start": {
-                    "line": 20,
+                    "line": 28,
                     "column": 17
                   },
                   "end": {
-                    "line": 20,
+                    "line": 28,
                     "column": 26
                   },
                   "identifierName": "finalName"
@@ -1381,15 +1406,15 @@
               "operator": "==",
               "right": {
                 "type": "StringLiteral",
-                "start": 470,
-                "end": 478,
+                "start": 600,
+                "end": 608,
                 "loc": {
                   "start": {
-                    "line": 20,
+                    "line": 28,
                     "column": 30
                   },
                   "end": {
-                    "line": 20,
+                    "line": 28,
                     "column": 38
                   }
                 },
@@ -1399,85 +1424,87 @@
                 },
                 "value": "Chrome"
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
-        "trailingComments": []
+        "trailingComments": [],
+        "name": "_"
       },
       {
         "type": "Identifier",
-        "start": 481,
-        "end": 522,
+        "start": 679,
+        "end": 720,
         "loc": {
           "start": {
-            "line": 21,
+            "line": 33,
             "column": 0
           },
           "end": {
-            "line": 21,
+            "line": 33,
             "column": 41
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 487,
-            "end": 521,
+            "start": 685,
+            "end": 719,
             "loc": {
               "start": {
-                "line": 21,
+                "line": 33,
                 "column": 6
               },
               "end": {
-                "line": 21,
+                "line": 33,
                 "column": 40
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 487,
-              "end": 496,
+              "start": 685,
+              "end": 694,
               "loc": {
                 "start": {
-                  "line": 21,
+                  "line": 33,
                   "column": 6
                 },
                 "end": {
-                  "line": 21,
+                  "line": 33,
                   "column": 15
                 },
                 "identifierName": "isFirefox"
               },
-              "name": "isFirefox"
+              "name": "isFirefox",
+              "leadingComments": null
             },
             "init": {
               "type": "BinaryExpression",
-              "start": 499,
-              "end": 521,
+              "start": 697,
+              "end": 719,
               "loc": {
                 "start": {
-                  "line": 21,
+                  "line": 33,
                   "column": 18
                 },
                 "end": {
-                  "line": 21,
+                  "line": 33,
                   "column": 40
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 499,
-                "end": 508,
+                "start": 697,
+                "end": 706,
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 33,
                     "column": 18
                   },
                   "end": {
-                    "line": 21,
+                    "line": 33,
                     "column": 27
                   },
                   "identifierName": "finalName"
@@ -1487,15 +1514,15 @@
               "operator": "==",
               "right": {
                 "type": "StringLiteral",
-                "start": 512,
-                "end": 521,
+                "start": 710,
+                "end": 719,
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 33,
                     "column": 31
                   },
                   "end": {
-                    "line": 21,
+                    "line": 33,
                     "column": 40
                   }
                 },
@@ -1505,85 +1532,87 @@
                 },
                 "value": "Firefox"
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
-        "trailingComments": []
+        "trailingComments": [],
+        "name": "_"
       },
       {
         "type": "Identifier",
-        "start": 524,
-        "end": 561,
+        "start": 788,
+        "end": 825,
         "loc": {
           "start": {
-            "line": 22,
+            "line": 38,
             "column": 0
           },
           "end": {
-            "line": 22,
+            "line": 38,
             "column": 37
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 530,
-            "end": 560,
+            "start": 794,
+            "end": 824,
             "loc": {
               "start": {
-                "line": 22,
+                "line": 38,
                 "column": 6
               },
               "end": {
-                "line": 22,
+                "line": 38,
                 "column": 36
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 530,
-              "end": 537,
+              "start": 794,
+              "end": 801,
               "loc": {
                 "start": {
-                  "line": 22,
+                  "line": 38,
                   "column": 6
                 },
                 "end": {
-                  "line": 22,
+                  "line": 38,
                   "column": 13
                 },
                 "identifierName": "isOpera"
               },
-              "name": "isOpera"
+              "name": "isOpera",
+              "leadingComments": null
             },
             "init": {
               "type": "BinaryExpression",
-              "start": 540,
-              "end": 560,
+              "start": 804,
+              "end": 824,
               "loc": {
                 "start": {
-                  "line": 22,
+                  "line": 38,
                   "column": 16
                 },
                 "end": {
-                  "line": 22,
+                  "line": 38,
                   "column": 36
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 540,
-                "end": 549,
+                "start": 804,
+                "end": 813,
                 "loc": {
                   "start": {
-                    "line": 22,
+                    "line": 38,
                     "column": 16
                   },
                   "end": {
-                    "line": 22,
+                    "line": 38,
                     "column": 25
                   },
                   "identifierName": "finalName"
@@ -1593,15 +1622,15 @@
               "operator": "==",
               "right": {
                 "type": "StringLiteral",
-                "start": 553,
-                "end": 560,
+                "start": 817,
+                "end": 824,
                 "loc": {
                   "start": {
-                    "line": 22,
+                    "line": 38,
                     "column": 29
                   },
                   "end": {
-                    "line": 22,
+                    "line": 38,
                     "column": 36
                   }
                 },
@@ -1611,85 +1640,87 @@
                 },
                 "value": "Opera"
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
-        "trailingComments": []
+        "trailingComments": [],
+        "name": "_"
       },
       {
         "type": "Identifier",
-        "start": 563,
-        "end": 602,
+        "start": 894,
+        "end": 933,
         "loc": {
           "start": {
-            "line": 23,
+            "line": 43,
             "column": 0
           },
           "end": {
-            "line": 23,
+            "line": 43,
             "column": 39
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 569,
-            "end": 601,
+            "start": 900,
+            "end": 932,
             "loc": {
               "start": {
-                "line": 23,
+                "line": 43,
                 "column": 6
               },
               "end": {
-                "line": 23,
+                "line": 43,
                 "column": 38
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 569,
-              "end": 577,
+              "start": 900,
+              "end": 908,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 43,
                   "column": 6
                 },
                 "end": {
-                  "line": 23,
+                  "line": 43,
                   "column": 14
                 },
                 "identifierName": "isSafari"
               },
-              "name": "isSafari"
+              "name": "isSafari",
+              "leadingComments": null
             },
             "init": {
               "type": "BinaryExpression",
-              "start": 580,
-              "end": 601,
+              "start": 911,
+              "end": 932,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 43,
                   "column": 17
                 },
                 "end": {
-                  "line": 23,
+                  "line": 43,
                   "column": 38
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 580,
-                "end": 589,
+                "start": 911,
+                "end": 920,
                 "loc": {
                   "start": {
-                    "line": 23,
+                    "line": 43,
                     "column": 17
                   },
                   "end": {
-                    "line": 23,
+                    "line": 43,
                     "column": 26
                   },
                   "identifierName": "finalName"
@@ -1699,15 +1730,15 @@
               "operator": "==",
               "right": {
                 "type": "StringLiteral",
-                "start": 593,
-                "end": 601,
+                "start": 924,
+                "end": 932,
                 "loc": {
                   "start": {
-                    "line": 23,
+                    "line": 43,
                     "column": 30
                   },
                   "end": {
-                    "line": 23,
+                    "line": 43,
                     "column": 38
                   }
                 },
@@ -1717,25 +1748,26 @@
                 },
                 "value": "Safari"
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
+        "name": "_",
         "trailingComments": []
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
@@ -1743,29 +1775,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 613,
-            "end": 617,
+            "start": 944,
+            "end": 948,
             "loc": {
               "start": {
-                "line": 24,
+                "line": 44,
                 "column": 9
               },
               "end": {
-                "line": 24,
+                "line": 44,
                 "column": 13
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 613,
-              "end": 617,
+              "start": 944,
+              "end": 948,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 9
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 13
                 },
                 "identifierName": "isIE"
@@ -1774,15 +1806,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 613,
-              "end": 617,
+              "start": 944,
+              "end": 948,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 9
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 13
                 },
                 "identifierName": "isIE"
@@ -1792,29 +1824,29 @@
           },
           {
             "type": "ExportSpecifier",
-            "start": 619,
-            "end": 627,
+            "start": 950,
+            "end": 958,
             "loc": {
               "start": {
-                "line": 24,
+                "line": 44,
                 "column": 15
               },
               "end": {
-                "line": 24,
+                "line": 44,
                 "column": 23
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 619,
-              "end": 627,
+              "start": 950,
+              "end": 958,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 15
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 23
                 },
                 "identifierName": "isChrome"
@@ -1823,15 +1855,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 619,
-              "end": 627,
+              "start": 950,
+              "end": 958,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 15
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 23
                 },
                 "identifierName": "isChrome"
@@ -1841,29 +1873,29 @@
           },
           {
             "type": "ExportSpecifier",
-            "start": 629,
-            "end": 638,
+            "start": 960,
+            "end": 969,
             "loc": {
               "start": {
-                "line": 24,
+                "line": 44,
                 "column": 25
               },
               "end": {
-                "line": 24,
+                "line": 44,
                 "column": 34
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 629,
-              "end": 638,
+              "start": 960,
+              "end": 969,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 25
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 34
                 },
                 "identifierName": "isFirefox"
@@ -1872,15 +1904,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 629,
-              "end": 638,
+              "start": 960,
+              "end": 969,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 25
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 34
                 },
                 "identifierName": "isFirefox"
@@ -1890,29 +1922,29 @@
           },
           {
             "type": "ExportSpecifier",
-            "start": 640,
-            "end": 647,
+            "start": 971,
+            "end": 978,
             "loc": {
               "start": {
-                "line": 24,
+                "line": 44,
                 "column": 36
               },
               "end": {
-                "line": 24,
+                "line": 44,
                 "column": 43
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 640,
-              "end": 647,
+              "start": 971,
+              "end": 978,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 36
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 43
                 },
                 "identifierName": "isOpera"
@@ -1921,15 +1953,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 640,
-              "end": 647,
+              "start": 971,
+              "end": 978,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 36
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 43
                 },
                 "identifierName": "isOpera"
@@ -1939,29 +1971,29 @@
           },
           {
             "type": "ExportSpecifier",
-            "start": 649,
-            "end": 657,
+            "start": 980,
+            "end": 988,
             "loc": {
               "start": {
-                "line": 24,
+                "line": 44,
                 "column": 45
               },
               "end": {
-                "line": 24,
+                "line": 44,
                 "column": 53
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 649,
-              "end": 657,
+              "start": 980,
+              "end": 988,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 45
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 53
                 },
                 "identifierName": "isSafari"
@@ -1970,15 +2002,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 649,
-              "end": 657,
+              "start": 980,
+              "end": 988,
               "loc": {
                 "start": {
-                  "line": 24,
+                  "line": 44,
                   "column": 45
                 },
                 "end": {
-                  "line": 24,
+                  "line": 44,
                   "column": 53
                 },
                 "identifierName": "isSafari"
@@ -1991,89 +2023,90 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 407,
-          "end": 438,
+          "start": 470,
+          "end": 501,
           "loc": {
             "start": {
-              "line": 19,
+              "line": 23,
               "column": 0
             },
             "end": {
-              "line": 19,
+              "line": 23,
               "column": 31
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 413,
-              "end": 437,
+              "start": 476,
+              "end": 500,
               "loc": {
                 "start": {
-                  "line": 19,
+                  "line": 23,
                   "column": 6
                 },
                 "end": {
-                  "line": 19,
+                  "line": 23,
                   "column": 30
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 413,
-                "end": 417,
+                "start": 476,
+                "end": 480,
                 "loc": {
                   "start": {
-                    "line": 19,
+                    "line": 23,
                     "column": 6
                   },
                   "end": {
-                    "line": 19,
+                    "line": 23,
                     "column": 10
                   },
                   "identifierName": "isIE"
                 },
-                "name": "isIE"
+                "name": "isIE",
+                "leadingComments": null
               },
               "init": {
                 "type": "BinaryExpression",
-                "start": 420,
-                "end": 437,
+                "start": 483,
+                "end": 500,
                 "loc": {
                   "start": {
-                    "line": 19,
+                    "line": 23,
                     "column": 13
                   },
                   "end": {
-                    "line": 19,
+                    "line": 23,
                     "column": 30
                   }
                 },
                 "left": {
                   "type": "Identifier",
-                  "start": 420,
-                  "end": 429,
+                  "start": 483,
+                  "end": 492,
                   "loc": {
                     "start": {
-                      "line": 19,
+                      "line": 23,
                       "column": 13
                     },
                     "end": {
-                      "line": 19,
+                      "line": 23,
                       "column": 22
                     },
                     "identifierName": "finalName"
@@ -2083,15 +2116,15 @@
                 "operator": "==",
                 "right": {
                   "type": "StringLiteral",
-                  "start": 433,
-                  "end": 437,
+                  "start": 496,
+                  "end": 500,
                   "loc": {
                     "start": {
-                      "line": 19,
+                      "line": 23,
                       "column": 26
                     },
                     "end": {
-                      "line": 19,
+                      "line": 23,
                       "column": 30
                     }
                   },
@@ -2101,12 +2134,47 @@
                   },
                   "value": "IE"
                 }
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
-          "trailingComments": []
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是IE浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 407,
+              "end": 468,
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 0
+                },
+                "end": {
+                  "line": 22,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Chrome浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 503,
+              "end": 568,
+              "loc": {
+                "start": {
+                  "line": 24,
+                  "column": 0
+                },
+                "end": {
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ]
         },
         "specifiers": null,
         "source": null,
@@ -2114,89 +2182,90 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 440,
-          "end": 479,
+          "start": 570,
+          "end": 609,
           "loc": {
             "start": {
-              "line": 20,
+              "line": 28,
               "column": 0
             },
             "end": {
-              "line": 20,
+              "line": 28,
               "column": 39
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 446,
-              "end": 478,
+              "start": 576,
+              "end": 608,
               "loc": {
                 "start": {
-                  "line": 20,
+                  "line": 28,
                   "column": 6
                 },
                 "end": {
-                  "line": 20,
+                  "line": 28,
                   "column": 38
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 446,
-                "end": 454,
+                "start": 576,
+                "end": 584,
                 "loc": {
                   "start": {
-                    "line": 20,
+                    "line": 28,
                     "column": 6
                   },
                   "end": {
-                    "line": 20,
+                    "line": 28,
                     "column": 14
                   },
                   "identifierName": "isChrome"
                 },
-                "name": "isChrome"
+                "name": "isChrome",
+                "leadingComments": null
               },
               "init": {
                 "type": "BinaryExpression",
-                "start": 457,
-                "end": 478,
+                "start": 587,
+                "end": 608,
                 "loc": {
                   "start": {
-                    "line": 20,
+                    "line": 28,
                     "column": 17
                   },
                   "end": {
-                    "line": 20,
+                    "line": 28,
                     "column": 38
                   }
                 },
                 "left": {
                   "type": "Identifier",
-                  "start": 457,
-                  "end": 466,
+                  "start": 587,
+                  "end": 596,
                   "loc": {
                     "start": {
-                      "line": 20,
+                      "line": 28,
                       "column": 17
                     },
                     "end": {
-                      "line": 20,
+                      "line": 28,
                       "column": 26
                     },
                     "identifierName": "finalName"
@@ -2206,15 +2275,15 @@
                 "operator": "==",
                 "right": {
                   "type": "StringLiteral",
-                  "start": 470,
-                  "end": 478,
+                  "start": 600,
+                  "end": 608,
                   "loc": {
                     "start": {
-                      "line": 20,
+                      "line": 28,
                       "column": 30
                     },
                     "end": {
-                      "line": 20,
+                      "line": 28,
                       "column": 38
                     }
                   },
@@ -2224,12 +2293,47 @@
                   },
                   "value": "Chrome"
                 }
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
-          "trailingComments": []
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Chrome浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 503,
+              "end": 568,
+              "loc": {
+                "start": {
+                  "line": 24,
+                  "column": 0
+                },
+                "end": {
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Firefox浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 611,
+              "end": 677,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 0
+                },
+                "end": {
+                  "line": 32,
+                  "column": 3
+                }
+              }
+            }
+          ]
         },
         "specifiers": null,
         "source": null,
@@ -2237,89 +2341,90 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 481,
-          "end": 522,
+          "start": 679,
+          "end": 720,
           "loc": {
             "start": {
-              "line": 21,
+              "line": 33,
               "column": 0
             },
             "end": {
-              "line": 21,
+              "line": 33,
               "column": 41
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 487,
-              "end": 521,
+              "start": 685,
+              "end": 719,
               "loc": {
                 "start": {
-                  "line": 21,
+                  "line": 33,
                   "column": 6
                 },
                 "end": {
-                  "line": 21,
+                  "line": 33,
                   "column": 40
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 487,
-                "end": 496,
+                "start": 685,
+                "end": 694,
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 33,
                     "column": 6
                   },
                   "end": {
-                    "line": 21,
+                    "line": 33,
                     "column": 15
                   },
                   "identifierName": "isFirefox"
                 },
-                "name": "isFirefox"
+                "name": "isFirefox",
+                "leadingComments": null
               },
               "init": {
                 "type": "BinaryExpression",
-                "start": 499,
-                "end": 521,
+                "start": 697,
+                "end": 719,
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 33,
                     "column": 18
                   },
                   "end": {
-                    "line": 21,
+                    "line": 33,
                     "column": 40
                   }
                 },
                 "left": {
                   "type": "Identifier",
-                  "start": 499,
-                  "end": 508,
+                  "start": 697,
+                  "end": 706,
                   "loc": {
                     "start": {
-                      "line": 21,
+                      "line": 33,
                       "column": 18
                     },
                     "end": {
-                      "line": 21,
+                      "line": 33,
                       "column": 27
                     },
                     "identifierName": "finalName"
@@ -2329,15 +2434,15 @@
                 "operator": "==",
                 "right": {
                   "type": "StringLiteral",
-                  "start": 512,
-                  "end": 521,
+                  "start": 710,
+                  "end": 719,
                   "loc": {
                     "start": {
-                      "line": 21,
+                      "line": 33,
                       "column": 31
                     },
                     "end": {
-                      "line": 21,
+                      "line": 33,
                       "column": 40
                     }
                   },
@@ -2347,12 +2452,47 @@
                   },
                   "value": "Firefox"
                 }
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
-          "trailingComments": []
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Firefox浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 611,
+              "end": 677,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 0
+                },
+                "end": {
+                  "line": 32,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Opera浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 722,
+              "end": 786,
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 0
+                },
+                "end": {
+                  "line": 37,
+                  "column": 3
+                }
+              }
+            }
+          ]
         },
         "specifiers": null,
         "source": null,
@@ -2360,89 +2500,90 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 524,
-          "end": 561,
+          "start": 788,
+          "end": 825,
           "loc": {
             "start": {
-              "line": 22,
+              "line": 38,
               "column": 0
             },
             "end": {
-              "line": 22,
+              "line": 38,
               "column": 37
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 530,
-              "end": 560,
+              "start": 794,
+              "end": 824,
               "loc": {
                 "start": {
-                  "line": 22,
+                  "line": 38,
                   "column": 6
                 },
                 "end": {
-                  "line": 22,
+                  "line": 38,
                   "column": 36
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 530,
-                "end": 537,
+                "start": 794,
+                "end": 801,
                 "loc": {
                   "start": {
-                    "line": 22,
+                    "line": 38,
                     "column": 6
                   },
                   "end": {
-                    "line": 22,
+                    "line": 38,
                     "column": 13
                   },
                   "identifierName": "isOpera"
                 },
-                "name": "isOpera"
+                "name": "isOpera",
+                "leadingComments": null
               },
               "init": {
                 "type": "BinaryExpression",
-                "start": 540,
-                "end": 560,
+                "start": 804,
+                "end": 824,
                 "loc": {
                   "start": {
-                    "line": 22,
+                    "line": 38,
                     "column": 16
                   },
                   "end": {
-                    "line": 22,
+                    "line": 38,
                     "column": 36
                   }
                 },
                 "left": {
                   "type": "Identifier",
-                  "start": 540,
-                  "end": 549,
+                  "start": 804,
+                  "end": 813,
                   "loc": {
                     "start": {
-                      "line": 22,
+                      "line": 38,
                       "column": 16
                     },
                     "end": {
-                      "line": 22,
+                      "line": 38,
                       "column": 25
                     },
                     "identifierName": "finalName"
@@ -2452,15 +2593,15 @@
                 "operator": "==",
                 "right": {
                   "type": "StringLiteral",
-                  "start": 553,
-                  "end": 560,
+                  "start": 817,
+                  "end": 824,
                   "loc": {
                     "start": {
-                      "line": 22,
+                      "line": 38,
                       "column": 29
                     },
                     "end": {
-                      "line": 22,
+                      "line": 38,
                       "column": 36
                     }
                   },
@@ -2470,12 +2611,47 @@
                   },
                   "value": "Opera"
                 }
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
-          "trailingComments": []
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Opera浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 722,
+              "end": 786,
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 0
+                },
+                "end": {
+                  "line": 37,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Safari浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 827,
+              "end": 892,
+              "loc": {
+                "start": {
+                  "line": 39,
+                  "column": 0
+                },
+                "end": {
+                  "line": 42,
+                  "column": 3
+                }
+              }
+            }
+          ]
         },
         "specifiers": null,
         "source": null,
@@ -2483,89 +2659,90 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 604,
-        "end": 660,
+        "start": 935,
+        "end": 991,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 44,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 44,
             "column": 56
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 563,
-          "end": 602,
+          "start": 894,
+          "end": 933,
           "loc": {
             "start": {
-              "line": 23,
+              "line": 43,
               "column": 0
             },
             "end": {
-              "line": 23,
+              "line": 43,
               "column": 39
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 569,
-              "end": 601,
+              "start": 900,
+              "end": 932,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 43,
                   "column": 6
                 },
                 "end": {
-                  "line": 23,
+                  "line": 43,
                   "column": 38
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 569,
-                "end": 577,
+                "start": 900,
+                "end": 908,
                 "loc": {
                   "start": {
-                    "line": 23,
+                    "line": 43,
                     "column": 6
                   },
                   "end": {
-                    "line": 23,
+                    "line": 43,
                     "column": 14
                   },
                   "identifierName": "isSafari"
                 },
-                "name": "isSafari"
+                "name": "isSafari",
+                "leadingComments": null
               },
               "init": {
                 "type": "BinaryExpression",
-                "start": 580,
-                "end": 601,
+                "start": 911,
+                "end": 932,
                 "loc": {
                   "start": {
-                    "line": 23,
+                    "line": 43,
                     "column": 17
                   },
                   "end": {
-                    "line": 23,
+                    "line": 43,
                     "column": 38
                   }
                 },
                 "left": {
                   "type": "Identifier",
-                  "start": 580,
-                  "end": 589,
+                  "start": 911,
+                  "end": 920,
                   "loc": {
                     "start": {
-                      "line": 23,
+                      "line": 43,
                       "column": 17
                     },
                     "end": {
-                      "line": 23,
+                      "line": 43,
                       "column": 26
                     },
                     "identifierName": "finalName"
@@ -2575,15 +2752,15 @@
                 "operator": "==",
                 "right": {
                   "type": "StringLiteral",
-                  "start": 593,
-                  "end": 601,
+                  "start": 924,
+                  "end": 932,
                   "loc": {
                     "start": {
-                      "line": 23,
+                      "line": 43,
                       "column": 30
                     },
                     "end": {
-                      "line": 23,
+                      "line": 43,
                       "column": 38
                     }
                   },
@@ -2593,11 +2770,29 @@
                   },
                   "value": "Safari"
                 }
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * 是否是Safari浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+              "start": 827,
+              "end": 892,
+              "loc": {
+                "start": {
+                  "line": 39,
+                  "column": 0
+                },
+                "end": {
+                  "line": 42,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
         },
         "specifiers": null,
@@ -2620,6 +2815,86 @@
         },
         "end": {
           "line": 4,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是IE浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 407,
+      "end": 468,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Chrome浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 503,
+      "end": 568,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Firefox浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 611,
+      "end": 677,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Opera浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 722,
+      "end": 786,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Safari浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 827,
+      "end": 892,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
           "column": 3
         }
       }
@@ -4926,6 +5201,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是IE浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 407,
+      "end": 468,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "const",
         "keyword": "const",
@@ -4940,15 +5231,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 407,
-      "end": 412,
+      "start": 470,
+      "end": 475,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 5
         }
       }
@@ -4966,15 +5257,15 @@
         "binop": null
       },
       "value": "isIE",
-      "start": 413,
-      "end": 417,
+      "start": 476,
+      "end": 480,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 6
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 10
         }
       }
@@ -4993,15 +5284,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 418,
-      "end": 419,
+      "start": 481,
+      "end": 482,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 11
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 12
         }
       }
@@ -5019,15 +5310,15 @@
         "binop": null
       },
       "value": "finalName",
-      "start": 420,
-      "end": 429,
+      "start": 483,
+      "end": 492,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 13
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 22
         }
       }
@@ -5046,15 +5337,15 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 430,
-      "end": 432,
+      "start": 493,
+      "end": 495,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 23
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 25
         }
       }
@@ -5073,15 +5364,15 @@
         "updateContext": null
       },
       "value": "IE",
-      "start": 433,
-      "end": 437,
+      "start": 496,
+      "end": 500,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 26
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 30
         }
       }
@@ -5099,16 +5390,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 437,
-      "end": 438,
+      "start": 500,
+      "end": 501,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 23,
           "column": 30
         },
         "end": {
-          "line": 19,
+          "line": 23,
           "column": 31
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Chrome浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 503,
+      "end": 568,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
         }
       }
     },
@@ -5127,15 +5434,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 440,
-      "end": 445,
+      "start": 570,
+      "end": 575,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 5
         }
       }
@@ -5153,15 +5460,15 @@
         "binop": null
       },
       "value": "isChrome",
-      "start": 446,
-      "end": 454,
+      "start": 576,
+      "end": 584,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 6
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 14
         }
       }
@@ -5180,15 +5487,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 455,
-      "end": 456,
+      "start": 585,
+      "end": 586,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 15
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 16
         }
       }
@@ -5206,15 +5513,15 @@
         "binop": null
       },
       "value": "finalName",
-      "start": 457,
-      "end": 466,
+      "start": 587,
+      "end": 596,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 17
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 26
         }
       }
@@ -5233,15 +5540,15 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 467,
-      "end": 469,
+      "start": 597,
+      "end": 599,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 27
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 29
         }
       }
@@ -5260,15 +5567,15 @@
         "updateContext": null
       },
       "value": "Chrome",
-      "start": 470,
-      "end": 478,
+      "start": 600,
+      "end": 608,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 30
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 38
         }
       }
@@ -5286,16 +5593,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 478,
-      "end": 479,
+      "start": 608,
+      "end": 609,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 28,
           "column": 38
         },
         "end": {
-          "line": 20,
+          "line": 28,
           "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Firefox浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 611,
+      "end": 677,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 3
         }
       }
     },
@@ -5314,15 +5637,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 481,
-      "end": 486,
+      "start": 679,
+      "end": 684,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 0
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 5
         }
       }
@@ -5340,15 +5663,15 @@
         "binop": null
       },
       "value": "isFirefox",
-      "start": 487,
-      "end": 496,
+      "start": 685,
+      "end": 694,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 6
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 15
         }
       }
@@ -5367,15 +5690,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 497,
-      "end": 498,
+      "start": 695,
+      "end": 696,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 16
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 17
         }
       }
@@ -5393,15 +5716,15 @@
         "binop": null
       },
       "value": "finalName",
-      "start": 499,
-      "end": 508,
+      "start": 697,
+      "end": 706,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 18
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 27
         }
       }
@@ -5420,15 +5743,15 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 509,
-      "end": 511,
+      "start": 707,
+      "end": 709,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 28
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 30
         }
       }
@@ -5447,15 +5770,15 @@
         "updateContext": null
       },
       "value": "Firefox",
-      "start": 512,
-      "end": 521,
+      "start": 710,
+      "end": 719,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 31
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 40
         }
       }
@@ -5473,16 +5796,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 521,
-      "end": 522,
+      "start": 719,
+      "end": 720,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 33,
           "column": 40
         },
         "end": {
-          "line": 21,
+          "line": 33,
           "column": 41
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Opera浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 722,
+      "end": 786,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 3
         }
       }
     },
@@ -5501,15 +5840,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 524,
-      "end": 529,
+      "start": 788,
+      "end": 793,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 0
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 5
         }
       }
@@ -5527,15 +5866,15 @@
         "binop": null
       },
       "value": "isOpera",
-      "start": 530,
-      "end": 537,
+      "start": 794,
+      "end": 801,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 6
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 13
         }
       }
@@ -5554,15 +5893,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 538,
-      "end": 539,
+      "start": 802,
+      "end": 803,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 14
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 15
         }
       }
@@ -5580,15 +5919,15 @@
         "binop": null
       },
       "value": "finalName",
-      "start": 540,
-      "end": 549,
+      "start": 804,
+      "end": 813,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 16
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 25
         }
       }
@@ -5607,15 +5946,15 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 550,
-      "end": 552,
+      "start": 814,
+      "end": 816,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 26
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 28
         }
       }
@@ -5634,15 +5973,15 @@
         "updateContext": null
       },
       "value": "Opera",
-      "start": 553,
-      "end": 560,
+      "start": 817,
+      "end": 824,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 29
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 36
         }
       }
@@ -5660,16 +5999,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 560,
-      "end": 561,
+      "start": 824,
+      "end": 825,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 38,
           "column": 36
         },
         "end": {
-          "line": 22,
+          "line": 38,
           "column": 37
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * 是否是Safari浏览器\r\n * @returns {boolean} true 是的 false 不是\r\n ",
+      "start": 827,
+      "end": 892,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 3
         }
       }
     },
@@ -5688,15 +6043,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 563,
-      "end": 568,
+      "start": 894,
+      "end": 899,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 5
         }
       }
@@ -5714,15 +6069,15 @@
         "binop": null
       },
       "value": "isSafari",
-      "start": 569,
-      "end": 577,
+      "start": 900,
+      "end": 908,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 6
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 14
         }
       }
@@ -5741,15 +6096,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 578,
-      "end": 579,
+      "start": 909,
+      "end": 910,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 15
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 16
         }
       }
@@ -5767,15 +6122,15 @@
         "binop": null
       },
       "value": "finalName",
-      "start": 580,
-      "end": 589,
+      "start": 911,
+      "end": 920,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 17
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 26
         }
       }
@@ -5794,15 +6149,15 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 590,
-      "end": 592,
+      "start": 921,
+      "end": 923,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 27
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 29
         }
       }
@@ -5821,15 +6176,15 @@
         "updateContext": null
       },
       "value": "Safari",
-      "start": 593,
-      "end": 601,
+      "start": 924,
+      "end": 932,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 30
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 38
         }
       }
@@ -5847,15 +6202,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 601,
-      "end": 602,
+      "start": 932,
+      "end": 933,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 43,
           "column": 38
         },
         "end": {
-          "line": 23,
+          "line": 43,
           "column": 39
         }
       }
@@ -5875,15 +6230,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 604,
-      "end": 610,
+      "start": 935,
+      "end": 941,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 0
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 6
         }
       }
@@ -5900,15 +6255,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 611,
-      "end": 612,
+      "start": 942,
+      "end": 943,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 7
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 8
         }
       }
@@ -5926,15 +6281,15 @@
         "binop": null
       },
       "value": "isIE",
-      "start": 613,
-      "end": 617,
+      "start": 944,
+      "end": 948,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 9
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 13
         }
       }
@@ -5952,15 +6307,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 617,
-      "end": 618,
+      "start": 948,
+      "end": 949,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 13
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 14
         }
       }
@@ -5978,15 +6333,15 @@
         "binop": null
       },
       "value": "isChrome",
-      "start": 619,
-      "end": 627,
+      "start": 950,
+      "end": 958,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 15
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 23
         }
       }
@@ -6004,15 +6359,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 627,
-      "end": 628,
+      "start": 958,
+      "end": 959,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 23
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 24
         }
       }
@@ -6030,15 +6385,15 @@
         "binop": null
       },
       "value": "isFirefox",
-      "start": 629,
-      "end": 638,
+      "start": 960,
+      "end": 969,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 25
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 34
         }
       }
@@ -6056,15 +6411,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 638,
-      "end": 639,
+      "start": 969,
+      "end": 970,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 34
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 35
         }
       }
@@ -6082,15 +6437,15 @@
         "binop": null
       },
       "value": "isOpera",
-      "start": 640,
-      "end": 647,
+      "start": 971,
+      "end": 978,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 36
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 43
         }
       }
@@ -6108,15 +6463,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 647,
-      "end": 648,
+      "start": 978,
+      "end": 979,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 43
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 44
         }
       }
@@ -6134,15 +6489,15 @@
         "binop": null
       },
       "value": "isSafari",
-      "start": 649,
-      "end": 657,
+      "start": 980,
+      "end": 988,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 45
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 53
         }
       }
@@ -6159,15 +6514,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 658,
-      "end": 659,
+      "start": 989,
+      "end": 990,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 54
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 55
         }
       }
@@ -6185,15 +6540,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 659,
-      "end": 660,
+      "start": 990,
+      "end": 991,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 44,
           "column": 55
         },
         "end": {
-          "line": 24,
+          "line": 44,
           "column": 56
         }
       }
@@ -6211,15 +6566,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 662,
-      "end": 662,
+      "start": 993,
+      "end": 993,
       "loc": {
         "start": {
-          "line": 25,
+          "line": 45,
           "column": 0
         },
         "end": {
-          "line": 25,
+          "line": 45,
           "column": 0
         }
       }

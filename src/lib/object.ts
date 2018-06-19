@@ -3,11 +3,12 @@
  * @Author: chen_huang
  * @Date: 2018-06-13 17:00:34
  * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-14 14:42:29
+ * @Last Modified time: 2018-06-19 15:18:44
  */
 
 /**
  * 浅拷贝（不包括原型链属性拷贝）
+ * @example
  * simpleCopy({}, { name: '张三' })
  * @param {object} [destination={}] 默认空对象
  * @param {object} source 待拷贝对象
@@ -22,6 +23,7 @@ function simpleCopy (destination: object = {}, source: object): object {
 
 /**
  * 获取指定对象下指定字段的值，支持递归
+ * @example
  * prop({a: {b: 1}}, 'a.b') => 1
  * prop({a: {b: 1}}, 'a')   => {b: 1}
  * prop({a: {b: 1}}, 'm')   => null
@@ -45,6 +47,7 @@ function prop (obj: object = {}, path: string = '') {
 
 /**
  * 深拷贝（基于递归）
+ * @example
  * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
  * @param {object} [source={}] 原始对象
  * @param {object} [deepSource] 可选 默认空对象
@@ -61,13 +64,14 @@ function deepCopy (source: object = {}, deepSource?: object): object {
     }
     return deepSource
 }
+
 /**
- * 自定义插值
- * 适用于取到接口返回的JSON根据需要转换成指定格式的字符串
+ * 自定义插值 适用于取到接口返回的JSON根据需要转换成指定格式的字符串
+ * @example
  * 基于位置的插值表达式 interpolation('{0}{3}{1}{1}{2}', 'A', 'B', 'C', 'D') => ADBBC
  * 基于字段的插值表达式 interpolation('{name} - {userID}', {name: 'test',userID: 1, age: 12}) =>test - 1
- * @param  {string} param 字符串
- * @param  {any} ...options 字符串|对象
+ * @param {string} param  字符串
+ * @param {*} options ...options 字符串|对象
  * @returns {string} 最终输出的字符串
  */
 function interpolation (param: string, ...options): string {

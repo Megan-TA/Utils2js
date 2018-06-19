@@ -34,7 +34,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -44,6 +46,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -68,6 +71,34 @@
           
           
           <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span><span class="code" data-ice="signature">: {&quot;rules&quot;: <span>*</span>}</span>
         </p>
       </div>
       <div>
@@ -129,7 +160,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>float &#x89E3;&#x51B3;js&#x5904;&#x7406;&#x6D6E;&#x70B9;&#x6570;&#x4E0D;&#x7CBE;&#x786E;&#x95EE;&#x9898;</p>
+</div>
       </div>
     </td>
     <td>
@@ -151,13 +183,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
       </div>
     </td>
     <td>
@@ -179,13 +212,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Firefox&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
       </div>
     </td>
     <td>
@@ -207,13 +241,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isIE">isIE</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isIE">isIE</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;IE&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
       </div>
     </td>
     <td>
@@ -235,13 +270,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isOpera">isOpera</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isOpera">isOpera</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Opera&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
       </div>
     </td>
     <td>
@@ -263,13 +299,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isSafari">isSafari</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="variable/index.html#static-variable-isSafari">isSafari</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Safari&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
       </div>
     </td>
     <td>
@@ -294,11 +331,54 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/index.js.html#lineNumber55">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/index.js.html#lineNumber70">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Logger} from &apos;<span><a href="file/dist/lib/index.js.html#lineNumber55">utils2js/dist/lib/index.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Logger} from &apos;<span><a href="file/dist/lib/index.js.html#lineNumber70">utils2js/dist/lib/index.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-variable-RegExtension">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">RegExtension</span><span class="code" data-ice="signature">: {&quot;rules&quot;: <span>*</span>}</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/dist/lib/regex.js.html#lineNumber8">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {RegExtension} from &apos;<span><a href="file/dist/lib/regex.js.html#lineNumber8">utils2js/dist/lib/regex.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -337,11 +417,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/index.js.html#lineNumber56">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/index.js.html#lineNumber71">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Type} from &apos;<span><a href="file/dist/lib/index.js.html#lineNumber56">utils2js/dist/lib/index.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Type} from &apos;<span><a href="file/dist/lib/index.js.html#lineNumber71">utils2js/dist/lib/index.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -380,14 +460,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/number.js.html#lineNumber70">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/number.js.html#lineNumber83">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {float} from &apos;<span><a href="file/dist/lib/number.js.html#lineNumber70">utils2js/dist/lib/number.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {float} from &apos;<span><a href="file/dist/lib/number.js.html#lineNumber83">utils2js/dist/lib/number.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>float &#x89E3;&#x51B3;js&#x5904;&#x7406;&#x6D6E;&#x70B9;&#x6570;&#x4E0D;&#x7CBE;&#x786E;&#x95EE;&#x9898;</p>
+</div>
 
   
 
@@ -419,25 +500,39 @@
     
     
     
-    <span class="code" data-ice="name">isChrome</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">isChrome</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber20">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber28">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isChrome} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber20">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isChrome} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber28">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
 
   
 
   <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>true &#x662F;&#x7684; false &#x4E0D;&#x662F;</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -462,25 +557,39 @@
     
     
     
-    <span class="code" data-ice="name">isFirefox</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">isFirefox</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber21">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber33">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isFirefox} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber21">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isFirefox} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber33">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Firefox&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
 
   
 
   <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>true &#x662F;&#x7684; false &#x4E0D;&#x662F;</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -505,25 +614,39 @@
     
     
     
-    <span class="code" data-ice="name">isIE</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">isIE</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber19">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber23">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isIE} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber19">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isIE} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber23">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;IE&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
 
   
 
   <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>true &#x662F;&#x7684; false &#x4E0D;&#x662F;</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -548,25 +671,39 @@
     
     
     
-    <span class="code" data-ice="name">isOpera</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">isOpera</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber22">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber38">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isOpera} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber22">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isOpera} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber38">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Opera&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
 
   
 
   <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>true &#x662F;&#x7684; false &#x4E0D;&#x662F;</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -591,25 +728,39 @@
     
     
     
-    <span class="code" data-ice="name">isSafari</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">isSafari</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber23">source</a></span></span>
+      <span data-ice="source"><span><a href="file/dist/lib/brower.js.html#lineNumber43">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isSafari} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber23">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isSafari} from &apos;<span><a href="file/dist/lib/brower.js.html#lineNumber43">utils2js/dist/lib/brower.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>&#x662F;&#x5426;&#x662F;Safari&#x6D4F;&#x89C8;&#x5668;</p>
+</div>
 
   
 
   <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>true &#x662F;&#x7684; false &#x4E0D;&#x662F;</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 

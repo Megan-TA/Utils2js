@@ -34,7 +34,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-simpleCopy">simpleCopy</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reverse">reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -44,6 +46,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Logger">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Type">Type</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RegExtension">RegExtension</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -54,10 +57,11 @@
  * @Author: chen_huang
  * @Date: 2018-06-13 17:00:34
  * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-14 14:42:29
+ * @Last Modified time: 2018-06-19 15:18:44
  */
 /**
  * &#x6D45;&#x62F7;&#x8D1D;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x539F;&#x578B;&#x94FE;&#x5C5E;&#x6027;&#x62F7;&#x8D1D;&#xFF09;
+ * @example
  * simpleCopy({}, { name: &apos;&#x5F20;&#x4E09;&apos; })
  * @param {object} [destination={}] &#x9ED8;&#x8BA4;&#x7A7A;&#x5BF9;&#x8C61;
  * @param {object} source &#x5F85;&#x62F7;&#x8D1D;&#x5BF9;&#x8C61;
@@ -73,6 +77,7 @@ function simpleCopy(destination = {}, source) {
 }
 /**
  * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x4E0B;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x652F;&#x6301;&#x9012;&#x5F52;
+ * @example
  * prop({a: {b: 1}}, &apos;a.b&apos;) =&gt; 1
  * prop({a: {b: 1}}, &apos;a&apos;)   =&gt; {b: 1}
  * prop({a: {b: 1}}, &apos;m&apos;)   =&gt; null
@@ -96,6 +101,7 @@ function prop(obj = {}, path = &apos;&apos;) {
 }
 /**
  * &#x6DF1;&#x62F7;&#x8D1D;&#xFF08;&#x57FA;&#x4E8E;&#x9012;&#x5F52;&#xFF09;
+ * @example
  * deepCopy({name: &apos;zhansgan&apos;, obj: {}, arr: [2, 3]})
  * @param {object} [source={}] &#x539F;&#x59CB;&#x5BF9;&#x8C61;
  * @param {object} [deepSource] &#x53EF;&#x9009; &#x9ED8;&#x8BA4;&#x7A7A;&#x5BF9;&#x8C61;
@@ -114,12 +120,12 @@ function deepCopy(source = {}, deepSource) {
     return deepSource;
 }
 /**
- * &#x81EA;&#x5B9A;&#x4E49;&#x63D2;&#x503C;
- * &#x9002;&#x7528;&#x4E8E;&#x53D6;&#x5230;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;JSON&#x6839;&#x636E;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+ * &#x81EA;&#x5B9A;&#x4E49;&#x63D2;&#x503C; &#x9002;&#x7528;&#x4E8E;&#x53D6;&#x5230;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;JSON&#x6839;&#x636E;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+ * @example
  * &#x57FA;&#x4E8E;&#x4F4D;&#x7F6E;&#x7684;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F; interpolation(&apos;{0}{3}{1}{1}{2}&apos;, &apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;) =&gt; ADBBC
  * &#x57FA;&#x4E8E;&#x5B57;&#x6BB5;&#x7684;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F; interpolation(&apos;{name} - {userID}&apos;, {name: &apos;test&apos;,userID: 1, age: 12}) =&gt;test - 1
- * @param  {string} param &#x5B57;&#x7B26;&#x4E32;
- * @param  {any} ...options &#x5B57;&#x7B26;&#x4E32;|&#x5BF9;&#x8C61;
+ * @param {string} param  &#x5B57;&#x7B26;&#x4E32;
+ * @param {*} options ...options &#x5B57;&#x7B26;&#x4E32;|&#x5BF9;&#x8C61;
  * @returns {string} &#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;&#x4E32;
  */
 function interpolation(param, ...options) {

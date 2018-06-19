@@ -40,10 +40,12 @@ const { float, getRandomBit } = _Number;
     s.info(float.ride(0.1, 0.2));
     s.info(float.divide(0.1, 0.2));
 }
-const { reverse } = _String;
+const { Reverse, LimitAndSliceChinese, LimitAndSliceChineseNotSym } = _String;
 {
     const s = Logger('测试字符串方法');
-    s.info(reverse('qwert1s'));
+    s.info(Reverse('qwert1s'));
+    s.info(LimitAndSliceChinese('你好啊，我是张三！', 4));
+    s.info(LimitAndSliceChineseNotSym('你好啊，我是张三！', 4));
 }
 const { sliceProtocol } = _Url;
 {

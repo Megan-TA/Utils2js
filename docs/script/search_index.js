@@ -1,9 +1,33 @@
 window.esdocSearchIndex = [
   [
+    "utils2js/dist/lib/string.js~limitandslicechinese",
+    "function/index.html#static-function-LimitAndSliceChinese",
+    "<span>LimitAndSliceChinese</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "function"
+  ],
+  [
+    "utils2js/dist/lib/string.js~limitandslicechinesenotsym",
+    "function/index.html#static-function-LimitAndSliceChineseNotSym",
+    "<span>LimitAndSliceChineseNotSym</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "function"
+  ],
+  [
     "utils2js/dist/lib/index.js~logger",
     "variable/index.html#static-variable-Logger",
     "<span>Logger</span> <span class=\"search-result-import-path\">utils2js/dist/lib/index.js</span>",
     "variable"
+  ],
+  [
+    "utils2js/dist/lib/regex.js~regextension",
+    "variable/index.html#static-variable-RegExtension",
+    "<span>RegExtension</span> <span class=\"search-result-import-path\">utils2js/dist/lib/regex.js</span>",
+    "variable"
+  ],
+  [
+    "utils2js/dist/lib/string.js~reverse",
+    "function/index.html#static-function-Reverse",
+    "<span>Reverse</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "function"
   ],
   [
     "utils2js/dist/lib/index.js~type",
@@ -69,12 +93,6 @@ window.esdocSearchIndex = [
     "utils2js/dist/lib/object.js~prop",
     "function/index.html#static-function-prop",
     "<span>prop</span> <span class=\"search-result-import-path\">utils2js/dist/lib/object.js</span>",
-    "function"
-  ],
-  [
-    "utils2js/dist/lib/string.js~reverse",
-    "function/index.html#static-function-reverse",
-    "<span>reverse</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
     "function"
   ],
   [

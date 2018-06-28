@@ -1,30 +1,30 @@
 var path = require('path')
 var gulp = require('gulp')
-var plumber = require('gulp-plumber')
-var babel = require('gulp-babel')
 var del = require('del')
-var uglify = require('gulp-uglify')
-var pump = require('pump')
+const pump = require('pump')
+const $ = require('gulp-load-plugins')()
 
 var dest = 'publish'
+var source = 'es6'
 
-gulp.task('copy', ['clean:publish'], () => {
+gulp.task('copy', ['compress'], () => {
     return gulp
         .src([
-            './!(node_modules|!(index).js)/*',
-            './src/lib'
+            'package.json',
+            'README.md',
+            'LICENSE'
         ])
-        .pipe(plumber())
+        .pipe($.plumber())
         .pipe(gulp.dest(dest))
 })
 
-gulp.task('handleJS', ['copy'], (cb) => {
+gulp.task('handleJS', ['clean:publish'], (cb) => {
     pump([
         gulp.src([
-            'publish/*.js',
-            'publish/**/*.js'
+            `${source}/*`,
+            `${source}/**/*`
         ]),
-        babel(),
+        $.babel(),
         gulp.dest(dest)
     ], cb)
 })
@@ -35,7 +35,7 @@ gulp.task('compress', ['handleJS'], (cb) => {
             'publish/*.js',
             'publish/**/*.js'
         ]),
-        uglify({
+        $.uglify({
             compress: {
                 drop_console: true
             }
@@ -46,8 +46,8 @@ gulp.task('compress', ['handleJS'], (cb) => {
 
 gulp.task('clean:publish', () => {
     return del([
-        'publish'
+        dest
     ])
 })
 
-gulp.task('default', ['compress'])
+gulp.task('default', ['copy'])

@@ -1,37 +1,37 @@
 {
   "type": "File",
   "start": 0,
-  "end": 344,
+  "end": 363,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 16,
+      "line": 17,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 344,
+    "end": 363,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 17,
         "column": 0
       }
     },
     "sourceType": "module",
     "body": [
       {
-        "type": "ExportNamedDeclaration",
+        "type": "Identifier",
         "start": 154,
-        "end": 342,
+        "end": 335,
         "loc": {
           "start": {
             "line": 8,
@@ -42,16 +42,354 @@
             "column": 2
           }
         },
-        "specifiers": [],
-        "source": null,
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 160,
+            "end": 334,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 6
+              },
+              "end": {
+                "line": 15,
+                "column": 1
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 160,
+              "end": 172,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 6
+                },
+                "end": {
+                  "line": 8,
+                  "column": 18
+                },
+                "identifierName": "RegExtension"
+              },
+              "name": "RegExtension",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ObjectExpression",
+              "start": 175,
+              "end": 334,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 21
+                },
+                "end": {
+                  "line": 15,
+                  "column": 1
+                }
+              },
+              "properties": [
+                {
+                  "type": "ObjectProperty",
+                  "start": 182,
+                  "end": 331,
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 5
+                    }
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "start": 182,
+                    "end": 187,
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 9
+                      },
+                      "identifierName": "rules"
+                    },
+                    "name": "rules"
+                  },
+                  "value": {
+                    "type": "ObjectExpression",
+                    "start": 189,
+                    "end": 331,
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 5
+                      }
+                    },
+                    "properties": [
+                      {
+                        "type": "ObjectProperty",
+                        "start": 219,
+                        "end": 257,
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 46
+                          }
+                        },
+                        "method": false,
+                        "shorthand": false,
+                        "computed": false,
+                        "key": {
+                          "type": "Identifier",
+                          "start": 219,
+                          "end": 236,
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 25
+                            },
+                            "identifierName": "matchMultiChinese"
+                          },
+                          "name": "matchMultiChinese",
+                          "leadingComments": null
+                        },
+                        "value": {
+                          "type": "RegExpLiteral",
+                          "start": 238,
+                          "end": 257,
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 27
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 46
+                            }
+                          },
+                          "extra": {
+                            "raw": "/[\\u4e00-\\u9fa5]+/g"
+                          },
+                          "pattern": "[\\u4e00-\\u9fa5]+",
+                          "flags": "g"
+                        },
+                        "leadingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 匹配多个中文",
+                            "start": 200,
+                            "end": 209,
+                            "loc": {
+                              "start": {
+                                "line": 10,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 10,
+                                "column": 17
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ObjectProperty",
+                        "start": 287,
+                        "end": 324,
+                        "loc": {
+                          "start": {
+                            "line": 13,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 13,
+                            "column": 45
+                          }
+                        },
+                        "method": false,
+                        "shorthand": false,
+                        "computed": false,
+                        "key": {
+                          "type": "Identifier",
+                          "start": 287,
+                          "end": 305,
+                          "loc": {
+                            "start": {
+                              "line": 13,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 13,
+                              "column": 26
+                            },
+                            "identifierName": "matchSingleChinese"
+                          },
+                          "name": "matchSingleChinese",
+                          "leadingComments": null
+                        },
+                        "value": {
+                          "type": "RegExpLiteral",
+                          "start": 307,
+                          "end": 324,
+                          "loc": {
+                            "start": {
+                              "line": 13,
+                              "column": 28
+                            },
+                            "end": {
+                              "line": 13,
+                              "column": 45
+                            }
+                          },
+                          "extra": {
+                            "raw": "/[\\u4e00-\\u9fa5]/"
+                          },
+                          "pattern": "[\\u4e00-\\u9fa5]",
+                          "flags": ""
+                        },
+                        "leadingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 匹配单个中文",
+                            "start": 268,
+                            "end": 277,
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 17
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 337,
+        "end": 361,
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": 24
+          }
+        },
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 346,
+            "end": 358,
+            "loc": {
+              "start": {
+                "line": 16,
+                "column": 9
+              },
+              "end": {
+                "line": 16,
+                "column": 21
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 346,
+              "end": 358,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 9
+                },
+                "end": {
+                  "line": 16,
+                  "column": 21
+                },
+                "identifierName": "RegExtension"
+              },
+              "name": "RegExtension"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 346,
+              "end": 358,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 9
+                },
+                "end": {
+                  "line": 16,
+                  "column": 21
+                },
+                "identifierName": "RegExtension"
+              },
+              "name": "RegExtension"
+            }
+          }
+        ],
+        "source": null
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 337,
+        "end": 361,
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": 24
+          }
+        },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 161,
-          "end": 342,
+          "start": 154,
+          "end": 335,
           "loc": {
             "start": {
               "line": 8,
-              "column": 7
+              "column": 0
             },
             "end": {
               "line": 15,
@@ -61,12 +399,12 @@
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 167,
-              "end": 341,
+              "start": 160,
+              "end": 334,
               "loc": {
                 "start": {
                   "line": 8,
-                  "column": 13
+                  "column": 6
                 },
                 "end": {
                   "line": 15,
@@ -75,16 +413,16 @@
               },
               "id": {
                 "type": "Identifier",
-                "start": 167,
-                "end": 179,
+                "start": 160,
+                "end": 172,
                 "loc": {
                   "start": {
                     "line": 8,
-                    "column": 13
+                    "column": 6
                   },
                   "end": {
                     "line": 8,
-                    "column": 25
+                    "column": 18
                   },
                   "identifierName": "RegExtension"
                 },
@@ -93,12 +431,12 @@
               },
               "init": {
                 "type": "ObjectExpression",
-                "start": 182,
-                "end": 341,
+                "start": 175,
+                "end": 334,
                 "loc": {
                   "start": {
                     "line": 8,
-                    "column": 28
+                    "column": 21
                   },
                   "end": {
                     "line": 15,
@@ -108,8 +446,8 @@
                 "properties": [
                   {
                     "type": "ObjectProperty",
-                    "start": 189,
-                    "end": 338,
+                    "start": 182,
+                    "end": 331,
                     "loc": {
                       "start": {
                         "line": 9,
@@ -125,8 +463,8 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 189,
-                      "end": 194,
+                      "start": 182,
+                      "end": 187,
                       "loc": {
                         "start": {
                           "line": 9,
@@ -142,8 +480,8 @@
                     },
                     "value": {
                       "type": "ObjectExpression",
-                      "start": 196,
-                      "end": 338,
+                      "start": 189,
+                      "end": 331,
                       "loc": {
                         "start": {
                           "line": 9,
@@ -157,8 +495,8 @@
                       "properties": [
                         {
                           "type": "ObjectProperty",
-                          "start": 226,
-                          "end": 264,
+                          "start": 219,
+                          "end": 257,
                           "loc": {
                             "start": {
                               "line": 11,
@@ -174,8 +512,8 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 226,
-                            "end": 243,
+                            "start": 219,
+                            "end": 236,
                             "loc": {
                               "start": {
                                 "line": 11,
@@ -192,8 +530,8 @@
                           },
                           "value": {
                             "type": "RegExpLiteral",
-                            "start": 245,
-                            "end": 264,
+                            "start": 238,
+                            "end": 257,
                             "loc": {
                               "start": {
                                 "line": 11,
@@ -214,8 +552,8 @@
                             {
                               "type": "CommentLine",
                               "value": " 匹配多个中文",
-                              "start": 207,
-                              "end": 216,
+                              "start": 200,
+                              "end": 209,
                               "loc": {
                                 "start": {
                                   "line": 10,
@@ -231,8 +569,8 @@
                         },
                         {
                           "type": "ObjectProperty",
-                          "start": 294,
-                          "end": 331,
+                          "start": 287,
+                          "end": 324,
                           "loc": {
                             "start": {
                               "line": 13,
@@ -248,8 +586,8 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 294,
-                            "end": 312,
+                            "start": 287,
+                            "end": 305,
                             "loc": {
                               "start": {
                                 "line": 13,
@@ -266,8 +604,8 @@
                           },
                           "value": {
                             "type": "RegExpLiteral",
-                            "start": 314,
-                            "end": 331,
+                            "start": 307,
+                            "end": 324,
                             "loc": {
                               "start": {
                                 "line": 13,
@@ -288,8 +626,8 @@
                             {
                               "type": "CommentLine",
                               "value": " 匹配单个中文",
-                              "start": 275,
-                              "end": 284,
+                              "start": 268,
+                              "end": 277,
                               "loc": {
                                 "start": {
                                   "line": 12,
@@ -315,7 +653,7 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:22:01\r\n ",
+              "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:56:53\r\n ",
               "start": 0,
               "end": 152,
               "loc": {
@@ -332,24 +670,9 @@
           ],
           "trailingComments": []
         },
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:22:01\r\n ",
-            "start": 0,
-            "end": 152,
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 0
-              },
-              "end": {
-                "line": 7,
-                "column": 3
-              }
-            }
-          }
-        ]
+        "specifiers": null,
+        "source": null,
+        "leadingComments": null
       }
     ],
     "directives": []
@@ -357,7 +680,7 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:22:01\r\n ",
+      "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:56:53\r\n ",
       "start": 0,
       "end": 152,
       "loc": {
@@ -374,8 +697,8 @@
     {
       "type": "CommentLine",
       "value": " 匹配多个中文",
-      "start": 207,
-      "end": 216,
+      "start": 200,
+      "end": 209,
       "loc": {
         "start": {
           "line": 10,
@@ -390,8 +713,8 @@
     {
       "type": "CommentLine",
       "value": " 匹配单个中文",
-      "start": 275,
-      "end": 284,
+      "start": 268,
+      "end": 277,
       "loc": {
         "start": {
           "line": 12,
@@ -407,7 +730,7 @@
   "tokens": [
     {
       "type": "CommentBlock",
-      "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:22:01\r\n ",
+      "value": "\r\n * 正则常用方法\r\n * @Author: chen_huang\r\n * @Date: 2018-06-19 14:40:02\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-19 15:56:53\r\n ",
       "start": 0,
       "end": 152,
       "loc": {
@@ -418,34 +741,6 @@
         "end": {
           "line": 7,
           "column": 3
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "export",
-        "keyword": "export",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "export",
-      "start": 154,
-      "end": 160,
-      "loc": {
-        "start": {
-          "line": 8,
-          "column": 0
-        },
-        "end": {
-          "line": 8,
-          "column": 6
         }
       }
     },
@@ -464,16 +759,16 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 161,
-      "end": 166,
+      "start": 154,
+      "end": 159,
       "loc": {
         "start": {
           "line": 8,
-          "column": 7
+          "column": 0
         },
         "end": {
           "line": 8,
-          "column": 12
+          "column": 5
         }
       }
     },
@@ -490,16 +785,16 @@
         "binop": null
       },
       "value": "RegExtension",
-      "start": 167,
-      "end": 179,
+      "start": 160,
+      "end": 172,
       "loc": {
         "start": {
           "line": 8,
-          "column": 13
+          "column": 6
         },
         "end": {
           "line": 8,
-          "column": 25
+          "column": 18
         }
       }
     },
@@ -517,16 +812,16 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 180,
-      "end": 181,
+      "start": 173,
+      "end": 174,
       "loc": {
         "start": {
           "line": 8,
-          "column": 26
+          "column": 19
         },
         "end": {
           "line": 8,
-          "column": 27
+          "column": 20
         }
       }
     },
@@ -542,16 +837,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 182,
-      "end": 183,
+      "start": 175,
+      "end": 176,
       "loc": {
         "start": {
           "line": 8,
-          "column": 28
+          "column": 21
         },
         "end": {
           "line": 8,
-          "column": 29
+          "column": 22
         }
       }
     },
@@ -568,8 +863,8 @@
         "binop": null
       },
       "value": "rules",
-      "start": 189,
-      "end": 194,
+      "start": 182,
+      "end": 187,
       "loc": {
         "start": {
           "line": 9,
@@ -594,8 +889,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 194,
-      "end": 195,
+      "start": 187,
+      "end": 188,
       "loc": {
         "start": {
           "line": 9,
@@ -619,8 +914,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 196,
-      "end": 197,
+      "start": 189,
+      "end": 190,
       "loc": {
         "start": {
           "line": 9,
@@ -635,8 +930,8 @@
     {
       "type": "CommentLine",
       "value": " 匹配多个中文",
-      "start": 207,
-      "end": 216,
+      "start": 200,
+      "end": 209,
       "loc": {
         "start": {
           "line": 10,
@@ -661,8 +956,8 @@
         "binop": null
       },
       "value": "matchMultiChinese",
-      "start": 226,
-      "end": 243,
+      "start": 219,
+      "end": 236,
       "loc": {
         "start": {
           "line": 11,
@@ -687,8 +982,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 243,
-      "end": 244,
+      "start": 236,
+      "end": 237,
       "loc": {
         "start": {
           "line": 11,
@@ -717,8 +1012,8 @@
         "pattern": "[\\u4e00-\\u9fa5]+",
         "flags": "g"
       },
-      "start": 245,
-      "end": 264,
+      "start": 238,
+      "end": 257,
       "loc": {
         "start": {
           "line": 11,
@@ -743,8 +1038,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 264,
-      "end": 265,
+      "start": 257,
+      "end": 258,
       "loc": {
         "start": {
           "line": 11,
@@ -759,8 +1054,8 @@
     {
       "type": "CommentLine",
       "value": " 匹配单个中文",
-      "start": 275,
-      "end": 284,
+      "start": 268,
+      "end": 277,
       "loc": {
         "start": {
           "line": 12,
@@ -785,8 +1080,8 @@
         "binop": null
       },
       "value": "matchSingleChinese",
-      "start": 294,
-      "end": 312,
+      "start": 287,
+      "end": 305,
       "loc": {
         "start": {
           "line": 13,
@@ -811,8 +1106,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 312,
-      "end": 313,
+      "start": 305,
+      "end": 306,
       "loc": {
         "start": {
           "line": 13,
@@ -841,8 +1136,8 @@
         "pattern": "[\\u4e00-\\u9fa5]",
         "flags": ""
       },
-      "start": 314,
-      "end": 331,
+      "start": 307,
+      "end": 324,
       "loc": {
         "start": {
           "line": 13,
@@ -866,8 +1161,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 337,
-      "end": 338,
+      "start": 330,
+      "end": 331,
       "loc": {
         "start": {
           "line": 14,
@@ -891,8 +1186,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 340,
-      "end": 341,
+      "start": 333,
+      "end": 334,
       "loc": {
         "start": {
           "line": 15,
@@ -917,8 +1212,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 341,
-      "end": 342,
+      "start": 334,
+      "end": 335,
       "loc": {
         "start": {
           "line": 15,
@@ -927,6 +1222,136 @@
         "end": {
           "line": 15,
           "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 337,
+      "end": 343,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 344,
+      "end": 345,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 7
+        },
+        "end": {
+          "line": 16,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RegExtension",
+      "start": 346,
+      "end": 358,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 9
+        },
+        "end": {
+          "line": 16,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 359,
+      "end": 360,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 22
+        },
+        "end": {
+          "line": 16,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 360,
+      "end": 361,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 23
+        },
+        "end": {
+          "line": 16,
+          "column": 24
         }
       }
     },
@@ -943,15 +1368,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 344,
-      "end": 344,
+      "start": 363,
+      "end": 363,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 17,
           "column": 0
         }
       }

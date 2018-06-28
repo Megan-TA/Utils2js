@@ -1,5 +1,5 @@
 {
-    "source": "./dist",
+    "source": "./es6",
     "destination": "./docs",
     "plugins": [
         {

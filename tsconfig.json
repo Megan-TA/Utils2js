@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "dist",
+        "outDir": "es6",
         "allowJs": true,
         "target": "es6"
     },

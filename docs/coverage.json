@@ -3,14 +3,14 @@
   "expectCount": 35,
   "actualCount": 23,
   "files": {
-    "dist/lib/brower.js": {
+    "es6/lib/brower.js": {
       "expectCount": 7,
       "actualCount": 6,
       "undocumentLines": [
         6
       ]
     },
-    "dist/lib/index.js": {
+    "es6/lib/index.js": {
       "expectCount": 8,
       "actualCount": 3,
       "undocumentLines": [
@@ -21,34 +21,34 @@
         71
       ]
     },
-    "dist/lib/number.js": {
+    "es6/lib/number.js": {
       "expectCount": 5,
       "actualCount": 5,
       "undocumentLines": []
     },
-    "dist/lib/object.js": {
+    "es6/lib/object.js": {
       "expectCount": 4,
       "actualCount": 4,
       "undocumentLines": []
     },
-    "dist/lib/regex.js": {
+    "es6/lib/regex.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         8
       ]
     },
-    "dist/lib/string.js": {
+    "es6/lib/string.js": {
       "expectCount": 4,
       "actualCount": 4,
       "undocumentLines": []
     },
-    "dist/lib/url.js": {
+    "es6/lib/url.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
     },
-    "dist/test.js": {
+    "es6/test.js": {
       "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [

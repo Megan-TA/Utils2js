@@ -3,9 +3,9 @@
  * @Author: chen_huang
  * @Date: 2018-06-19 14:40:02
  * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-19 15:22:01
+ * @Last Modified time: 2018-06-19 15:56:53
  */
-export const RegExtension = {
+const RegExtension = {
     rules: {
         // 匹配多个中文
         matchMultiChinese: /[\u4e00-\u9fa5]+/g,
@@ -13,3 +13,4 @@ export const RegExtension = {
         matchSingleChinese: /[\u4e00-\u9fa5]/
     }
 };
+export { RegExtension };

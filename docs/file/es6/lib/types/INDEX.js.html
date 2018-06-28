@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">dist/lib/object.js | utils2js</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">es6/lib/types/INDEX.js | utils2js</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -51,110 +51,9 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">dist/lib/object.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
- * &#x5BF9;&#x8C61;&#x6269;&#x5C55;
- * @Author: chen_huang
- * @Date: 2018-06-13 17:00:34
- * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-19 15:18:44
- */
-/**
- * &#x6D45;&#x62F7;&#x8D1D;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x539F;&#x578B;&#x94FE;&#x5C5E;&#x6027;&#x62F7;&#x8D1D;&#xFF09;
- * @example
- * simpleCopy({}, { name: &apos;&#x5F20;&#x4E09;&apos; })
- * @param {object} [destination={}] &#x9ED8;&#x8BA4;&#x7A7A;&#x5BF9;&#x8C61;
- * @param {object} source &#x5F85;&#x62F7;&#x8D1D;&#x5BF9;&#x8C61;
- * @returns {object} &#x8F93;&#x51FA;&#x6D45;&#x62F7;&#x8D1D;&#x5BF9;&#x8C61;
- */
-function simpleCopy(destination = {}, source) {
-    Object.keys(source).forEach((value, key) =&gt; {
-        if (!destination.hasOwnProperty(key)) {
-            return destination[key] = value;
-        }
-    });
-    return destination;
-}
-/**
- * &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x4E0B;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x652F;&#x6301;&#x9012;&#x5F52;
- * @example
- * prop({a: {b: 1}}, &apos;a.b&apos;) =&gt; 1
- * prop({a: {b: 1}}, &apos;a&apos;)   =&gt; {b: 1}
- * prop({a: {b: 1}}, &apos;m&apos;)   =&gt; null
- * @param {object} [obj={}] &#x5F85;&#x67E5;&#x627E;&#x7684;&#x539F;&#x59CB;&#x5BF9;&#x8C61;
- * @param {string} [path=&apos;&apos;] &#x9700;&#x8981;&#x67E5;&#x627E;&#x7684;&#x8282;&#x70B9;
- * @returns {any} &#x672A;&#x627E;&#x5230;&#x9ED8;&#x8BA4;&#x8F93;&#x51FA;null
- */
-function prop(obj = {}, path = &apos;&apos;) {
-    let key;
-    let pathArray;
-    pathArray = path.split(&apos;.&apos;);
-    while ((key = pathArray.shift())) {
-        try {
-            obj = obj[key];
-        }
-        catch (err) {
-            return null;
-        }
-    }
-    return obj;
-}
-/**
- * &#x6DF1;&#x62F7;&#x8D1D;&#xFF08;&#x57FA;&#x4E8E;&#x9012;&#x5F52;&#xFF09;
- * @example
- * deepCopy({name: &apos;zhansgan&apos;, obj: {}, arr: [2, 3]})
- * @param {object} [source={}] &#x539F;&#x59CB;&#x5BF9;&#x8C61;
- * @param {object} [deepSource] &#x53EF;&#x9009; &#x9ED8;&#x8BA4;&#x7A7A;&#x5BF9;&#x8C61;
- * @returns {object} &#x6DF1;&#x62F7;&#x8D1D;&#x4E4B;&#x540E;&#x7684;&#x5BF9;&#x8C61;
- */
-function deepCopy(source = {}, deepSource) {
-    for (const key in source) {
-        if (typeof source[key] == &apos;object&apos;) {
-            deepSource[key] = source[key] instanceof Array ? [] : {};
-            deepCopy(source[key], deepSource[key]);
-        }
-        else {
-            deepSource[key] = source[key];
-        }
-    }
-    return deepSource;
-}
-/**
- * &#x81EA;&#x5B9A;&#x4E49;&#x63D2;&#x503C; &#x9002;&#x7528;&#x4E8E;&#x53D6;&#x5230;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;JSON&#x6839;&#x636E;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;
- * @example
- * &#x57FA;&#x4E8E;&#x4F4D;&#x7F6E;&#x7684;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F; interpolation(&apos;{0}{3}{1}{1}{2}&apos;, &apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;) =&gt; ADBBC
- * &#x57FA;&#x4E8E;&#x5B57;&#x6BB5;&#x7684;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F; interpolation(&apos;{name} - {userID}&apos;, {name: &apos;test&apos;,userID: 1, age: 12}) =&gt;test - 1
- * @param {string} param  &#x5B57;&#x7B26;&#x4E32;
- * @param {*} options ...options &#x5B57;&#x7B26;&#x4E32;|&#x5BF9;&#x8C61;
- * @returns {string} &#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;&#x4E32;
- */
-function interpolation(param, ...options) {
-    let arg1 = arguments[0] || &apos;&apos;;
-    const arg2 = arguments[1] || {};
-    let matchArray = [];
-    const REG_RULE = /{([a-zA-Z0-9]+)}/;
-    const REG_NUM_RULE = /\d+/;
-    while ((matchArray = REG_RULE.exec(arg1))) {
-        // matchArray&#x4EE3;&#x8868;&#x7B26;&#x5408;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x6570;&#x7EC4;
-        // matchArray[0] &#x4EE3;&#x8868;&#x5339;&#x914D;&#x5B8C;&#x6574;&#x7684;{1}
-        // matchArray[1] &#x4EE3;&#x8868;{}&#x91CC;&#x9762;&#x5177;&#x4F53;&#x7684;&#x503C;1
-        const execTotalVal = matchArray[0];
-        const execVal = matchArray[1];
-        if (REG_NUM_RULE.test(execVal)) {
-            // &#x57FA;&#x4E8E;&#x4F4D;&#x7F6E;&#x63D2;&#x503C;
-            arg1 = arg1.replace(execTotalVal, options[Number(execVal)]);
-        }
-        else {
-            if (prop(arg2, matchArray[1]) != null) {
-                arg1 = arg1.replace(execTotalVal, prop(arg2, matchArray[1]));
-            }
-        }
-    }
-    return arg1;
-}
-export { interpolation, deepCopy, prop, simpleCopy };
-</code></pre>
-
+<div class="content" data-ice="content"><h1 data-ice="title">es6/lib/types/INDEX.js</h1>
+<pre class="source-code line-number raw-source-code"></pre>
+<p data-ice="emptySourceCode">Sorry, this documentation does not provide source code.</p>
 </div>
 
 <footer class="footer">

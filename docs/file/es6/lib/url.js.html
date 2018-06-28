@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">dist/lib/brower.js | utils2js</title>
+  <title data-ice="title">es6/lib/url.js | utils2js</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -51,51 +51,18 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">dist/lib/brower.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">es6/lib/url.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * &#x5224;&#x65AD;&#x6D4F;&#x89C8;&#x5668;&#x7C7B;&#x578B; &#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x6D4F;&#x89C8;&#x5668;&#x540D;&#x79F0;
- * @returns
+ * &#x622A;&#x6389;url&#x534F;&#x8BAE;&#x540D;&#xFF08;http|https&#xFF09;&#x4EE5;&#x53CA;&#xFF1A;
+ * @exanple
+ * sliceProtocol(&apos;http://www.baidu.com&apos;) =&gt; //www.baidu.com
+ * @param {string} [url=&apos;&apos;] &#x5F85;&#x4F20;&#x5165;&#x9700;&#x8981;&#x622A;&#x53D6;&#x534F;&#x8BAE;&#x7684;url
+ * @returns {string} &#x6B63;&#x5E38;&#x4F1A;&#x8F93;&#x51FA;//www.baidu.com &#x4E0D;&#x662F;url&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x539F;&#x8DEF;&#x8FD4;&#x56DE;
  */
-let finalName = &apos;IE&apos;;
-const userAgent = navigator.userAgent;
-if (userAgent.indexOf(&apos;Chrome&apos;) &gt; -1) {
-    finalName = &apos;Chrome&apos;;
+function sliceProtocol(url = &apos;&apos;) {
+    return url.replace(/^(http|https):/, &apos;&apos;);
 }
-else if (userAgent.indexOf(&apos;Firefox&apos;) &gt; -1) {
-    finalName = &apos;Firefox&apos;;
-}
-else if (userAgent.indexOf(&apos;Opera&apos;) &gt; -1) {
-    finalName = &apos;Opera&apos;;
-}
-else if (userAgent.indexOf(&apos;Safari&apos;) &gt; -1) {
-    finalName = &apos;Safari&apos;;
-}
-/**
- * &#x662F;&#x5426;&#x662F;IE&#x6D4F;&#x89C8;&#x5668;
- * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
- */
-const isIE = finalName == &apos;IE&apos;;
-/**
- * &#x662F;&#x5426;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;
- * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
- */
-const isChrome = finalName == &apos;Chrome&apos;;
-/**
- * &#x662F;&#x5426;&#x662F;Firefox&#x6D4F;&#x89C8;&#x5668;
- * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
- */
-const isFirefox = finalName == &apos;Firefox&apos;;
-/**
- * &#x662F;&#x5426;&#x662F;Opera&#x6D4F;&#x89C8;&#x5668;
- * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
- */
-const isOpera = finalName == &apos;Opera&apos;;
-/**
- * &#x662F;&#x5426;&#x662F;Safari&#x6D4F;&#x89C8;&#x5668;
- * @returns {boolean} true &#x662F;&#x7684; false &#x4E0D;&#x662F;
- */
-const isSafari = finalName == &apos;Safari&apos;;
-export { isIE, isChrome, isFirefox, isOpera, isSafari };
+export { sliceProtocol };
 </code></pre>
 
 </div>

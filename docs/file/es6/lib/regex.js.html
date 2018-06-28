@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">dist/index.js | utils2js</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">es6/lib/regex.js | utils2js</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -51,13 +51,23 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">dist/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import * as _Brower from &apos;./lib/brower&apos;;
-import * as _Main from &apos;./lib/index&apos;;
-import * as _Number from &apos;./lib/number&apos;;
-import * as _String from &apos;./lib/string&apos;;
-import * as _Url from &apos;./lib/url&apos;;
-export { _Main, _Brower, _Number, _String, _Url };
+<div class="content" data-ice="content"><h1 data-ice="title">es6/lib/regex.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * &#x6B63;&#x5219;&#x5E38;&#x7528;&#x65B9;&#x6CD5;
+ * @Author: chen_huang
+ * @Date: 2018-06-19 14:40:02
+ * @Last Modified by: chen_huang
+ * @Last Modified time: 2018-06-19 15:56:53
+ */
+const RegExtension = {
+    rules: {
+        // &#x5339;&#x914D;&#x591A;&#x4E2A;&#x4E2D;&#x6587;
+        matchMultiChinese: /[\u4e00-\u9fa5]+/g,
+        // &#x5339;&#x914D;&#x5355;&#x4E2A;&#x4E2D;&#x6587;
+        matchSingleChinese: /[\u4e00-\u9fa5]/
+    }
+};
+export { RegExtension };
 </code></pre>
 
 </div>

@@ -1,464 +1,464 @@
 window.esdocSearchIndex = [
   [
-    "utils2js/dist/lib/string.js~limitandslicechinese",
+    "utils2js/es6/lib/string.js~limitandslicechinese",
     "function/index.html#static-function-LimitAndSliceChinese",
-    "<span>LimitAndSliceChinese</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "<span>LimitAndSliceChinese</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/string.js~limitandslicechinesenotsym",
+    "utils2js/es6/lib/string.js~limitandslicechinesenotsym",
     "function/index.html#static-function-LimitAndSliceChineseNotSym",
-    "<span>LimitAndSliceChineseNotSym</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "<span>LimitAndSliceChineseNotSym</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/index.js~logger",
+    "utils2js/es6/lib/index.js~logger",
     "variable/index.html#static-variable-Logger",
-    "<span>Logger</span> <span class=\"search-result-import-path\">utils2js/dist/lib/index.js</span>",
+    "<span>Logger</span> <span class=\"search-result-import-path\">utils2js/es6/lib/index.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/regex.js~regextension",
+    "utils2js/es6/lib/regex.js~regextension",
     "variable/index.html#static-variable-RegExtension",
-    "<span>RegExtension</span> <span class=\"search-result-import-path\">utils2js/dist/lib/regex.js</span>",
+    "<span>RegExtension</span> <span class=\"search-result-import-path\">utils2js/es6/lib/regex.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/string.js~reverse",
+    "utils2js/es6/lib/string.js~reverse",
     "function/index.html#static-function-Reverse",
-    "<span>Reverse</span> <span class=\"search-result-import-path\">utils2js/dist/lib/string.js</span>",
+    "<span>Reverse</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/index.js~type",
+    "utils2js/es6/lib/index.js~type",
     "variable/index.html#static-variable-Type",
-    "<span>Type</span> <span class=\"search-result-import-path\">utils2js/dist/lib/index.js</span>",
+    "<span>Type</span> <span class=\"search-result-import-path\">utils2js/es6/lib/index.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/object.js~deepcopy",
+    "utils2js/es6/lib/object.js~deepcopy",
     "function/index.html#static-function-deepCopy",
-    "<span>deepCopy</span> <span class=\"search-result-import-path\">utils2js/dist/lib/object.js</span>",
+    "<span>deepCopy</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/number.js~float",
+    "utils2js/es6/lib/number.js~float",
     "variable/index.html#static-variable-float",
-    "<span>float</span> <span class=\"search-result-import-path\">utils2js/dist/lib/number.js</span>",
+    "<span>float</span> <span class=\"search-result-import-path\">utils2js/es6/lib/number.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/number.js~getrandombit",
+    "utils2js/es6/lib/number.js~getrandombit",
     "function/index.html#static-function-getRandomBit",
-    "<span>getRandomBit</span> <span class=\"search-result-import-path\">utils2js/dist/lib/number.js</span>",
+    "<span>getRandomBit</span> <span class=\"search-result-import-path\">utils2js/es6/lib/number.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/object.js~interpolation",
+    "utils2js/es6/lib/object.js~interpolation",
     "function/index.html#static-function-interpolation",
-    "<span>interpolation</span> <span class=\"search-result-import-path\">utils2js/dist/lib/object.js</span>",
+    "<span>interpolation</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/brower.js~ischrome",
+    "utils2js/es6/lib/brower.js~ischrome",
     "variable/index.html#static-variable-isChrome",
-    "<span>isChrome</span> <span class=\"search-result-import-path\">utils2js/dist/lib/brower.js</span>",
+    "<span>isChrome</span> <span class=\"search-result-import-path\">utils2js/es6/lib/brower.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/brower.js~isfirefox",
+    "utils2js/es6/lib/brower.js~isfirefox",
     "variable/index.html#static-variable-isFirefox",
-    "<span>isFirefox</span> <span class=\"search-result-import-path\">utils2js/dist/lib/brower.js</span>",
+    "<span>isFirefox</span> <span class=\"search-result-import-path\">utils2js/es6/lib/brower.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/brower.js~isie",
+    "utils2js/es6/lib/brower.js~isie",
     "variable/index.html#static-variable-isIE",
-    "<span>isIE</span> <span class=\"search-result-import-path\">utils2js/dist/lib/brower.js</span>",
+    "<span>isIE</span> <span class=\"search-result-import-path\">utils2js/es6/lib/brower.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/brower.js~isopera",
+    "utils2js/es6/lib/brower.js~isopera",
     "variable/index.html#static-variable-isOpera",
-    "<span>isOpera</span> <span class=\"search-result-import-path\">utils2js/dist/lib/brower.js</span>",
+    "<span>isOpera</span> <span class=\"search-result-import-path\">utils2js/es6/lib/brower.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/brower.js~issafari",
+    "utils2js/es6/lib/brower.js~issafari",
     "variable/index.html#static-variable-isSafari",
-    "<span>isSafari</span> <span class=\"search-result-import-path\">utils2js/dist/lib/brower.js</span>",
+    "<span>isSafari</span> <span class=\"search-result-import-path\">utils2js/es6/lib/brower.js</span>",
     "variable"
   ],
   [
-    "utils2js/dist/lib/object.js~prop",
+    "utils2js/es6/lib/object.js~prop",
     "function/index.html#static-function-prop",
-    "<span>prop</span> <span class=\"search-result-import-path\">utils2js/dist/lib/object.js</span>",
+    "<span>prop</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/object.js~simplecopy",
+    "utils2js/es6/lib/object.js~simplecopy",
     "function/index.html#static-function-simpleCopy",
-    "<span>simpleCopy</span> <span class=\"search-result-import-path\">utils2js/dist/lib/object.js</span>",
+    "<span>simpleCopy</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
     "function"
   ],
   [
-    "utils2js/dist/lib/url.js~sliceprotocol",
+    "utils2js/es6/lib/url.js~sliceprotocol",
     "function/index.html#static-function-sliceProtocol",
-    "<span>sliceProtocol</span> <span class=\"search-result-import-path\">utils2js/dist/lib/url.js</span>",
+    "<span>sliceProtocol</span> <span class=\"search-result-import-path\">utils2js/es6/lib/url.js</span>",
     "function"
   ],
   [
-    "dist/.external-ecmascript.js~array",
+    "es6/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "dist/.external-ecmascript.js~Array",
+    "es6/.external-ecmascript.js~Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~arraybuffer",
+    "es6/.external-ecmascript.js~arraybuffer",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "dist/.external-ecmascript.js~ArrayBuffer",
+    "es6/.external-ecmascript.js~ArrayBuffer",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~boolean",
+    "es6/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "dist/.external-ecmascript.js~Boolean",
+    "es6/.external-ecmascript.js~Boolean",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~dataview",
+    "es6/.external-ecmascript.js~dataview",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "dist/.external-ecmascript.js~DataView",
+    "es6/.external-ecmascript.js~DataView",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~date",
+    "es6/.external-ecmascript.js~date",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "dist/.external-ecmascript.js~Date",
+    "es6/.external-ecmascript.js~Date",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~error",
+    "es6/.external-ecmascript.js~error",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "dist/.external-ecmascript.js~Error",
+    "es6/.external-ecmascript.js~Error",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~evalerror",
+    "es6/.external-ecmascript.js~evalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "dist/.external-ecmascript.js~EvalError",
+    "es6/.external-ecmascript.js~EvalError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~float32array",
+    "es6/.external-ecmascript.js~float32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "dist/.external-ecmascript.js~Float32Array",
+    "es6/.external-ecmascript.js~Float32Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~float64array",
+    "es6/.external-ecmascript.js~float64array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "dist/.external-ecmascript.js~Float64Array",
+    "es6/.external-ecmascript.js~Float64Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~function",
+    "es6/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "dist/.external-ecmascript.js~Function",
+    "es6/.external-ecmascript.js~Function",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~generator",
+    "es6/.external-ecmascript.js~generator",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "dist/.external-ecmascript.js~Generator",
+    "es6/.external-ecmascript.js~Generator",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~generatorfunction",
+    "es6/.external-ecmascript.js~generatorfunction",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "dist/.external-ecmascript.js~GeneratorFunction",
+    "es6/.external-ecmascript.js~GeneratorFunction",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~infinity",
+    "es6/.external-ecmascript.js~infinity",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "dist/.external-ecmascript.js~Infinity",
+    "es6/.external-ecmascript.js~Infinity",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~int16array",
+    "es6/.external-ecmascript.js~int16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "dist/.external-ecmascript.js~Int16Array",
+    "es6/.external-ecmascript.js~Int16Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~int32array",
+    "es6/.external-ecmascript.js~int32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "dist/.external-ecmascript.js~Int32Array",
+    "es6/.external-ecmascript.js~Int32Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~int8array",
+    "es6/.external-ecmascript.js~int8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "dist/.external-ecmascript.js~Int8Array",
+    "es6/.external-ecmascript.js~Int8Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~internalerror",
+    "es6/.external-ecmascript.js~internalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "dist/.external-ecmascript.js~InternalError",
+    "es6/.external-ecmascript.js~InternalError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~json",
+    "es6/.external-ecmascript.js~json",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "dist/.external-ecmascript.js~JSON",
+    "es6/.external-ecmascript.js~JSON",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~map",
+    "es6/.external-ecmascript.js~map",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "dist/.external-ecmascript.js~Map",
+    "es6/.external-ecmascript.js~Map",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~nan",
+    "es6/.external-ecmascript.js~nan",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "dist/.external-ecmascript.js~NaN",
+    "es6/.external-ecmascript.js~NaN",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~number",
+    "es6/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "dist/.external-ecmascript.js~Number",
+    "es6/.external-ecmascript.js~Number",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~object",
+    "es6/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "dist/.external-ecmascript.js~Object",
+    "es6/.external-ecmascript.js~Object",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~promise",
+    "es6/.external-ecmascript.js~promise",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "dist/.external-ecmascript.js~Promise",
+    "es6/.external-ecmascript.js~Promise",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~proxy",
+    "es6/.external-ecmascript.js~proxy",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "dist/.external-ecmascript.js~Proxy",
+    "es6/.external-ecmascript.js~Proxy",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~rangeerror",
+    "es6/.external-ecmascript.js~rangeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "dist/.external-ecmascript.js~RangeError",
+    "es6/.external-ecmascript.js~RangeError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~referenceerror",
+    "es6/.external-ecmascript.js~referenceerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "dist/.external-ecmascript.js~ReferenceError",
+    "es6/.external-ecmascript.js~ReferenceError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~reflect",
+    "es6/.external-ecmascript.js~reflect",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "dist/.external-ecmascript.js~Reflect",
+    "es6/.external-ecmascript.js~Reflect",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~regexp",
+    "es6/.external-ecmascript.js~regexp",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "dist/.external-ecmascript.js~RegExp",
+    "es6/.external-ecmascript.js~RegExp",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~set",
+    "es6/.external-ecmascript.js~set",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "dist/.external-ecmascript.js~Set",
+    "es6/.external-ecmascript.js~Set",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~string",
+    "es6/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "dist/.external-ecmascript.js~String",
+    "es6/.external-ecmascript.js~String",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~symbol",
+    "es6/.external-ecmascript.js~symbol",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "dist/.external-ecmascript.js~Symbol",
+    "es6/.external-ecmascript.js~Symbol",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~syntaxerror",
+    "es6/.external-ecmascript.js~syntaxerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "dist/.external-ecmascript.js~SyntaxError",
+    "es6/.external-ecmascript.js~SyntaxError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~typeerror",
+    "es6/.external-ecmascript.js~typeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "dist/.external-ecmascript.js~TypeError",
+    "es6/.external-ecmascript.js~TypeError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~urierror",
+    "es6/.external-ecmascript.js~urierror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "dist/.external-ecmascript.js~URIError",
+    "es6/.external-ecmascript.js~URIError",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~uint16array",
+    "es6/.external-ecmascript.js~uint16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "dist/.external-ecmascript.js~Uint16Array",
+    "es6/.external-ecmascript.js~Uint16Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~uint32array",
+    "es6/.external-ecmascript.js~uint32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "dist/.external-ecmascript.js~Uint32Array",
+    "es6/.external-ecmascript.js~Uint32Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~uint8array",
+    "es6/.external-ecmascript.js~uint8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "dist/.external-ecmascript.js~Uint8Array",
+    "es6/.external-ecmascript.js~Uint8Array",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~uint8clampedarray",
+    "es6/.external-ecmascript.js~uint8clampedarray",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "dist/.external-ecmascript.js~Uint8ClampedArray",
+    "es6/.external-ecmascript.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~weakmap",
+    "es6/.external-ecmascript.js~weakmap",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "dist/.external-ecmascript.js~WeakMap",
+    "es6/.external-ecmascript.js~WeakMap",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~weakset",
+    "es6/.external-ecmascript.js~weakset",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "dist/.external-ecmascript.js~WeakSet",
+    "es6/.external-ecmascript.js~WeakSet",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~boolean",
+    "es6/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "dist/.external-ecmascript.js~boolean",
+    "es6/.external-ecmascript.js~boolean",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~function",
+    "es6/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "dist/.external-ecmascript.js~function",
+    "es6/.external-ecmascript.js~function",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~null",
+    "es6/.external-ecmascript.js~null",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "dist/.external-ecmascript.js~null",
+    "es6/.external-ecmascript.js~null",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~number",
+    "es6/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "dist/.external-ecmascript.js~number",
+    "es6/.external-ecmascript.js~number",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~object",
+    "es6/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "dist/.external-ecmascript.js~object",
+    "es6/.external-ecmascript.js~object",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~string",
+    "es6/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "dist/.external-ecmascript.js~string",
+    "es6/.external-ecmascript.js~string",
     "external"
   ],
   [
-    "dist/.external-ecmascript.js~undefined",
+    "es6/.external-ecmascript.js~undefined",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "dist/.external-ecmascript.js~undefined",
+    "es6/.external-ecmascript.js~undefined",
     "external"
   ],
   [
-    "dist/index.js",
-    "file/dist/index.js.html",
-    "dist/index.js",
+    "es6/index.js",
+    "file/es6/index.js.html",
+    "es6/index.js",
     "file"
   ],
   [
-    "dist/lib/brower.js",
-    "file/dist/lib/brower.js.html",
-    "dist/lib/brower.js",
+    "es6/lib/brower.js",
+    "file/es6/lib/brower.js.html",
+    "es6/lib/brower.js",
     "file"
   ],
   [
-    "dist/lib/date.js",
-    "file/dist/lib/date.js.html",
-    "dist/lib/date.js",
+    "es6/lib/date.js",
+    "file/es6/lib/date.js.html",
+    "es6/lib/date.js",
     "file"
   ],
   [
-    "dist/lib/index.js",
-    "file/dist/lib/index.js.html",
-    "dist/lib/index.js",
+    "es6/lib/index.js",
+    "file/es6/lib/index.js.html",
+    "es6/lib/index.js",
     "file"
   ],
   [
-    "dist/lib/number.js",
-    "file/dist/lib/number.js.html",
-    "dist/lib/number.js",
+    "es6/lib/number.js",
+    "file/es6/lib/number.js.html",
+    "es6/lib/number.js",
     "file"
   ],
   [
-    "dist/lib/object.js",
-    "file/dist/lib/object.js.html",
-    "dist/lib/object.js",
+    "es6/lib/object.js",
+    "file/es6/lib/object.js.html",
+    "es6/lib/object.js",
     "file"
   ],
   [
-    "dist/lib/regex.js",
-    "file/dist/lib/regex.js.html",
-    "dist/lib/regex.js",
+    "es6/lib/regex.js",
+    "file/es6/lib/regex.js.html",
+    "es6/lib/regex.js",
     "file"
   ],
   [
-    "dist/lib/string.js",
-    "file/dist/lib/string.js.html",
-    "dist/lib/string.js",
+    "es6/lib/string.js",
+    "file/es6/lib/string.js.html",
+    "es6/lib/string.js",
     "file"
   ],
   [
-    "dist/lib/types/index.js",
-    "file/dist/lib/types/INDEX.js.html",
-    "dist/lib/types/INDEX.js",
+    "es6/lib/types/index.js",
+    "file/es6/lib/types/INDEX.js.html",
+    "es6/lib/types/INDEX.js",
     "file"
   ],
   [
-    "dist/lib/types/number.js",
-    "file/dist/lib/types/NUMBER.js.html",
-    "dist/lib/types/NUMBER.js",
+    "es6/lib/types/number.js",
+    "file/es6/lib/types/NUMBER.js.html",
+    "es6/lib/types/NUMBER.js",
     "file"
   ],
   [
-    "dist/lib/url.js",
-    "file/dist/lib/url.js.html",
-    "dist/lib/url.js",
+    "es6/lib/url.js",
+    "file/es6/lib/url.js.html",
+    "es6/lib/url.js",
     "file"
   ],
   [
-    "dist/test.js",
-    "file/dist/test.js.html",
-    "dist/test.js",
+    "es6/test.js",
+    "file/es6/test.js.html",
+    "es6/test.js",
     "file"
   ]
 ]

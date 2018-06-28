@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var RegExtension={rules:{matchMultiChinese:/[\u4e00-\u9fa5]+/g,matchSingleChinese:/[\u4e00-\u9fa5]/}};exports.RegExtension=RegExtension;

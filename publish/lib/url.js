@@ -1,0 +1,1 @@
+"use strict";function sliceProtocol(){return(0<arguments.length&&void 0!==arguments[0]?arguments[0]:"").replace(/^(http|https):/,"")}Object.defineProperty(exports,"__esModule",{value:!0}),exports.sliceProtocol=sliceProtocol;

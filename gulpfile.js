@@ -7,7 +7,7 @@ const $ = require('gulp-load-plugins')()
 var dest = 'publish'
 var source = 'es6'
 
-gulp.task('copy', ['compress'], () => {
+gulp.task('copy', ['handleJS'], () => {
     return gulp
         .src([
             'package.json',
@@ -37,7 +37,8 @@ gulp.task('compress', ['handleJS'], (cb) => {
         ]),
         $.uglify({
             compress: {
-                drop_console: true
+                drop_console: true,
+                preserveComments: false
             }
         }),
         gulp.dest(dest)

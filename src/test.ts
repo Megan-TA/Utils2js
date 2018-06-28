@@ -14,6 +14,24 @@ const {
 {
     const A = Logger('测试Logger')
     A.info('测试成功了')
+    const test = [
+        123,
+        '123',
+        true,
+        {name: '张三'},
+        function name () {
+            return '张三'
+        },
+        /^\d+$/,
+        null,
+        undefined,
+        [1, 2, 3],
+        new Date(),
+        new Error()
+    ]
+    test.forEach(item => {
+        A.info(Type(item))
+    })
 }
 
 const {
@@ -32,25 +50,6 @@ const {
     s.info(isFirefox)
     s.info(isSafari)
     s.info('---------------------')
-    const test = [
-        123,
-        '123',
-        true,
-        {name: '张三'},
-        function name () {
-            return '张三'
-        },
-        /^\d+$/,
-        null,
-        undefined,
-        [1, 2, 3],
-        new Date(),
-        new Error()
-    ]
-    test.forEach(item => {
-        s.info(Type(item))
-    })
-
 }
 
 const {

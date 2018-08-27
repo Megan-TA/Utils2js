@@ -3,7 +3,7 @@
  * @Author: chen_huang
  * @Date: 2018-06-13 17:00:34
  * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-19 15:18:44
+ * @Last Modified time: 2018-08-20 17:39:30
  */
 
 /**
@@ -49,20 +49,36 @@ function prop (obj: object = {}, path: string = '') {
  * 深拷贝（基于递归）
  * @example
  * deepCopy({name: 'zhansgan', obj: {}, arr: [2, 3]})
- * @param {object} [source={}] 原始对象
- * @param {object} [deepSource] 可选 默认空对象
+ * @param {object} [data = {}] 原始对象
+ * @param {object} [final] 可选
  * @returns {object} 深拷贝之后的对象
  */
-function deepCopy (source: object = {}, deepSource?: object): object {
-    for (const key in source) {
-        if (typeof source[key] == 'object') {
-            deepSource[key] = source[key] instanceof Array ? [] : {}
-            deepCopy(source[key], deepSource[key])
-        } else {
-            deepSource[key] = source[key]
+function deepCopy (data: object = {}, final: object = {}): object {
+    for (let key in data) {
+        const keyToVal = data[key]
+        const val = Object.prototype.toString.call(keyToVal).match(/^\[object\s(\w+)\]$/)[1]
+
+        switch (val) {
+            case 'Object':
+                final[key] = deepCopy(keyToVal, {})
+                break
+            case 'Array':
+                final[key] = deepCopy(keyToVal, [])
+                break
+            case 'RegExp':
+                final[key] = new RegExp(keyToVal)
+                break
+            case 'Undefined':
+                final[key] = undefined
+                break
+            case 'Null':
+                final[key] = null
+                break
+             default:
+                final[key] = keyToVal  
         }
-    }
-    return deepSource
+   }
+   return final
 }
 
 /**

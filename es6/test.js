@@ -1,18 +1,8 @@
-import { _Brower, _Main, _Number, _String, _Url } from './index';
+import { _Brower, _Main, _Number, _String, _Url, _Object } from './index';
 const { Logger, Type } = _Main;
 {
     const A = Logger('测试Logger');
     A.info('测试成功了');
-}
-const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
-{
-    const s = Logger('测试浏览器类型判断');
-    s.info(isIE);
-    s.info(isChrome);
-    s.info(isOpera);
-    s.info(isFirefox);
-    s.info(isSafari);
-    s.info('---------------------');
     const test = [
         123,
         '123',
@@ -29,8 +19,38 @@ const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
         new Error()
     ];
     test.forEach(item => {
-        s.info(Type(item));
+        A.info(Type(item));
     });
+}
+const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
+{
+    const s = Logger('测试浏览器类型判断');
+    s.info(isIE);
+    s.info(isChrome);
+    s.info(isOpera);
+    s.info(isFirefox);
+    s.info(isSafari);
+    s.info('---------------------');
+}
+const { deepCopy } = _Object;
+{
+    const s = Logger('测试对象方法');
+    s.info(deepCopy({
+        name: '张三',
+        showName: function () {
+            console.log(222);
+        },
+        extra: {
+            a: '111'
+        },
+        a: [2222],
+        v: [{
+                name: '1111'
+            }],
+        s: /ssss/g,
+        q: null,
+        w: undefined
+    }));
 }
 const { float, getRandomBit } = _Number;
 {

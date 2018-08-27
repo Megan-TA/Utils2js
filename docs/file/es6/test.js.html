@@ -57,16 +57,6 @@ const { Logger, Type } = _Main;
 {
     const A = Logger(&apos;&#x6D4B;&#x8BD5;Logger&apos;);
     A.info(&apos;&#x6D4B;&#x8BD5;&#x6210;&#x529F;&#x4E86;&apos;);
-}
-const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
-{
-    const s = Logger(&apos;&#x6D4B;&#x8BD5;&#x6D4F;&#x89C8;&#x5668;&#x7C7B;&#x578B;&#x5224;&#x65AD;&apos;);
-    s.info(isIE);
-    s.info(isChrome);
-    s.info(isOpera);
-    s.info(isFirefox);
-    s.info(isSafari);
-    s.info(&apos;---------------------&apos;);
     const test = [
         123,
         &apos;123&apos;,
@@ -83,8 +73,18 @@ const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
         new Error()
     ];
     test.forEach(item =&gt; {
-        s.info(Type(item));
+        A.info(Type(item));
     });
+}
+const { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;
+{
+    const s = Logger(&apos;&#x6D4B;&#x8BD5;&#x6D4F;&#x89C8;&#x5668;&#x7C7B;&#x578B;&#x5224;&#x65AD;&apos;);
+    s.info(isIE);
+    s.info(isChrome);
+    s.info(isOpera);
+    s.info(isFirefox);
+    s.info(isSafari);
+    s.info(&apos;---------------------&apos;);
 }
 const { float, getRandomBit } = _Number;
 {

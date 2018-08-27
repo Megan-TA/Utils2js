@@ -2,7 +2,8 @@
     "compilerOptions": {
         "outDir": "es6",
         "allowJs": true,
-        "target": "es6"
+        "target": "es6",
+        "removeComments": true
     },
     "include": [
         "src/**/*",

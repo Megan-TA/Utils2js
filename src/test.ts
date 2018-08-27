@@ -3,7 +3,8 @@ import {
     _Main,
     _Number,
     _String,
-    _Url
+    _Url,
+    _Object
 } from './index'
 
 const {
@@ -50,6 +51,30 @@ const {
     s.info(isFirefox)
     s.info(isSafari)
     s.info('---------------------')
+}
+
+const {
+    deepCopy
+} = _Object
+
+{
+    const s = Logger('测试对象方法')
+    s.info(deepCopy({
+        name: '张三',	
+        showName: function () {
+            console.log(222)
+        },
+        extra: {
+            a: '111'
+        },
+        a: [2222],
+        v: [{
+            name: '1111'
+        }],
+        s: /ssss/g,
+        q: null,
+        w: undefined
+    }))
 }
 
 const {

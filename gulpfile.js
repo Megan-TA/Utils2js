@@ -45,7 +45,7 @@ gulp.task('compress', ['handleJS'], (cb) => {
     ], cb)
 })
 
-gulp.task('clean:publish', () => {
+gulp.task('clean:publish', ['compress'], () => {
     return del([
         dest
     ])

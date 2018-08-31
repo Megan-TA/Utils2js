@@ -947,7 +947,7 @@
     "__docId__": 61,
     "kind": "file",
     "name": "es6/lib/index.js",
-    "content": "/*\r\n * 个人工具方法\r\n * @Author: chen_huang\r\n * @Date: 2017-09-20 16:17:55\r\n * @Last Modified by: chen_huang\r\n * @Last Modified time: 2018-06-14 19:04:13\r\n */\r\nimport { isIE } from './brower';\r\nimport { getRandomBit } from './number';\r\nimport { interpolation } from './object';\r\nlet INSTANCE = null;\r\n/**\r\n * Utils2js 单列模式\r\n * @class Utils2js\r\n */\r\nclass Utils2js {\r\n    static get getInstance() {\r\n        if (!INSTANCE) {\r\n            INSTANCE = new Utils2js();\r\n        }\r\n        return INSTANCE;\r\n    }\r\n    /**\r\n     * 控制台输出多彩提示信息\r\n     * IE版本默认不支持多彩控制信息，默认输出白底黑字文本\r\n     * @example\r\n     * const channelOne = Logger('频道1')\r\n     * channelOne.info('这是测试文本')\r\n     * @param {string} channel 必须先指定文本属于自身的频道\r\n     * @param {{color?: string}} [options={}] （可选）指定需要展示的颜色值，默认会随机生成\r\n     * @returns {object} 输出{info}格式的对象 通过.info()最终输出的带多彩的类似\"['频道1']这是测试文本\" 形式\r\n     * @memberof Utils2js\r\n     */\r\n    Logger(channel, options = {}) {\r\n        // 浏览器检测\r\n        function info(message) {\r\n            if (isIE) {\r\n                console.log(interpolation('[{0}]', channel), message);\r\n            }\r\n            else {\r\n                if (options && options.color) {\r\n                    options.color = options.color;\r\n                }\r\n                else {\r\n                    options.color = getRandomBit(6, 16);\r\n                }\r\n                console.log(interpolation('%c[{0}]', channel), interpolation('color: {0}', options.color), message);\r\n            }\r\n        }\r\n        return {\r\n            info\r\n        };\r\n    }\r\n    /**\r\n     * 更准确的类型判定方法\r\n     * 返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error\r\n     *\r\n     * @param {*} params\r\n     * @returns {string} 统一返回小写的具体类型名称\r\n     * @memberof Utils2js\r\n     */\r\n    Type(params) {\r\n        const REGEXP = /^\\[object\\W([a-zA-Z]+)\\]$/g;\r\n        const waitingForReg = Object.prototype.toString.call(params);\r\n        const handleResult = REGEXP.exec(waitingForReg);\r\n        return handleResult[1].toLowerCase();\r\n    }\r\n}\r\nconst STANCE__UTILS2JS = Utils2js.getInstance;\r\nexport const Logger = STANCE__UTILS2JS.Logger;\r\nexport const Type = STANCE__UTILS2JS.Type;\r\n",
+    "content": "import { getRandomBit } from './number';\r\nimport { interpolation } from './object';\r\nlet INSTANCE = null;\r\n/**\r\n * Utils2js 单列模式\r\n * @class Utils2js\r\n */\r\nclass Utils2js {\r\n    static get getInstance() {\r\n        if (!INSTANCE) {\r\n            INSTANCE = new Utils2js();\r\n        }\r\n        return INSTANCE;\r\n    }\r\n    /**\r\n     * 控制台输出多彩提示信息\r\n     * IE版本默认不支持多彩控制信息，默认输出白底黑字文本\r\n     * @example\r\n     * const channelOne = Logger('频道1')\r\n     * channelOne.info('这是测试文本')\r\n     * @param {string} channel 必须先指定文本属于自身的频道\r\n     * @param {{color?: string}} [options={}] （可选）指定需要展示的颜色值，默认会随机生成\r\n     * @returns {object} 输出{info}格式的对象 通过.info()最终输出的带多彩的类似\"['频道1']这是测试文本\" 形式\r\n     * @memberof Utils2js\r\n     */\r\n    Logger(channel, options = {}) {\r\n        // 浏览器检测\r\n        function info(message) {\r\n            var remainParams = Array.prototype.slice.call(arguments, 1);\r\n            var colorArray = [interpolation('%c[{0}]', channel), `color: ${options.color}`, message].concat(remainParams);\r\n            if (options && options.color) {\r\n                options.color = options.color;\r\n            }\r\n            else {\r\n                options.color = getRandomBit(6, 16);\r\n            }\r\n            console.log.apply(this, colorArray);\r\n        }\r\n        function red(message) {\r\n            var remainParams = Array.prototype.slice.call(arguments, 1).join(' ');\r\n            var colorArray = [interpolation('%c[{0}]', channel), `color: #CA0C16`, message + ' ' + remainParams];\r\n            console.log.apply(this, colorArray);\r\n        }\r\n        return {\r\n            info,\r\n            red\r\n        };\r\n    }\r\n    /**\r\n     * 更准确的类型判定方法\r\n     * 返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error\r\n     *\r\n     * @param {*} params\r\n     * @returns {string} 统一返回小写的具体类型名称\r\n     * @memberof Utils2js\r\n     */\r\n    Type(params) {\r\n        const REGEXP = /^\\[object\\W([a-zA-Z]+)\\]$/g;\r\n        const waitingForReg = Object.prototype.toString.call(params);\r\n        const handleResult = REGEXP.exec(waitingForReg);\r\n        return handleResult[1].toLowerCase();\r\n    }\r\n}\r\nconst STANCE__UTILS2JS = Utils2js.getInstance;\r\nexport const Logger = STANCE__UTILS2JS.Logger;\r\nexport const Type = STANCE__UTILS2JS.Type;\r\n",
     "static": true,
     "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/es6/lib/index.js",
     "access": "public",
@@ -966,7 +966,7 @@
     "importPath": "utils2js/es6/lib/index.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 3,
     "undocument": true,
     "type": {
       "types": [
@@ -987,7 +987,7 @@
     "importPath": "utils2js/es6/lib/index.js",
     "importStyle": null,
     "description": "Utils2js 单列模式",
-    "lineNumber": 16,
+    "lineNumber": 8,
     "unknown": [
       {
         "tagName": "@class",
@@ -1008,7 +1008,7 @@
     "longname": "es6/lib/index.js~Utils2js.getInstance",
     "access": "public",
     "description": null,
-    "lineNumber": 17,
+    "lineNumber": 9,
     "undocument": true,
     "type": {
       "types": [
@@ -1030,7 +1030,7 @@
     "examples": [
       "const channelOne = Logger('频道1')\nchannelOne.info('这是测试文本')"
     ],
-    "lineNumber": 34,
+    "lineNumber": 26,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1081,7 +1081,7 @@
     "longname": "es6/lib/index.js~Utils2js#Type",
     "access": "public",
     "description": "更准确的类型判定方法\n返回类型如下：number/string/boolean/object/function/regexp/null/undefined/array/date/error",
-    "lineNumber": 62,
+    "lineNumber": 57,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1121,7 +1121,7 @@
     "importPath": "utils2js/es6/lib/index.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 69,
+    "lineNumber": 64,
     "undocument": true,
     "type": {
       "types": [
@@ -1142,7 +1142,7 @@
     "importPath": "utils2js/es6/lib/index.js",
     "importStyle": "{Logger}",
     "description": null,
-    "lineNumber": 70,
+    "lineNumber": 65,
     "undocument": true,
     "type": {
       "types": [
@@ -1162,7 +1162,7 @@
     "importPath": "utils2js/es6/lib/index.js",
     "importStyle": "{Type}",
     "description": null,
-    "lineNumber": 71,
+    "lineNumber": 66,
     "undocument": true,
     "type": {
       "types": [
@@ -2140,7 +2140,7 @@
     "__docId__": 95,
     "kind": "file",
     "name": "es6/test.js",
-    "content": "import { _Brower, _Main, _Number, _String, _Url, _Object, _Array } from './index';\r\nconst { Logger, Type } = _Main;\r\n{\r\n    const A = Logger('测试Logger');\r\n    A.info('测试成功了');\r\n    const test = [\r\n        123,\r\n        '123',\r\n        true,\r\n        { name: '张三' },\r\n        function name() {\r\n            return '张三';\r\n        },\r\n        /^\\d+$/,\r\n        null,\r\n        undefined,\r\n        [1, 2, 3],\r\n        new Date(),\r\n        new Error()\r\n    ];\r\n    test.forEach(item => {\r\n        A.info(Type(item));\r\n    });\r\n}\r\nconst { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;\r\n{\r\n    const s = Logger('测试浏览器类型判断');\r\n    s.info(isIE);\r\n    s.info(isChrome);\r\n    s.info(isOpera);\r\n    s.info(isFirefox);\r\n    s.info(isSafari);\r\n    s.info('---------------------');\r\n}\r\nconst { deepCopy } = _Object;\r\n{\r\n    const s = Logger('测试对象方法');\r\n    s.info(deepCopy({\r\n        name: '张三',\r\n        showName: function () {\r\n            console.log(222);\r\n        },\r\n        extra: {\r\n            a: '111'\r\n        },\r\n        a: [2222],\r\n        v: [{\r\n                name: '1111'\r\n            }],\r\n        s: /ssss/g,\r\n        q: null,\r\n        w: undefined\r\n    }));\r\n}\r\nconst { float, getRandomBit } = _Number;\r\n{\r\n    const s = Logger('测试数字方法');\r\n    s.info(float.add(0.1, 0.2));\r\n    s.info(float.sub(0.1, 0.2));\r\n    s.info(float.ride(0.1, 0.2));\r\n    s.info(float.divide(0.1, 0.2));\r\n}\r\nconst { Reverse, LimitAndSliceChinese, LimitAndSliceChineseNotSym, truncate, repeat, confirmEnding } = _String;\r\n{\r\n    const s = Logger('测试字符串方法');\r\n    let name = '你好啊，我是张三！';\r\n    s.info(Reverse('qwert1s'));\r\n    s.info(LimitAndSliceChinese(name, 4));\r\n    s.info(LimitAndSliceChineseNotSym(name, 4));\r\n    s.info(truncate(name, 4));\r\n    s.info(repeat(name, 4));\r\n    s.info(confirmEnding(name, '！'));\r\n}\r\nconst { sliceProtocol } = _Url;\r\n{\r\n    const s = Logger('测试url方法');\r\n    s.info(sliceProtocol('http://www.baidu.com'));\r\n    s.info(sliceProtocol('https://www.baidu.com'));\r\n}\r\nconst { upSet, destroyer, chunk } = _Array;\r\n{\r\n    let arr = [5, 2, 5, 6, 1, 2, 3];\r\n    const s = Logger('测试数组方法');\r\n    s.info(upSet(arr));\r\n    s.info(destroyer(arr, 2));\r\n    s.info(chunk(arr, 2));\r\n}\r\n",
+    "content": "import { _Brower, _Main, _Number, _String, _Url, _Object, _Array } from './index';\r\nconst { Logger, Type } = _Main;\r\n{\r\n    const A = Logger('测试Logger');\r\n    A.info('测试成功了', '测试多个参数1', '测试多个参数2');\r\n    A.red('测试红色信息', '2222', '等你饿哦多胡搜');\r\n    const test = [\r\n        123,\r\n        '123',\r\n        true,\r\n        { name: '张三' },\r\n        function name() {\r\n            return '张三';\r\n        },\r\n        /^\\d+$/,\r\n        null,\r\n        undefined,\r\n        [1, 2, 3],\r\n        new Date(),\r\n        new Error()\r\n    ];\r\n    test.forEach(item => {\r\n        A.info(Type(item));\r\n    });\r\n}\r\nconst { isIE, isChrome, isOpera, isFirefox, isSafari } = _Brower;\r\n{\r\n    const s = Logger('测试浏览器类型判断');\r\n    s.info(isIE);\r\n    s.info(isChrome);\r\n    s.info(isOpera);\r\n    s.info(isFirefox);\r\n    s.info(isSafari);\r\n    s.info('---------------------');\r\n}\r\nconst { deepCopy } = _Object;\r\n{\r\n    const s = Logger('测试对象方法');\r\n    s.info(deepCopy({\r\n        name: '张三',\r\n        showName: function () {\r\n            console.log(222);\r\n        },\r\n        extra: {\r\n            a: '111'\r\n        },\r\n        a: [2222],\r\n        v: [{\r\n                name: '1111'\r\n            }],\r\n        s: /ssss/g,\r\n        q: null,\r\n        w: undefined\r\n    }));\r\n}\r\nconst { float, getRandomBit } = _Number;\r\n{\r\n    const s = Logger('测试数字方法');\r\n    s.info(float.add(0.1, 0.2));\r\n    s.info(float.sub(0.1, 0.2));\r\n    s.info(float.ride(0.1, 0.2));\r\n    s.info(float.divide(0.1, 0.2));\r\n}\r\nconst { Reverse, LimitAndSliceChinese, LimitAndSliceChineseNotSym, truncate, repeat, confirmEnding } = _String;\r\n{\r\n    const s = Logger('测试字符串方法');\r\n    let name = '你好啊，我是张三！';\r\n    s.info(Reverse('qwert1s'));\r\n    s.info(LimitAndSliceChinese(name, 4));\r\n    s.info(LimitAndSliceChineseNotSym(name, 4));\r\n    s.info(truncate(name, 4));\r\n    s.info(repeat(name, 4));\r\n    s.info(confirmEnding(name, '！'));\r\n}\r\nconst { sliceProtocol } = _Url;\r\n{\r\n    const s = Logger('测试url方法');\r\n    s.info(sliceProtocol('http://www.baidu.com'));\r\n    s.info(sliceProtocol('https://www.baidu.com'));\r\n}\r\nconst { upSet, destroyer, chunk } = _Array;\r\n{\r\n    let arr = [5, 2, 5, 6, 1, 2, 3];\r\n    const s = Logger('测试数组方法');\r\n    s.info(upSet(arr));\r\n    s.info(destroyer(arr, 2));\r\n    s.info(chunk(arr, 2));\r\n}\r\n",
     "static": true,
     "longname": "D:/Users/chen_huang/Desktop/github/Utils2js/es6/test.js",
     "access": "public",
@@ -2180,7 +2180,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 25,
+    "lineNumber": 26,
     "undocument": true,
     "type": {
       "types": [
@@ -2201,7 +2201,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 35,
+    "lineNumber": 36,
     "undocument": true,
     "type": {
       "types": [
@@ -2222,7 +2222,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 55,
+    "lineNumber": 56,
     "undocument": true,
     "type": {
       "types": [
@@ -2243,7 +2243,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 63,
+    "lineNumber": 64,
     "undocument": true,
     "type": {
       "types": [
@@ -2264,7 +2264,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 74,
+    "lineNumber": 75,
     "undocument": true,
     "type": {
       "types": [
@@ -2285,7 +2285,7 @@
     "importPath": "utils2js/es6/test.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 80,
+    "lineNumber": 81,
     "undocument": true,
     "type": {
       "types": [
@@ -2296,7 +2296,7 @@
   },
   {
     "kind": "index",
-    "content": "# Utils2js\r\n\r\n一个基于`TypeScript`和`esdoc`编写的工具方法\r\n\r\n相应的工具方法已生成文档\r\n\r\n安装方式\r\n\r\n```shell\r\nnpm run utils2js\r\n```\r\n\r\n使用方式\r\n\r\n```javascript\r\nimport {\r\n    _Brower,\r\n    _Main,\r\n    _Number,\r\n    _String,\r\n    _Url\r\n} from 'utils2js'\r\n```\r\n\r\n根据自身需求，按需引用对应类型的方法\r\n\r\n比如引用_Main对象下的Logger方法\r\n\r\n```javascript\r\nconst A = Logger('测试Logger')\r\nA.info('测试成功了')\r\nconst test = [\r\n    123,\r\n    '123',\r\n    true,\r\n    {name: '张三'},\r\n    function name () {\r\n        return '张三'\r\n    },\r\n    /^\\d+$/,\r\n    null,\r\n    undefined,\r\n    [1, 2, 3],\r\n    new Date(),\r\n    new Error()\r\n]\r\ntest.forEach(item => {\r\n    A.info(Type(item))\r\n})\r\n```",
+    "content": "# Utils2js\r\n\r\n一个基于`TypeScript`和`esdoc`编写的工具方法\r\n\r\n相应的工具方法已生成文档\r\n\r\n安装方式\r\n\r\n```shell\r\nnpm run utils2js\r\n```\r\n\r\n使用方式\r\n\r\n```javascript\r\nimport {\r\n    _Brower,\r\n    _Main,\r\n    _Number,\r\n    _String,\r\n    _Url\r\n} from 'utils2js'\r\n```\r\n\r\n根据自身需求，按需引用对应类型的方法\r\n\r\n在线文档查看地址：[地址](https://megan-ta.github.io/Utils2js/)\r\n\r\n比如引用_Main对象下的Logger方法\r\n\r\n```javascript\r\nconst A = Logger('测试Logger')\r\nA.info('测试成功了')\r\nconst test = [\r\n    123,\r\n    '123',\r\n    true,\r\n    {name: '张三'},\r\n    function name () {\r\n        return '张三'\r\n    },\r\n    /^\\d+$/,\r\n    null,\r\n    undefined,\r\n    [1, 2, 3],\r\n    new Date(),\r\n    new Error()\r\n]\r\ntest.forEach(item => {\r\n    A.info(Type(item))\r\n})\r\n```\r\n",
     "longname": "D:\\Users\\chen_huang\\Desktop\\github\\Utils2js\\README.md",
     "name": "./README.md",
     "static": true,
@@ -2304,7 +2304,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\r\n  \"name\": \"utils2js\",\r\n  \"version\": \"1.0.3\",\r\n  \"description\": \"Common tool method encapsulation\",\r\n  \"main\": \"index.js\",\r\n  \"directories\": {\r\n    \"lib\": \"lib\"\r\n  },\r\n  \"scripts\": {\r\n    \"dev\": \"webpack-dev-server --config webpack.config.js\",\r\n    \"prod\": \"gulp && npm run publish\",\r\n    \"publish\": \"npm publish ./publish\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"tsc6\": \"tsc\",\r\n    \"pack\": \"npm run tsc6 && npm run doc\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Megan-TA/Utils2js.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"utils\",\r\n    \"utils2js\"\r\n  ],\r\n  \"author\": \"chen214\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Megan-TA/Utils2js/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Megan-TA/Utils2js#readme\",\r\n  \"devDependencies\": {\r\n    \"awesome-typescript-loader\": \"3.5.0\",\r\n    \"babel-core\": \"^6.26.3\",\r\n    \"babel-preset-es2015\": \"^6.24.1\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\r\n    \"gulp\": \"^3.9.1\",\r\n    \"gulp-babel\": \"^7.0.1\",\r\n    \"gulp-load-plugins\": \"^1.5.0\",\r\n    \"gulp-plumber\": \"^1.2.0\",\r\n    \"gulp-uglify\": \"^3.0.0\",\r\n    \"html-webpack-plugin\": \"^3.2.0\",\r\n    \"mockjs\": \"^1.0.1-beta3\",\r\n    \"pump\": \"^3.0.0\",\r\n    \"source-map-loader\": \"^0.2.3\",\r\n    \"tslint\": \"^5.10.0\",\r\n    \"typescript\": \"^2.9.2\",\r\n    \"webpack\": \"3.5.5\",\r\n    \"webpack-dev-server\": \"2.7.1\",\r\n    \"webpack-merge\": \"^4.1.2\"\r\n  }\r\n}\r\n",
+    "content": "{\r\n  \"name\": \"utils2js\",\r\n  \"version\": \"1.0.3\",\r\n  \"description\": \"Common tool method encapsulation\",\r\n  \"main\": \"index.js\",\r\n  \"directories\": {\r\n    \"lib\": \"lib\"\r\n  },\r\n  \"scripts\": {\r\n    \"dev\": \"webpack-dev-server --config webpack.config.js\",\r\n    \"prod\": \"gulp && npm run publish\",\r\n    \"publish\": \"npm publish ./publish\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"tsc6\": \"tsc\",\r\n    \"pack\": \"npm run tsc6 && npm run doc --dev\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Megan-TA/Utils2js.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"utils\",\r\n    \"utils2js\"\r\n  ],\r\n  \"author\": \"chen214\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Megan-TA/Utils2js/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Megan-TA/Utils2js#readme\",\r\n  \"devDependencies\": {\r\n    \"awesome-typescript-loader\": \"3.5.0\",\r\n    \"babel-core\": \"^6.26.3\",\r\n    \"babel-preset-es2015\": \"^6.24.1\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\r\n    \"gulp\": \"^3.9.1\",\r\n    \"gulp-babel\": \"^7.0.1\",\r\n    \"gulp-load-plugins\": \"^1.5.0\",\r\n    \"gulp-plumber\": \"^1.2.0\",\r\n    \"gulp-uglify\": \"^3.0.0\",\r\n    \"html-webpack-plugin\": \"^3.2.0\",\r\n    \"mockjs\": \"^1.0.1-beta3\",\r\n    \"pump\": \"^3.0.0\",\r\n    \"source-map-loader\": \"^0.2.3\",\r\n    \"tslint\": \"^5.10.0\",\r\n    \"typescript\": \"^2.9.2\",\r\n    \"webpack\": \"3.5.5\",\r\n    \"webpack-dev-server\": \"2.7.1\",\r\n    \"webpack-merge\": \"^4.1.2\"\r\n  }\r\n}\r\n",
     "longname": "D:\\Users\\chen_huang\\Desktop\\github\\Utils2js\\package.json",
     "name": "package.json",
     "static": true,

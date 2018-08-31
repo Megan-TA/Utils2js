@@ -15,7 +15,8 @@ const {
 
 {
     const A = Logger('测试Logger')
-    A.info('测试成功了')
+    A.info('测试成功了', '测试多个参数1', '测试多个参数2')
+    A.red('测试红色信息', '2222', '等你饿哦多胡搜')
     const test = [
         123,
         '123',

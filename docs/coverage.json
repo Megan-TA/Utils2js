@@ -17,11 +17,11 @@
       "expectCount": 8,
       "actualCount": 3,
       "undocumentLines": [
-        11,
-        17,
-        69,
-        70,
-        71
+        3,
+        9,
+        64,
+        65,
+        66
       ]
     },
     "es6/lib/number.js": {
@@ -56,12 +56,12 @@
       "actualCount": 0,
       "undocumentLines": [
         2,
-        25,
-        35,
-        55,
-        63,
-        74,
-        80
+        26,
+        36,
+        56,
+        64,
+        75,
+        81
       ]
     }
   }

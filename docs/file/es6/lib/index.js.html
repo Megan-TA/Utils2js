@@ -58,15 +58,7 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">es6/lib/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
- * &#x4E2A;&#x4EBA;&#x5DE5;&#x5177;&#x65B9;&#x6CD5;
- * @Author: chen_huang
- * @Date: 2017-09-20 16:17:55
- * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-14 19:04:13
- */
-import { isIE } from &apos;./brower&apos;;
-import { getRandomBit } from &apos;./number&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { getRandomBit } from &apos;./number&apos;;
 import { interpolation } from &apos;./object&apos;;
 let INSTANCE = null;
 /**
@@ -94,21 +86,24 @@ class Utils2js {
     Logger(channel, options = {}) {
         // &#x6D4F;&#x89C8;&#x5668;&#x68C0;&#x6D4B;
         function info(message) {
-            if (isIE) {
-                console.log(interpolation(&apos;[{0}]&apos;, channel), message);
+            var remainParams = Array.prototype.slice.call(arguments, 1);
+            var colorArray = [interpolation(&apos;%c[{0}]&apos;, channel), `color: ${options.color}`, message].concat(remainParams);
+            if (options &amp;&amp; options.color) {
+                options.color = options.color;
             }
             else {
-                if (options &amp;&amp; options.color) {
-                    options.color = options.color;
-                }
-                else {
-                    options.color = getRandomBit(6, 16);
-                }
-                console.log(interpolation(&apos;%c[{0}]&apos;, channel), interpolation(&apos;color: {0}&apos;, options.color), message);
+                options.color = getRandomBit(6, 16);
             }
+            console.log.apply(this, colorArray);
+        }
+        function red(message) {
+            var remainParams = Array.prototype.slice.call(arguments, 1).join(&apos; &apos;);
+            var colorArray = [interpolation(&apos;%c[{0}]&apos;, channel), `color: #CA0C16`, message + &apos; &apos; + remainParams];
+            console.log.apply(this, colorArray);
         }
         return {
-            info
+            info,
+            red
         };
     }
     /**

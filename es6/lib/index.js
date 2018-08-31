@@ -1,4 +1,3 @@
-import { isIE } from './brower';
 import { getRandomBit } from './number';
 import { interpolation } from './object';
 let INSTANCE = null;
@@ -11,21 +10,24 @@ class Utils2js {
     }
     Logger(channel, options = {}) {
         function info(message) {
-            if (isIE) {
-                console.log(interpolation('[{0}]', channel), message);
+            var remainParams = Array.prototype.slice.call(arguments, 1);
+            var colorArray = [interpolation('%c[{0}]', channel), `color: ${options.color}`, message].concat(remainParams);
+            if (options && options.color) {
+                options.color = options.color;
             }
             else {
-                if (options && options.color) {
-                    options.color = options.color;
-                }
-                else {
-                    options.color = getRandomBit(6, 16);
-                }
-                console.log(interpolation('%c[{0}]', channel), interpolation('color: {0}', options.color), message);
+                options.color = getRandomBit(6, 16);
             }
+            console.log.apply(this, colorArray);
+        }
+        function red(message) {
+            var remainParams = Array.prototype.slice.call(arguments, 1).join(' ');
+            var colorArray = [interpolation('%c[{0}]', channel), `color: #CA0C16`, message + ' ' + remainParams];
+            console.log.apply(this, colorArray);
         }
         return {
-            info
+            info,
+            red
         };
     }
     Type(params) {

@@ -24,6 +24,8 @@ import {
 
 根据自身需求，按需引用对应类型的方法
 
+在线文档查看地址：[地址](https://megan-ta.github.io/Utils2js/)
+
 比如引用_Main对象下的Logger方法
 
 ```javascript

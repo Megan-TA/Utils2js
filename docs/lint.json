@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "name": "destroyer",
+    "filePath": "es6/lib/array.js",
+    "lines": [
+      {
+        "lineNumber": 29,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 30,
+        "line": " * 摧毁数组指定数值\r"
+      },
+      {
+        "lineNumber": 31,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 32,
+        "line": " * destroyer([2,3,1,2], 2) => [3,1]\r"
+      },
+      {
+        "lineNumber": 33,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 34,
+        "line": " * @param {any[]} arr 待摧毁的数组\r"
+      },
+      {
+        "lineNumber": 35,
+        "line": " * @returns {any[]} 待摧毁的值\r"
+      },
+      {
+        "lineNumber": 36,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 37,
+        "line": "function destroyer(arr, any) {\r"
+      }
+    ],
+    "codeParams": [
+      "arr",
+      "any"
+    ],
+    "docParams": [
+      "arr"
+    ]
+  }
+]

@@ -1,8 +1,13 @@
 {
-  "coverage": "67.64%",
-  "expectCount": 34,
-  "actualCount": 23,
+  "coverage": "69.04%",
+  "expectCount": 42,
+  "actualCount": 29,
   "files": {
+    "es6/lib/array.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
     "es6/lib/brower.js": {
       "expectCount": 6,
       "actualCount": 6,
@@ -37,8 +42,8 @@
       ]
     },
     "es6/lib/string.js": {
-      "expectCount": 4,
-      "actualCount": 4,
+      "expectCount": 7,
+      "actualCount": 7,
       "undocumentLines": []
     },
     "es6/lib/url.js": {
@@ -47,14 +52,16 @@
       "undocumentLines": []
     },
     "es6/test.js": {
-      "expectCount": 5,
+      "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [
         2,
         25,
         35,
-        43,
-        50
+        55,
+        63,
+        74,
+        80
       ]
     }
   }

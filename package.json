@@ -12,7 +12,7 @@
     "publish": "npm publish ./publish",
     "doc": "./node_modules/.bin/esdoc",
     "tsc6": "tsc",
-    "pack": "npm run tsc6 && npm run doc"
+    "pack": "npm run tsc6 && npm run doc --dev"
   },
   "repository": {
     "type": "git",

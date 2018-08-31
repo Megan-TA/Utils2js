@@ -29,7 +29,10 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#lib">lib</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRandomBit">getRandomBit</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#lib">lib</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chunk">chunk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-destroyer">destroyer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-upSet">upSet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRandomBit">getRandomBit</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepCopy">deepCopy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-interpolation">interpolation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prop">prop</a></span></span></li>
@@ -37,6 +40,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChinese">LimitAndSliceChinese</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LimitAndSliceChineseNotSym">LimitAndSliceChineseNotSym</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Reverse">Reverse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-confirmEnding">confirmEnding</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-truncate">truncate</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceProtocol">sliceProtocol</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isChrome">isChrome</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFirefox">isFirefox</a></span></span></li>
@@ -57,7 +63,7 @@
  * @Author: chen_huang
  * @Date: 2018-06-13 16:00:49
  * @Last Modified by: chen_huang
- * @Last Modified time: 2018-06-19 15:17:27
+ * @Last Modified time: 2018-08-31 15:22:31
  */
 import { RegExtension } from &apos;./regex&apos;;
 /**
@@ -177,7 +183,73 @@ function LimitAndSliceChinese(waitingForSliceString, maxNumLen = 10) {
     }
     return result;
 }
-export { Reverse, LimitAndSliceChineseNotSym, LimitAndSliceChinese };
+/**
+ * &#x68C0;&#x67E5;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E;
+ * &#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;&#x53E5;&#x5B50;(str)&#x662F;&#x5426;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;(target)&#x7ED3;&#x5C3E;&#x3002;
+ * @example
+ * confirmEnding(&quot;Bastian&quot;, &quot;n&quot;) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; true.
+ * confirmEnding(&quot;Connor&quot;, &quot;n&quot;) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; false.
+ * confirmEnding(&quot;He has to give me a new name&quot;, &quot;name&quot;) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; true.
+ * confirmEnding(&quot;He has to give me a new name&quot;, &quot;me&quot;) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; true.
+ * @param {string} str &#x76EE;&#x6807;&#x5B57;&#x7B26;&#x4E32;
+ * @param {string} target &#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+ * @returns {boolean}
+ */
+function confirmEnding(str, target) {
+    var flag = false;
+    var newArr = str.split(&apos; &apos;);
+    var lastItem = newArr[newArr.length - 1];
+    var finalLast = lastItem.split(target);
+    if (finalLast[finalLast.length - 1] === &apos;&apos;) {
+        flag = true;
+    }
+    return flag;
+}
+/**
+ * &#x91CD;&#x590D;&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;
+ * &#x91CD;&#x590D;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32; num&#x6B21;&#xFF0C;&#x5982;&#x679C;num&#x662F;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;
+ * @example
+ * repeat(&quot;*&quot;, 3) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;***&quot;
+ * repeat(&quot;abc&quot;, 4) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;abcabcabcabc&quot;
+ * repeat(&quot;abc&quot;, -2) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;&quot;
+ * @param {string} str &#x539F;&#x5B57;&#x7B26;&#x4E32;
+ * @param {number} num &#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;
+ * @returns {string}
+ */
+function repeat(str, num) {
+    var string = &apos;&apos;;
+    for (var i = 1; i &lt;= num; i++) {
+        string += str;
+    }
+    return string;
+}
+/**
+ * &#x622A;&#x65AD;&#x5B57;&#x7B26;&#x4E32;
+ * &#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x6BD4;&#x6307;&#x5B9A;&#x7684;&#x53C2;&#x6570;num&#x957F;&#xFF0C;&#x5219;&#x628A;&#x591A;&#x4F59;&#x7684;&#x90E8;&#x5206;&#x7528;...&#x6765;&#x8868;&#x793A;&#x3002;
+ * &#x5207;&#x8BB0;&#xFF0C;&#x63D2;&#x5165;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x5C3E;&#x90E8;&#x7684;&#x4E09;&#x4E2A;&#x70B9;&#x53F7;&#x4E5F;&#x4F1A;&#x8BA1;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002;
+ * &#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x53C2;&#x6570;num&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;3&#xFF0C;&#x5219;&#x6DFB;&#x52A0;&#x7684;&#x4E09;&#x4E2A;&#x70B9;&#x53F7;&#x4E0D;&#x4F1A;&#x8BA1;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002;
+ * @example
+ * truncate(&quot;A-tisket a-tasket A green and yellow basket&quot;, 11) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;A-tisket...&quot;
+ * truncate(&quot;A-tisket a-tasket A green and yellow basket&quot;, &quot;A-tisket a-tasket A green and yellow basket&quot;.length) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;A-tisket a-tasket A green and yellow basket&quot;
+ * truncate(&quot;A-&quot;, 1) &#x5E94;&#x8BE5;&#x8FD4;&#x56DE; &quot;A...&quot;
+ * @param {string} str
+ * @param {number} num
+ * @returns {string}
+ */
+function truncate(str, num) {
+    var last = str.length - 1 &gt;= num ? &apos;...&apos; : &apos;&apos;;
+    if (num &lt;= 3) {
+        str = str.substr(0, num) + last;
+    }
+    else if (last === &apos;&apos;) {
+        str = str.substr(0, num) + last;
+    }
+    else {
+        str = str.substr(0, num - 3) + last;
+    }
+    return str;
+}
+export { Reverse, LimitAndSliceChineseNotSym, LimitAndSliceChinese, confirmEnding, repeat, truncate };
 </code></pre>
 
 </div>

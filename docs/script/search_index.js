@@ -36,9 +36,27 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "utils2js/es6/lib/array.js~chunk",
+    "function/index.html#static-function-chunk",
+    "<span>chunk</span> <span class=\"search-result-import-path\">utils2js/es6/lib/array.js</span>",
+    "function"
+  ],
+  [
+    "utils2js/es6/lib/string.js~confirmending",
+    "function/index.html#static-function-confirmEnding",
+    "<span>confirmEnding</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
+    "function"
+  ],
+  [
     "utils2js/es6/lib/object.js~deepcopy",
     "function/index.html#static-function-deepCopy",
     "<span>deepCopy</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
+    "function"
+  ],
+  [
+    "utils2js/es6/lib/array.js~destroyer",
+    "function/index.html#static-function-destroyer",
+    "<span>destroyer</span> <span class=\"search-result-import-path\">utils2js/es6/lib/array.js</span>",
     "function"
   ],
   [
@@ -96,6 +114,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "utils2js/es6/lib/string.js~repeat",
+    "function/index.html#static-function-repeat",
+    "<span>repeat</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
+    "function"
+  ],
+  [
     "utils2js/es6/lib/object.js~simplecopy",
     "function/index.html#static-function-simpleCopy",
     "<span>simpleCopy</span> <span class=\"search-result-import-path\">utils2js/es6/lib/object.js</span>",
@@ -105,6 +129,18 @@ window.esdocSearchIndex = [
     "utils2js/es6/lib/url.js~sliceprotocol",
     "function/index.html#static-function-sliceProtocol",
     "<span>sliceProtocol</span> <span class=\"search-result-import-path\">utils2js/es6/lib/url.js</span>",
+    "function"
+  ],
+  [
+    "utils2js/es6/lib/string.js~truncate",
+    "function/index.html#static-function-truncate",
+    "<span>truncate</span> <span class=\"search-result-import-path\">utils2js/es6/lib/string.js</span>",
+    "function"
+  ],
+  [
+    "utils2js/es6/lib/array.js~upset",
+    "function/index.html#static-function-upSet",
+    "<span>upSet</span> <span class=\"search-result-import-path\">utils2js/es6/lib/array.js</span>",
     "function"
   ],
   [
@@ -393,6 +429,12 @@ window.esdocSearchIndex = [
     "es6/index.js",
     "file/es6/index.js.html",
     "es6/index.js",
+    "file"
+  ],
+  [
+    "es6/lib/array.js",
+    "file/es6/lib/array.js.html",
+    "es6/lib/array.js",
     "file"
   ],
   [

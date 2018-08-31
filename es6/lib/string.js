@@ -79,4 +79,34 @@ function LimitAndSliceChinese(waitingForSliceString, maxNumLen = 10) {
     }
     return result;
 }
-export { Reverse, LimitAndSliceChineseNotSym, LimitAndSliceChinese };
+function confirmEnding(str, target) {
+    var flag = false;
+    var newArr = str.split(' ');
+    var lastItem = newArr[newArr.length - 1];
+    var finalLast = lastItem.split(target);
+    if (finalLast[finalLast.length - 1] === '') {
+        flag = true;
+    }
+    return flag;
+}
+function repeat(str, num) {
+    var string = '';
+    for (var i = 1; i <= num; i++) {
+        string += str;
+    }
+    return string;
+}
+function truncate(str, num) {
+    var last = str.length - 1 >= num ? '...' : '';
+    if (num <= 3) {
+        str = str.substr(0, num) + last;
+    }
+    else if (last === '') {
+        str = str.substr(0, num) + last;
+    }
+    else {
+        str = str.substr(0, num - 3) + last;
+    }
+    return str;
+}
+export { Reverse, LimitAndSliceChineseNotSym, LimitAndSliceChinese, confirmEnding, repeat, truncate };
